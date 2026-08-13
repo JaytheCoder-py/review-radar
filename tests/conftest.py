@@ -31,8 +31,18 @@ def daily_index_raw() -> str:
 
 @pytest.fixture
 def eliminated() -> Submission:
-    """Item 7.01 alone. Regulation FD, no index consequence, terminates at the baseline."""
+    """Item 2.02 alone. An earnings release - correctly eliminated."""
     return _load("eliminated_8k.txt")
+
+
+@pytest.fixture
+def false_elimination() -> Submission:
+    """A real 25% stock split, announced under Item 7.01 alone, and therefore eliminated.
+
+    IntegraMed America, 2007. The baseline discards it. Kept as a fixture because it is
+    the structural limit of item-code routing, stated as a test rather than a caveat.
+    """
+    return _load("false_elimination_8k.txt")
 
 
 @pytest.fixture

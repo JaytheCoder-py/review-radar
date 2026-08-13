@@ -1,0 +1,216 @@
+-----BEGIN PRIVACY-ENHANCED MESSAGE-----
+Proc-Type: 2001,MIC-CLEAR
+Originator-Name: webmaster@www.sec.gov
+Originator-Key-Asymmetric:
+ MFgwCgYEVQgBAQICAf8DSgAwRwJAW2sNKK9AVtBzYZmr6aGjlWyK3XmZv3dTINen
+ TWSM7vrzLADbmYQaionwg5sDW3P6oaM5D3tdezXMm7z1T+B+twIDAQAB
+MIC-Info: RSA-MD5,RSA,
+ CNL2dooskWjj64Xp8kSl/Vcfi8Q417vmhROXl6xSCUPvwvF8eG+RM8731w21zroc
+ 5gPQuCl4IChz50pyZzl9vQ==
+
+<SEC-DOCUMENT>0000885988-07-000009.txt : 20070321
+<SEC-HEADER>0000885988-07-000009.hdr.sgml : 20070321
+<ACCEPTANCE-DATETIME>20070321141401
+ACCESSION NUMBER:		0000885988-07-000009
+CONFORMED SUBMISSION TYPE:	8-K
+PUBLIC DOCUMENT COUNT:		2
+CONFORMED PERIOD OF REPORT:	20070319
+ITEM INFORMATION:		Regulation FD Disclosure
+FILED AS OF DATE:		20070321
+DATE AS OF CHANGE:		20070321
+
+FILER:
+
+	COMPANY DATA:	
+		COMPANY CONFORMED NAME:			INTEGRAMED AMERICA INC
+		CENTRAL INDEX KEY:			0000885988
+		STANDARD INDUSTRIAL CLASSIFICATION:	SERVICES-OFFICES & CLINICS OF DOCTORS OF MEDICINE [8011]
+		IRS NUMBER:				061150326
+		STATE OF INCORPORATION:			DE
+		FISCAL YEAR END:			1206
+
+	FILING VALUES:
+		FORM TYPE:		8-K
+		SEC ACT:		1934 Act
+		SEC FILE NUMBER:	000-20260
+		FILM NUMBER:		07708734
+
+	BUSINESS ADDRESS:	
+		STREET 1:		TWO MANHATTANVILLE RD
+		CITY:			PURCHASE
+		STATE:			NY
+		ZIP:			10577-2100
+		BUSINESS PHONE:		9142538000
+
+	MAIL ADDRESS:	
+		STREET 1:		2 MANHATTANVILLE RD
+		CITY:			PURCHASE
+		STATE:			NY
+		ZIP:			10577-2100
+
+	FORMER COMPANY:	
+		FORMER CONFORMED NAME:	IVF AMERICA INC
+		DATE OF NAME CHANGE:	19950720
+</SEC-HEADER>
+<DOCUMENT>
+<TYPE>8-K
+<SEQUENCE>1
+<FILENAME>form8k03192007.txt
+<DESCRIPTION>INTEGRAMED AMERICA, INC.
+<TEXT>
+                       SECURITIES AND EXCHANGE COMMISSION
+                             Washington, D.C. 20549
+
+
+
+                                    FORM 8-K
+
+                                 CURRENT REPORT
+
+
+                       Pursuant to Section 13 or 15(d) of
+                      the Securities and Exchange Act 1934
+
+
+Date of Report (Date of earliest event reported):    March 19, 2007
+
+                            INTEGRAMED AMERICA, INC.
+- --------------------------------------------------------------------------------
+               (Exact name of registrant as specified in charter)
+
+                                    Delaware
+- --------------------------------------------------------------------------------
+                 (State of other jurisdiction of incorporation)
+
+                  0-20260                            6-1150326
+- --------------------------------------------------------------------------------
+           (Commission File Numbers)    (IRS Employer Identification No.)
+
+Two Manhattanville Road, Purchase, NY                  10577
+- --------------------------------------------------------------------------------
+       (Address of principal executive offices)      (Zip Code)
+
+Registrant's telephone no. including area code: (914) 253-8000
+                                                --------------
+
+(Former name or former address, if changed since last report)
+
+Check the appropriate box below if the Form 8-K filing is intended to
+simultaneously satisfy the filing obligation of the registrant under any of the
+following provisions:
+
+          Written  communication  pursuant to Rule 425 under the  Securities Act
+    ___   (17 CFR 230.425)
+
+          Soliciting material pursuant to Rule 14a-12 under the Exchange Act (17
+    ___   CFR 240.14a-12)
+
+          Pre-commencement  communication  pursuant to Rule  14d-2(b)  under the
+    ___   Exchange Act (17 CFR 240.14d-2(b)
+
+          Pre-commencement  communication  pursuant to Rule  13e-4(c)  under the
+    ___   Exchange Act (17 CFR 240.13e-4(c))
+
+
+
+
+<PAGE>
+
+
+ITEM 7.01    Regulation FD Disclosure
+
+             Registrant's  Press  Release  dated  March 20,  2007,  attached  as
+Exhibit 99.1 hereto, is furnished pursuant to Regulation FD; it is not filed.
+
+
+
+                                   SIGNATURES
+
+
+         Pursuant to the requirements of the Securities Exchange Act of 1934,
+the Registrant has duly caused this report to be signed on its behalf by the
+undersigned thereunto duly authorized.
+
+
+                                    INTEGRAMED AMERICA, INC.
+                                    (Registrant)
+
+
+
+
+Date:    March 21, 2007     By:  /s/Claude E. White
+                                    -------------------------------------------
+                                    Claude E. White
+                                    Vice President, General Counsel & Secretary
+
+
+</TEXT>
+</DOCUMENT>
+<DOCUMENT>
+<TYPE>EX-99.1
+<SEQUENCE>3
+<FILENAME>exhibit99stocksplit.txt
+<DESCRIPTION>INTEGRAMED AMERICA, IN.C
+<TEXT>
+      John W. Hlywak, Jr. (Investors)    Scott Soifer (Media & Physicians)
+      Executive Vice President & CFO     Vice President Marketing & Development
+      IntegraMed America, Inc.           IntegraMed America, Inc.
+      (914) 251-4143                     (914) 251-4186
+      email:  jhlywak@integramed.com     email:scott.soifer@integramed.com
+              ----------------------     ---------------------------------
+      Web Address:  http://www.integramed.com
+                    -------------------------
+
+     IntegraMed Declares 25% Stock Split Effected in the Form of A Dividend
+
+Purchase, NY, March 20, 2007 -- IntegraMed America, Inc. (Nasdaq: INMD), the
+largest fertility services company in the United States, today announced that on
+March 19, 2007 the Board of Directors of the Company declared a 25 percent stock
+split effected in the form of a stock dividend.
+
+The 25 percent stock split effected in the form of a stock dividend will result
+in shareholders receiving 1.0 additional share of common stock for each four
+shares owned on April 13, 2007, which was established as the record date for the
+25 percent stock split effected in the form of a stock dividend. The payable
+date for the 25 percent stock split effected in the form of a stock dividend was
+established as May 4, 2007, with certificates issued pursuant to the 25 percent
+stock split effected in the form of a stock dividend to be mailed to
+shareholders on that date. No fractional shares will be issued; fractional share
+amounts will be rounded to the next whole share.
+
+As of March 19, 2007 the Company had 6,513,634 shares of common stock
+outstanding. As a result of the 25 percent stock split effected in the form of a
+stock dividend, after the payment day, the Company will have 8,142,043 shares of
+common stock outstanding.
+
+                         About IntegraMed America, Inc.
+
+IntegraMed America, Inc. provides business services to a national network of 30
+fertility centers in 86 locations across the United States; distributes
+pharmaceutical products and treatment financing programs directly to consumers;
+and operates the Web site http://www.integramed.com, a leading fertility portal.
+The IntegraMed network includes 153 physicians and Ph.D. scientists. Network
+membership is limited to one practice per metropolitan area, yet one of every
+five procedures in the U.S. is performed in an IntegraMed practice. IntegraMed
+provides more services to both consumers and medical providers in the fertility
+field than any other consortium.
+
+===============================================================================
+
+Statements contained in this press release that are not based on historical
+fact, including statements concerning future results, performance, expectations
+and expansion of IntegraMed are forward-looking statements that may involve a
+number of risks and uncertainties. Actual results may differ materially from the
+statements made as a result of various factors, including, but not limited to,
+the risks associated with IntegraMed's ability to finance future growth; the
+loss of significant business services contract(s); profitability at Reproductive
+Science Centers serviced by IntegraMed; changes in insurance coverage,
+government laws and regulations regarding health care or managed care
+contracting; and other risks, including those identified in the company's most
+recent Form 10-K and in other documents filed by IntegraMed with the U.S.
+Securities and Exchange Commission. All information in this press release is as
+of March 20, 2007 and IntegraMed undertakes no duty to update this information.
+</TEXT>
+</DOCUMENT>
+</SEC-DOCUMENT>
+-----END PRIVACY-ENHANCED MESSAGE-----

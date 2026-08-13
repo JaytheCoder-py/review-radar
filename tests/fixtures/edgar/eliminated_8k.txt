@@ -5,211 +5,729 @@ Originator-Key-Asymmetric:
  MFgwCgYEVQgBAQICAf8DSgAwRwJAW2sNKK9AVtBzYZmr6aGjlWyK3XmZv3dTINen
  TWSM7vrzLADbmYQaionwg5sDW3P6oaM5D3tdezXMm7z1T+B+twIDAQAB
 MIC-Info: RSA-MD5,RSA,
- CNL2dooskWjj64Xp8kSl/Vcfi8Q417vmhROXl6xSCUPvwvF8eG+RM8731w21zroc
- 5gPQuCl4IChz50pyZzl9vQ==
+ V5yLaw07l16bm3Rbv9/+J6Zah73adtoUoYmqbAuK1dyI6+ddMA9ManEnoZ5vP2LU
+ BvsWaNis1MMNITytaX3NMQ==
 
-<SEC-DOCUMENT>0000885988-07-000009.txt : 20070321
-<SEC-HEADER>0000885988-07-000009.hdr.sgml : 20070321
-<ACCEPTANCE-DATETIME>20070321141401
-ACCESSION NUMBER:		0000885988-07-000009
+<SEC-DOCUMENT>0000765207-04-000050.txt : 20041021
+<SEC-HEADER>0000765207-04-000050.hdr.sgml : 20041021
+<ACCEPTANCE-DATETIME>20041021112618
+ACCESSION NUMBER:		0000765207-04-000050
 CONFORMED SUBMISSION TYPE:	8-K
 PUBLIC DOCUMENT COUNT:		2
-CONFORMED PERIOD OF REPORT:	20070319
-ITEM INFORMATION:		Regulation FD Disclosure
-FILED AS OF DATE:		20070321
-DATE AS OF CHANGE:		20070321
+CONFORMED PERIOD OF REPORT:	20041020
+ITEM INFORMATION:		Results of Operations and Financial Condition
+FILED AS OF DATE:		20041021
+DATE AS OF CHANGE:		20041021
 
 FILER:
 
 	COMPANY DATA:	
-		COMPANY CONFORMED NAME:			INTEGRAMED AMERICA INC
-		CENTRAL INDEX KEY:			0000885988
-		STANDARD INDUSTRIAL CLASSIFICATION:	SERVICES-OFFICES & CLINICS OF DOCTORS OF MEDICINE [8011]
-		IRS NUMBER:				061150326
-		STATE OF INCORPORATION:			DE
-		FISCAL YEAR END:			1206
+		COMPANY CONFORMED NAME:			FIRST NATIONAL LINCOLN CORP /ME/
+		CENTRAL INDEX KEY:			0000765207
+		STANDARD INDUSTRIAL CLASSIFICATION:	NATIONAL COMMERCIAL BANKS [6021]
+		IRS NUMBER:				010404322
+		STATE OF INCORPORATION:			ME
+		FISCAL YEAR END:			1231
 
 	FILING VALUES:
 		FORM TYPE:		8-K
 		SEC ACT:		1934 Act
-		SEC FILE NUMBER:	000-20260
-		FILM NUMBER:		07708734
+		SEC FILE NUMBER:	000-26589
+		FILM NUMBER:		041089007
 
 	BUSINESS ADDRESS:	
-		STREET 1:		TWO MANHATTANVILLE RD
-		CITY:			PURCHASE
-		STATE:			NY
-		ZIP:			10577-2100
-		BUSINESS PHONE:		9142538000
+		STREET 1:		P.O. BOX 940
+		STREET 2:		MAIN STREET
+		CITY:			DAMARISCOTTA
+		STATE:			ME
+		ZIP:			04543
+		BUSINESS PHONE:		2075633195
 
 	MAIL ADDRESS:	
-		STREET 1:		2 MANHATTANVILLE RD
-		CITY:			PURCHASE
-		STATE:			NY
-		ZIP:			10577-2100
-
-	FORMER COMPANY:	
-		FORMER CONFORMED NAME:	IVF AMERICA INC
-		DATE OF NAME CHANGE:	19950720
+		STREET 1:		P.O. BOX 940
+		CITY:			DAMARISCOTTA
+		STATE:			ME
+		ZIP:			04543
 </SEC-HEADER>
 <DOCUMENT>
 <TYPE>8-K
 <SEQUENCE>1
-<FILENAME>form8k03192007.txt
-<DESCRIPTION>INTEGRAMED AMERICA, INC.
+<FILENAME>fnlc04q3earnings8k.txt
 <TEXT>
+- -------------------------------------------------------------------------------
+
+
+                                  UNITED STATES
                        SECURITIES AND EXCHANGE COMMISSION
-                             Washington, D.C. 20549
+                             WASHINGTON, D.C. 20549
 
-
+                                -----------------
 
                                     FORM 8-K
+
 
                                  CURRENT REPORT
 
 
-                       Pursuant to Section 13 or 15(d) of
-                      the Securities and Exchange Act 1934
+                     Pursuant to Section 13 or 15(d) of the
+                         Securities Exchange Act of 1934
+
+        Date of report (Date of earliest event reported): October 20, 2004
 
 
-Date of Report (Date of earliest event reported):    March 19, 2007
+                                ----------------
 
-                            INTEGRAMED AMERICA, INC.
-- --------------------------------------------------------------------------------
-               (Exact name of registrant as specified in charter)
+                      FIRST NATIONAL LINCOLN CORPORATION
+              (Exact name of Registrant as specified in charter)
 
-                                    Delaware
-- --------------------------------------------------------------------------------
-                 (State of other jurisdiction of incorporation)
+                                    MAINE
+                (State or other jurisdiction of incorporation)
 
-                  0-20260                            6-1150326
-- --------------------------------------------------------------------------------
-           (Commission File Numbers)    (IRS Employer Identification No.)
-
-Two Manhattanville Road, Purchase, NY                  10577
-- --------------------------------------------------------------------------------
-       (Address of principal executive offices)      (Zip Code)
-
-Registrant's telephone no. including area code: (914) 253-8000
-                                                --------------
-
-(Former name or former address, if changed since last report)
-
-Check the appropriate box below if the Form 8-K filing is intended to
-simultaneously satisfy the filing obligation of the registrant under any of the
-following provisions:
-
-          Written  communication  pursuant to Rule 425 under the  Securities Act
-    ___   (17 CFR 230.425)
-
-          Soliciting material pursuant to Rule 14a-12 under the Exchange Act (17
-    ___   CFR 240.14a-12)
-
-          Pre-commencement  communication  pursuant to Rule  14d-2(b)  under the
-    ___   Exchange Act (17 CFR 240.14d-2(b)
-
-          Pre-commencement  communication  pursuant to Rule  13e-4(c)  under the
-    ___   Exchange Act (17 CFR 240.13e-4(c))
+                  0-26589                      01-0404322
+         (Commission file number)   (IRS employer identification no.)
 
 
+                 Main Street, Damariscotta, Maine        04853
+             (Address of principal executive offices)  (Zip Code)
 
 
-<PAGE>
+                                (207) 563-3195
+             (Registrant's telephone number, including area code)
+
+            Check the appropriate box below if the Form 8-K filing is
+            intended to simultaneously satisfy the filing obligations
+            of the registrant under any of the following provisions:
+
+    [X]  Written communications pursuant to Rule 425 under the Securities Act
+          (17 CFR 230.425)
+
+     [_]  Soliciting material pursuant to Rule 14a-12 under the Exchange Act
+           (17 CFR 240.14a-12)
+
+    [_]  Pre-commencement communications pursuant to Rule 14d-2(b) under the
+          Exchange Act (17 CFR 240.14d-2(b))
+
+    [_]  Pre-commencement communications pursuant to Rule 13e-4(c) under the
+          Exchange Act (17 CFR 240.13e-4 (c))
+
+                               -------------------
 
 
-ITEM 7.01    Regulation FD Disclosure
+- -------------------------------------------------------------------------------
 
-             Registrant's  Press  Release  dated  March 20,  2007,  attached  as
-Exhibit 99.1 hereto, is furnished pursuant to Regulation FD; it is not filed.
+                                TABLE OF CONTENTS
 
+Item 2.02 Results of Operations and Financial Condition .............  Page 1
 
+Item 9.01 Financial Statements and Exhibits .........................  Page 1
 
-                                   SIGNATURES
+Signatures  .........................................................  Page 2
 
-
-         Pursuant to the requirements of the Securities Exchange Act of 1934,
-the Registrant has duly caused this report to be signed on its behalf by the
-undersigned thereunto duly authorized.
-
-
-                                    INTEGRAMED AMERICA, INC.
-                                    (Registrant)
+Exhibit Index  ......................................................  Page 3
 
 
 
 
-Date:    March 21, 2007     By:  /s/Claude E. White
-                                    -------------------------------------------
-                                    Claude E. White
-                                    Vice President, General Counsel & Secretary
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Section 2 - Financial Information
+
+Item 2.02 Results of Operations and Financial Condition.
+
+     On October 20, 2004, the Registrant issued the press release filed
+herewith as Exhibit 99.1 with information regarding the results of operations
+and financial condition of First National Lincoln Corporation for the nine
+months and three months ended September 30, 2004.
+
+
+
+
+Section 9 - Financial Statements and Exhibits
+
+Item 9.01 Financial Statements and Exhibits.
+
+          (c)  Exhibits.
+               --------
+
+          The following Exhibits are being furnished herewith:
+
+          99.1 Registrant's Press Release dated October 20, 2004.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Page 1
+                                    SIGNATURE
+
+     Pursuant to the requirements of the Securities Exchange Act of 1934, the
+Registrant has duly caused this report to be signed on its behalf by the
+undersigned hereunto duly authorized.
+
+
+
+                                     FIRST NATIONAL LINCOLN CORPORATION
+
+                                By:  /s/ F. STEPHEN WARD
+                                     ---------------------
+                                     F. Stephen Ward
+                                     Treasurer and Chief Financial Officer
+
+Dated:  October 21, 2004
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Page 2
+                                  Exhibit Index
+                                  -------------
+
+Exhibit
+Number                     Description of Exhibit
+- ------                     ----------------------
+
+99.1          Registrant's Press Release dated October 20, 2004.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Page 3
+
+
+
+
 
 
 </TEXT>
 </DOCUMENT>
 <DOCUMENT>
-<TYPE>EX-99.1
-<SEQUENCE>3
-<FILENAME>exhibit99stocksplit.txt
-<DESCRIPTION>INTEGRAMED AMERICA, IN.C
+<TYPE>EX-99
+<SEQUENCE>2
+<FILENAME>fnlc04q3earningsrelease.txt
 <TEXT>
-      John W. Hlywak, Jr. (Investors)    Scott Soifer (Media & Physicians)
-      Executive Vice President & CFO     Vice President Marketing & Development
-      IntegraMed America, Inc.           IntegraMed America, Inc.
-      (914) 251-4143                     (914) 251-4186
-      email:  jhlywak@integramed.com     email:scott.soifer@integramed.com
-              ----------------------     ---------------------------------
-      Web Address:  http://www.integramed.com
-                    -------------------------
+Exhibit 99.1
 
-     IntegraMed Declares 25% Stock Split Effected in the Form of A Dividend
+First National Lincoln Corporation Reports Record Third Quarter Earnings Per
+Share, Up 11.1% Over Prior Year
 
-Purchase, NY, March 20, 2007 -- IntegraMed America, Inc. (Nasdaq: INMD), the
-largest fertility services company in the United States, today announced that on
-March 19, 2007 the Board of Directors of the Company declared a 25 percent stock
-split effected in the form of a stock dividend.
 
-The 25 percent stock split effected in the form of a stock dividend will result
-in shareholders receiving 1.0 additional share of common stock for each four
-shares owned on April 13, 2007, which was established as the record date for the
-25 percent stock split effected in the form of a stock dividend. The payable
-date for the 25 percent stock split effected in the form of a stock dividend was
-established as May 4, 2007, with certificates issued pursuant to the 25 percent
-stock split effected in the form of a stock dividend to be mailed to
-shareholders on that date. No fractional shares will be issued; fractional share
-amounts will be rounded to the next whole share.
+DAMARISCOTTA, Maine--(BUSINESS WIRE)--Oct. 20, 2004--First National Lincoln
+Corporation (Nasdaq NM: FNLC), today announced earnings per share of $0.30 on a
+fully diluted basis for the quarter ended September 30, 2004, an increase of
+$0.03 or 11.1% over the $0.27 reported for the same period in 2003. Net income
+for the third quarter was $2,216,000, an increase of $204,000 or 10.1% over the
+$2,012,000 posted in the third quarter of 2003. Both earnings per share and net
+income reported by the Company for 2004 set new single-quarter records. All
+prior period results in this release have been adjusted to reflect the three-
+for-one stock split in 2004.
 
-As of March 19, 2007 the Company had 6,513,634 shares of common stock
-outstanding. As a result of the 25 percent stock split effected in the form of a
-stock dividend, after the payment day, the Company will have 8,142,043 shares of
-common stock outstanding.
+The Company also announced earnings per share of $0.83 on a fully diluted basis
+for the nine months ended September 30, 2004, an increase of $0.10 or 13.7%
+over the $0.73 reported for the same period in 2003. Net income for the first
+nine months of 2004 was $6,197,000, an increase of $777,000 or 14.3% over the
+$5,420,000 posted in 2003. Both earnings per share and net income reported by
+the Company for 2004 set new records for the first nine months of the year.
 
-                         About IntegraMed America, Inc.
+Year-to-date changes on the balance sheet showed total assets at $630.2 million
+on September 30, 2004 - an increase of 10.8% over December 31, 2003. Loans
+totaled $461.5 million, up 15.7% over December 31, 2003, while investments
+increased by 0.4% to $137.2 million. Deposits of $401.5 million were up 11.8%
+over year end. As of September 30, 2004, First National Lincoln Corporation had
+total equity of $51.5 million, an increase of 8.0% or $3.8 million over
+December 31, 2003.
 
-IntegraMed America, Inc. provides business services to a national network of 30
-fertility centers in 86 locations across the United States; distributes
-pharmaceutical products and treatment financing programs directly to consumers;
-and operates the Web site http://www.integramed.com, a leading fertility portal.
-The IntegraMed network includes 153 physicians and Ph.D. scientists. Network
-membership is limited to one practice per metropolitan area, yet one of every
-five procedures in the U.S. is performed in an IntegraMed practice. IntegraMed
-provides more services to both consumers and medical providers in the fertility
-field than any other consortium.
+"I am very pleased with the performance we have produced in the third quarter
+and in the first nine months of 2004," commented Daniel R. Daigneault, First
+National Lincoln Corporation's President and Chief Executive Officer. "Growth
+in earning assets was the primary reason for our increase in earnings, with
+total loans up by $62.6 million or 15.7% over December 31, 2003. While growth
+has been very strong in commercial loans and home equity lines of credit, we
+have had exceptional growth in residential mortgages, which are up $30.1
+million or 17.3%.
 
-===============================================================================
+"This asset growth has led to a 22.9% or $2.9 million increase in net interest
+income for the first nine months of 2004 versus the same period in 2003,"
+President Daigneault observed. "At the same time we have seen a healthy
+increase in our net interest margin, which was 3.93% for the first nine months
+of 2004 compared to 3.69% for the first nine months of 2003. This was the
+result of liability costs rising more slowly than asset yields given recent
+actions by the Federal Reserve to increase short-term interest rates.
 
-Statements contained in this press release that are not based on historical
-fact, including statements concerning future results, performance, expectations
-and expansion of IntegraMed are forward-looking statements that may involve a
-number of risks and uncertainties. Actual results may differ materially from the
-statements made as a result of various factors, including, but not limited to,
-the risks associated with IntegraMed's ability to finance future growth; the
-loss of significant business services contract(s); profitability at Reproductive
-Science Centers serviced by IntegraMed; changes in insurance coverage,
-government laws and regulations regarding health care or managed care
-contracting; and other risks, including those identified in the company's most
-recent Form 10-K and in other documents filed by IntegraMed with the U.S.
-Securities and Exchange Commission. All information in this press release is as
-of March 20, 2007 and IntegraMed undertakes no duty to update this information.
+"Near the end of the second quarter, we launched a new program designed to
+attract a greater number of new checking accounts," President Daigneault
+continued. "I am pleased with the results achieved in the early stages of this
+initiative and feel it will result in increased levels of core deposits and
+more non-interest income for the Company."
+
+
+
+
+
+
+Page 1
+"Another factor in our 2004 performance is our excellent efficiency ratio,"
+President Daigneault noted, "which was 49.2% for the third quarter and 49.1%
+for the first nine months of 2004. This is an important measure of how much we
+spend to generate a dollar in revenue and continues to be much better than that
+of our peers. Although non-interest income is down from last year's levels due
+to lower mortgage origination income, we continue to make up for this in net
+interest income from loan growth and controlled operating expenses.
+
+"On August 26, 2004, we announced the signing of a definitive agreement for the
+merger of FNB Bankshares of Bar Harbor, Maine, with First National Lincoln
+Corporation," President Daigneault said. "At closing, the combined company will
+have 14 banking offices and four investment management offices serving coastal
+Maine communities from Brunswick to Calais. We will also become one of the four
+largest banks headquartered in Maine. I continue to be excited by the
+opportunities that will be created as a result of combining our companies, and
+am optimistic the merger will be completed in the first quarter of 2005 once
+all regulatory and shareholder approvals are received.
+
+"Our excellent earnings performance enables us to continue to share our profits
+with shareholders in the form of cash dividends," commented F. Stephen Ward,
+the Company's Treasurer & Chief Financial Officer. "We increased our dividend
+once again in the third quarter to $0.115 per share. The Company has raised its
+dividend for 36 consecutive quarters, resulting in an annualized dividend of
+$0.46 per share and an annual dividend yield of 2.39% based upon the September
+30, 2004 closing price of $19.25 per share."
+
+"Our earnings performance also results in very strong performance statistics,"
+Mr. Ward concluded. "Our return on average equity was 17.78% in the third
+quarter of 2004 compared to 17.24% for the third quarter of 2003, and year-to-
+date stands at 16.85% in 2004 compared to 16.23% in 2003. Based upon return on
+average equity, The First continues to be in the top ten percent of all banks
+in the United States as of June 30, 2004, according to the most recent
+BancIntelligence report. Because of the consistent performance we have posted
+over many years, we continue to see First National Lincoln Corporation as an
+excellent investment opportunity."
+
+First National Lincoln Corporation, headquartered in Damariscotta, Maine, is
+the holding company for The First National Bank of Damariscotta and Pemaquid
+Advisors. The First is an independent community bank serving Mid-Coast Maine
+with seven offices in Lincoln and Knox Counties that provide consumer and
+commercial banking products and services. Pemaquid Advisors provides investment
+advisory, private banking and trust services from offices in Damariscotta,
+Boothbay Harbor, and Brunswick, Maine.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Page 2
+Forward-looking and cautionary statements: except for the historical
+information and discussions contained herein, statements contained in this
+release may constitute "forward-looking statements" within the meaning of the
+Private Securities Litigation Reform Act of 1995. These statements involve a
+number of risks, uncertainties and other factors that could cause actual
+results to differ materially, as discussed in the Company's filings with the
+Securities and Exchange Commission. Forward-looking statements regarding the
+FNLC/FNB Bankshares merger involve certain risks and uncertainties that may
+cause actual results to differ materially from those contemplated including,
+among others, the following possibilities: (1) costs or difficulties related to
+the integration of the businesses of the two banks are greater than expected;
+(2) cost savings from the merger cannot be realized ; (3) revenues following
+the merger are lower than expected; (4) deposit volumes will change over time;
+(5) competitive pressure among depository institutions increases significantly;
+(6) changes in the interest rate environment reduce net interest margins; (7)
+general economic conditions, either nationally or in the markets in which the
+two banks will be doing business, are less favorable than expected; (8)
+legislation or changes in regulatory requirements adversely affect banks
+operating in Maine, or (9) factors which would result in a condition to the
+transaction not being met.
+
+First National Lincoln Corporation has filed, and will be filing, relevant
+documents concerning the merger with the Securities and Exchange Commission
+(SEC), including a registration statement on Form S-4 containing a
+prospectus/proxy statement. WE URGE INVESTORS TO READ THESE DOCUMENTS BECAUSE
+THEY CONTAIN IMPORTANT INFORMATION ABOUT THE MERGER. Investors may obtain these
+documents free of charge at the SEC's website, www.sec.gov. In addition,
+documents filed with the SEC are available free of charge from First National
+Lincoln Corporation. The directors and executive officers of FNB Bankshares may
+be deemed to be participants in the solicitation of proxies to approve the
+merger. Additional information about the interest of those participants may be
+obtained from reading the definitive prospectus/proxy statement regarding the
+proposed merger. INVESTORS SHOULD READ THE PROSPECTUS/PROXY STATEMENT AND OTHER
+DOCUMENTS TO BE FILED WITH THE SEC CAREFULLY BEFORE MAKING A DECISION
+CONCERNING THE MERGER.
+
+For more information, please contact F. Stephen Ward, Treasurer & Chief
+Financial Officer, at 207.563.3195 ext. 5001
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Page 3
+- ---------------------------------------------------------------------
+First National Lincoln Corporation
+Consolidated Balance Sheets (Unaudited)
+- ------------------------------------------------- --------- ---------
+                                        Sept. 30, Sept. 30,  Dec. 31,
+In thousands of dollars                   2004      2003      2003
+- ------------------------------------------------- --------- ---------
+Assets
+- ----------------------------------------
+Cash and due from banks                  $16,659   $13,758   $17,087
+Overnight Funds Sold                           0         0         0
+Investments:
+ Available for sale                       52,900    62,815    57,445
+ Held to maturity (market values $85,316
+  at 9/30/04, $78,174 at 9/30/03, and
+  $80,820 at 12/31/03)                    84,310    76,381    79,244
+Loans held for sale (fair value
+ approximates cost)                            0     1,884       982
+Loans                                    461,504   383,032   398,895
+Less: allowance for loan losses            4,727     4,177     4,200
+                                        --------- --------- ---------
+     Net loans                           456,777   378,855   394,695
+                                        --------- --------- ---------
+Accrued interest receivable                3,026     2,814     2,743
+Bank premises and equipment                9,149     7,466     9,007
+Other real estate owned                        0        51        51
+Other assets                               7,381     7,794     7,558
+                                        --------- --------- ---------
+        Total Assets                    $630,202  $551,818  $568,812
+                                        ========= ========= =========
+Liabilities & Stockholders' Equity
+- ----------------------------------------
+Demand deposits                          $33,734   $33,425   $28,874
+NOW deposits                              60,088    55,593    52,161
+Money market deposits                     85,651    86,366    80,586
+Savings deposits                          67,182    65,093    63,356
+Certificates of deposit                   75,423    69,522    69,880
+Certificates $100,000 and over            79,401    60,953    64,220
+                                        --------- --------- ---------
+     Total deposits                      401,479   370,952   359,077
+Borrowed funds                           172,442   129,583   157,822
+Other liabilities                          4,749     4,550     4,195
+                                        --------- --------- ---------
+     Total Liabilities                   578,670   505,085   521,094
+                                        --------- --------- ---------
+Shareholders' Equity:
+Common stock                                  74        74        74
+Additional paid-in capital                 3,851     4,638     4,650
+Retained earnings                         45,378    41,707    42,988
+Net unrealized gains on available-for-
+ sale securities                           2,229     2,558     2,497
+Treasury stock                                 0    (2,244)   (2,491)
+                                        --------- --------- ---------
+    Total Stockholders' Equity            51,532    46,733    47,718
+                                        --------- --------- ---------
+       Total Liabilities & Stockholders'
+        Equity                          $630,202  $551,818  $568,812
+                                        ========= ========= =========
+Prior periods have been adjusted to reflect the three-for-one stock split in
+2004
+- ---------------------------------------------------------------------
+First National Lincoln Corporation
+Consolidated Statements of Income (Unaudited)
+- ----------------------------------------------------------------------
+                                          For the          For the
+                                        nine months       quarters
+                                           ended            ended
+                                          Sept. 30,       Sept. 30,
+                                      ---------------- ---------------
+In thousands of dollars                  2004    2003     2004   2003
+- ----------------------------------------------------------------------
+Interest Income:
+     Interest and fees on loans       $17,470 $15,949   $6,172 $5,358
+     Interest on deposits with other
+      banks                                 4      52        1      4
+     Interest and dividends on
+      investments                       4,940   4,486    1,702  1,453
+                                      ---------------- ---------------
+     Total interest income             22,414  20,487    7,875  6,815
+                                      ---------------- ---------------
+Interest expense:
+     Interest on deposits               3,868   4,600    1,342  1,318
+     Interest on borrowed funds         2,748   3,037      921    911
+                                      ---------------- ---------------
+     Total interest expense             6,616   7,637    2,263  2,229
+                                      ---------------- ---------------
+Net interest income                    15,798  12,850    5,612  4,586
+Provision for loan losses                 720     675      240    225
+                                      ---------------- ---------------
+Net interest income after provision
+ for loan losses                       15,078  12,175    5,372  4,361
+                                      ---------------- ---------------
+Other operating income:
+     Fiduciary income                     644     577      214    203
+     Service charges on deposit
+      accounts                            881     833      301    268
+     Net securities gains                   0       0        0      0
+     Mortgage origination and
+      servicing income                    310     794       59    304
+     Other operating income             1,688   1,772      726    768
+                                      ---------------- ---------------
+     Total other operating income       3,523   3,976    1,300  1,543
+                                      ---------------- ---------------
+Other operating expenses:
+     Salaries and employee benefits     5,138   4,377    1,835  1,546
+     Occupancy expense                    655     569      227    176
+     Furniture and equipment expense    1,094   1,039      340    338
+     Other                              3,047   2,606    1,174  1,016
+                                      ---------------- ---------------
+     Total other operating expenses     9,934   8,591    3,576  3,076
+                                      ---------------- ---------------
+Income before income taxes              8,667   7,560    3,096  2,828
+Applicable income taxes                 2,470   2,140      880    816
+                                      ---------------- ---------------
+NET INCOME                             $6,197  $5,420   $2,216 $2,012
+                                      ================ ===============
+Prior periods have been adjusted to reflect the three-for-one
+ stock split in 2004
+
+Page 5
+- ----------------------------------------------------------------------
+First National Lincoln Corporation
+Selected Financial Data (Unaudited)
+- ----------------------------------------------------------------------
+                                       For the nine   For the quarters
+                                       months ended        ended
+                                       September 30     September 30
+Dollars in thousands,                ---------------- ----------------
+except for per share amounts           2004    2003     2004    2003
+- ----------------------------------------------------------------------
+
+Summary of Operations
+Operating Income                      $25,937 $24,463  $9,175  $8,358
+Operating Expense                      17,270  16,903   6,079  $5,530
+Net Interest Income                    15,798  12,850   5,612   4,586
+Provision for Loan Losses                 720     675     240     225
+Net Income                              6,197   5,420   2,216   2,012
+
+Per Common Share Data
+Basic Earnings per Share                $0.85   $0.75   $0.30   $0.28
+Diluted Earnings per Share               0.83    0.73    0.30    0.27
+Cash Dividends Declared                  0.33    0.28    0.12    0.10
+Book Value                               7.01    6.42    7.01    6.42
+Market Value                            19.25   14.33   19.25   14.33
+
+Financial Ratios
+Return on Average Equity (a)            16.85%  16.23%  17.78%  17.24%
+Return on Average Assets (a)             1.40%   1.40%   1.44%   1.49%
+Average Equity to Average Assets         8.29%   8.63%   8.12%   8.64%
+Net Interest Margin Tax-Equivalent (a)   3.93%   3.69%   4.04%   3.78%
+Dividend Payout Ratio                   38.59%  37.50%  38.33%  34.94%
+Allowance for Loan Losses/Total Loans    1.02%   1.09%   1.02%   1.09%
+Non-Performing Loans to Total Loans      0.37%   0.32%   0.37%   0.32%
+Non-Performing Assets to Total Assets    0.28%   0.23%   0.28%   0.23%
+Efficiency Ratio                        49.07%  48.66%  49.18%  47.95%
+
+At Period End
+Total Assets                          630,202 551,818 630,202 551,818
+Total Loans                           461,504 383,032 461,504 383,032
+Total Investment Securities           137,210 139,196 137,210 139,196
+Total Deposits                        401,479 370,952 401,479 370,952
+Total Shareholders' Equity             51,532  46,733  51,532  46,733
+
+(a) Annualized using a 365-day basis
+Prior periods have been adjusted to reflect the three-for-one stock
+ split in 2004
+- ----------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+
+Page 6
+
 </TEXT>
 </DOCUMENT>
 </SEC-DOCUMENT>

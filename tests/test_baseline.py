@@ -20,11 +20,33 @@ from reviewradar.types import EventType
 # Routing
 
 
-def test_a_regulation_fd_filing_terminates_at_the_baseline(eliminated: Submission) -> None:
+def test_an_earnings_release_terminates_at_the_baseline(eliminated: Submission) -> None:
+    # Item 2.02 alone. Correctly eliminated: an earnings release that refers back to a
+    # split already effected announces nothing an index calculator must act on.
     result = classify(eliminated)
+    assert result.items == {"2.02"}
+    assert result.event_type is EventType.NO_INDEX_ACTION
+    assert result.needs_model is False
+
+
+def test_the_baseline_silently_discards_a_real_split(false_elimination: Submission) -> None:
+    """The most important test in the suite, and it asserts a failure.
+
+    IntegraMed announced a 25% stock split effected as a stock dividend, by press
+    release, under Item 7.01 alone - Regulation FD. Every item present carries no index
+    consequence, so the deterministic stage eliminates the filing and it is never seen
+    again: not by the model, not by a queue, not by a person.
+
+    This is not a bug in the classifier. It is the structural limit of routing on item
+    codes, and it is why the elimination rate alone is not a result. The gold set puts a
+    number on it - 6 of 28 index-relevant filings, 21.4% - and that number is the
+    argument for the second stage.
+    """
+    result = classify(false_elimination)
     assert result.items == {"7.01"}
     assert result.event_type is EventType.NO_INDEX_ACTION
     assert result.needs_model is False
+    assert "25% stock split" in false_elimination.full_text().lower()
 
 
 def test_a_delisting_notice_is_typed_but_still_needs_its_fields(diagnostic: Submission) -> None:

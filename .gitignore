@@ -13,3 +13,6 @@ data/runs/
 # Raw filings are reproducible from data/corpus/manifest.json via scripts/fetch_corpus.py.
 # ~90MB of SEC archives does not belong in git; the manifest and the gold labels do.
 data/corpus/submissions/
+
+data/events.duckdb
+data/scoreboard.json

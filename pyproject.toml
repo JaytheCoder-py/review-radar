@@ -22,7 +22,7 @@ dependencies = [
 vertex = ["anthropic[vertex]>=0.40.0"]
 
 [project.scripts]
-reviewradar = "reviewradar.cli:app"
+reviewradar = "reviewradar.cli:main"
 
 [build-system]
 requires = ["hatchling"]
