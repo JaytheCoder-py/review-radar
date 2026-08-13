@@ -9,3 +9,7 @@ __pycache__/
 *.duckdb.wal
 data/runs/
 .env
+
+# Raw filings are reproducible from data/corpus/manifest.json via scripts/fetch_corpus.py.
+# ~90MB of SEC archives does not belong in git; the manifest and the gold labels do.
+data/corpus/submissions/

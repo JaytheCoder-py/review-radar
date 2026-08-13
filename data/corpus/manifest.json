@@ -1,0 +1,2795 @@
+{
+  "0000002488-25-000039": {
+    "cik": "0000002488",
+    "company": "ADVANCED MICRO DEVICES INC",
+    "filed": "2025-04-16",
+    "stratum": "random",
+    "url": "https://www.sec.gov/Archives/edgar/data/2488/000000248825000039/0000002488-25-000039.txt"
+  },
+  "0000003545-05-000050": {
+    "cik": "0000003545",
+    "company": "ALICO INC",
+    "filed": "2005-06-15",
+    "stratum": "stratified",
+    "url": "https://www.sec.gov/Archives/edgar/data/3545/000000354505000050/0000003545-05-000050.txt"
+  },
+  "0000004962-25-000034": {
+    "cik": "0000004962",
+    "company": "AMERICAN EXPRESS CO",
+    "filed": "2025-04-17",
+    "stratum": "random",
+    "url": "https://www.sec.gov/Archives/edgar/data/4962/000000496225000034/0000004962-25-000034.txt"
+  },
+  "0000016918-25-000019": {
+    "cik": "0000016918",
+    "company": "CONSTELLATION BRANDS, INC.",
+    "filed": "2025-04-14",
+    "stratum": "random",
+    "url": "https://www.sec.gov/Archives/edgar/data/16918/000001691825000019/0000016918-25-000019.txt"
+  },
+  "0000017313-25-000032": {
+    "cik": "0000017313",
+    "company": "CAPITAL SOUTHWEST CORP",
+    "filed": "2025-04-21",
+    "stratum": "random",
+    "url": "https://www.sec.gov/Archives/edgar/data/17313/000001731325000032/0000017313-25-000032.txt"
+  },
+  "0000036966-25-000035": {
+    "cik": "0000036966",
+    "company": "FIRST HORIZON CORP",
+    "filed": "2025-04-16",
+    "stratum": "random",
+    "url": "https://www.sec.gov/Archives/edgar/data/36966/000003696625000035/0000036966-25-000035.txt"
+  },
+  "0000037808-25-000089": {
+    "cik": "0000037808",
+    "company": "FNB CORP/PA/",
+    "filed": "2025-04-17",
+    "stratum": "random",
+    "url": "https://www.sec.gov/Archives/edgar/data/37808/000003780825000089/0000037808-25-000089.txt"
+  },
+  "0000037996-25-000067": {
+    "cik": "0000037996",
+    "company": "FORD MOTOR CO",
+    "filed": "2025-04-17",
+    "stratum": "random",
+    "url": "https://www.sec.gov/Archives/edgar/data/37996/000003799625000067/0000037996-25-000067.txt"
+  },
+  "0000040545-24-000088": {
+    "cik": "0000040545",
+    "company": "GENERAL ELECTRIC Co",
+    "filed": "2024-04-08",
+    "stratum": "stratified",
+    "url": "https://www.sec.gov/Archives/edgar/data/40545/000004054524000088/0000040545-24-000088.txt"
+  },
+  "0000049071-25-000016": {
+    "cik": "0000049071",
+    "company": "HUMANA INC",
+    "filed": "2025-04-18",
+    "stratum": "random",
+    "url": "https://www.sec.gov/Archives/edgar/data/49071/000004907125000016/0000049071-25-000016.txt"
+  },
+  "0000049938-25-000020": {
+    "cik": "0000049938",
+    "company": "IMPERIAL OIL LTD",
+    "filed": "2025-04-16",
+    "stratum": "random",
+    "url": "https://www.sec.gov/Archives/edgar/data/49938/000004993825000020/0000049938-25-000020.txt"
+  },
+  "0000066382-21-000082": {
+    "cik": "0000066382",
+    "company": "HERMAN MILLER INC",
+    "filed": "2021-10-29",
+    "stratum": "stratified",
+    "url": "https://www.sec.gov/Archives/edgar/data/66382/000006638221000082/0000066382-21-000082.txt"
+  },
+  "0000066756-25-000049": {
+    "cik": "0000066756",
+    "company": "ALLETE INC",
+    "filed": "2025-04-16",
+    "stratum": "random",
+    "url": "https://www.sec.gov/Archives/edgar/data/66756/000006675625000049/0000066756-25-000049.txt"
+  },
+  "0000100517-25-000087": {
+    "cik": "0000100517",
+    "company": "United Airlines Holdings, Inc.",
+    "filed": "2025-04-15",
+    "stratum": "random",
+    "url": "https://www.sec.gov/Archives/edgar/data/100517/000010051725000087/0000100517-25-000087.txt"
+  },
+  "0000105770-25-000022": {
+    "cik": "0000105770",
+    "company": "WEST PHARMACEUTICAL SERVICES INC",
+    "filed": "2025-04-14",
+    "stratum": "random",
+    "url": "https://www.sec.gov/Archives/edgar/data/105770/000010577025000022/0000105770-25-000022.txt"
+  },
+  "0000106640-25-000043": {
+    "cik": "0000106640",
+    "company": "WHIRLPOOL CORP /DE/",
+    "filed": "2025-04-16",
+    "stratum": "random",
+    "url": "https://www.sec.gov/Archives/edgar/data/106640/000010664025000043/0000106640-25-000043.txt"
+  },
+  "0000277375-12-000009": {
+    "cik": "0000277375",
+    "company": "DELTA NATURAL GAS CO INC",
+    "filed": "2012-04-09",
+    "stratum": "stratified",
+    "url": "https://www.sec.gov/Archives/edgar/data/277375/000027737512000009/0000277375-12-000009.txt"
+  },
+  "0000310522-25-000220": {
+    "cik": "0000310522",
+    "company": "FEDERAL NATIONAL MORTGAGE ASSOCIATION FANNIE MAE",
+    "filed": "2025-04-15",
+    "stratum": "random",
+    "url": "https://www.sec.gov/Archives/edgar/data/310522/000031052225000220/0000310522-25-000220.txt"
+  },
+  "0000714562-25-000026": {
+    "cik": "0000714562",
+    "company": "FIRST FINANCIAL CORP /IN/",
+    "filed": "2025-04-16",
+    "stratum": "random",
+    "url": "https://www.sec.gov/Archives/edgar/data/714562/000071456225000026/0000714562-25-000026.txt"
+  },
+  "0000716214-05-000031": {
+    "cik": "0000716214",
+    "company": "TEKNOWLEDGE CORP",
+    "filed": "2005-04-22",
+    "stratum": "stratified",
+    "url": "https://www.sec.gov/Archives/edgar/data/716214/000071621405000031/0000716214-05-000031.txt"
+  },
+  "0000723646-25-000026": {
+    "cik": "0000723646",
+    "company": "FRANKLIN FINANCIAL SERVICES CORP /PA/",
+    "filed": "2025-04-14",
+    "stratum": "random",
+    "url": "https://www.sec.gov/Archives/edgar/data/723646/000072364625000026/0000723646-25-000026.txt"
+  },
+  "0000731766-25-000123": {
+    "cik": "0000731766",
+    "company": "UNITEDHEALTH GROUP INC",
+    "filed": "2025-04-17",
+    "stratum": "random",
+    "url": "https://www.sec.gov/Archives/edgar/data/731766/000073176625000123/0000731766-25-000123.txt"
+  },
+  "0000755465-03-000076": {
+    "cik": "0000755465",
+    "company": "SANDATA TECHNOLOGIES INC",
+    "filed": "2003-05-30",
+    "stratum": "stratified",
+    "url": "https://www.sec.gov/Archives/edgar/data/755465/000075546503000076/0000755465-03-000076.txt"
+  },
+  "0000765207-04-000042": {
+    "cik": "0000765207",
+    "company": "FIRST NATIONAL LINCOLN CORP /ME/",
+    "filed": "2004-07-22",
+    "stratum": "stratified",
+    "url": "https://www.sec.gov/Archives/edgar/data/765207/000076520704000042/0000765207-04-000042.txt"
+  },
+  "0000765207-04-000050": {
+    "cik": "0000765207",
+    "company": "FIRST NATIONAL LINCOLN CORP /ME/",
+    "filed": "2004-10-21",
+    "stratum": "stratified",
+    "url": "https://www.sec.gov/Archives/edgar/data/765207/000076520704000050/0000765207-04-000050.txt"
+  },
+  "0000765207-05-000015": {
+    "cik": "0000765207",
+    "company": "FIRST NATIONAL LINCOLN CORP /ME/",
+    "filed": "2005-04-26",
+    "stratum": "stratified",
+    "url": "https://www.sec.gov/Archives/edgar/data/765207/000076520705000015/0000765207-05-000015.txt"
+  },
+  "0000795266-25-000047": {
+    "cik": "0000795266",
+    "company": "KB HOME",
+    "filed": "2025-04-18",
+    "stratum": "random",
+    "url": "https://www.sec.gov/Archives/edgar/data/795266/000079526625000047/0000795266-25-000047.txt"
+  },
+  "0000798941-14-000041": {
+    "cik": "0000798941",
+    "company": "FIRST CITIZENS BANCSHARES INC /DE/",
+    "filed": "2014-11-06",
+    "stratum": "stratified",
+    "url": "https://www.sec.gov/Archives/edgar/data/798941/000079894114000041/0000798941-14-000041.txt"
+  },
+  "0000808326-06-000205": {
+    "cik": "0000808326",
+    "company": "EMCORE CORP",
+    "filed": "2006-12-22",
+    "stratum": "stratified",
+    "url": "https://www.sec.gov/Archives/edgar/data/808326/000080832606000205/0000808326-06-000205.txt"
+  },
+  "0000815097-25-000029": {
+    "cik": "0000815097",
+    "company": "CARNIVAL CORP",
+    "filed": "2025-04-18",
+    "stratum": "random",
+    "url": "https://www.sec.gov/Archives/edgar/data/815097/000081509725000029/0000815097-25-000029.txt"
+  },
+  "0000817720-25-000030": {
+    "cik": "0000817720",
+    "company": "SYNAPTICS Inc",
+    "filed": "2025-04-18",
+    "stratum": "random",
+    "url": "https://www.sec.gov/Archives/edgar/data/817720/000081772025000030/0000817720-25-000030.txt"
+  },
+  "0000827187-25-000041": {
+    "cik": "0000827187",
+    "company": "Sleep Number Corp",
+    "filed": "2025-04-16",
+    "stratum": "random",
+    "url": "https://www.sec.gov/Archives/edgar/data/827187/000082718725000041/0000827187-25-000041.txt"
+  },
+  "0000846617-04-000002": {
+    "cik": "0000846617",
+    "company": "BRIDGE BANCORP INC",
+    "filed": "2004-01-20",
+    "stratum": "stratified",
+    "url": "https://www.sec.gov/Archives/edgar/data/846617/000084661704000002/0000846617-04-000002.txt"
+  },
+  "0000849869-10-000017": {
+    "cik": "0000849869",
+    "company": "SILGAN HOLDINGS INC",
+    "filed": "2010-05-03",
+    "stratum": "stratified",
+    "url": "https://www.sec.gov/Archives/edgar/data/849869/000084986910000017/0000849869-10-000017.txt"
+  },
+  "0000882835-25-000013": {
+    "cik": "0000882835",
+    "company": "ROPER TECHNOLOGIES INC",
+    "filed": "2025-04-14",
+    "stratum": "random",
+    "url": "https://www.sec.gov/Archives/edgar/data/882835/000088283525000013/0000882835-25-000013.txt"
+  },
+  "0000885988-05-000066": {
+    "cik": "0000885988",
+    "company": "INTEGRAMED AMERICA INC",
+    "filed": "2005-05-24",
+    "stratum": "stratified",
+    "url": "https://www.sec.gov/Archives/edgar/data/885988/000088598805000066/0000885988-05-000066.txt"
+  },
+  "0000885988-06-000069": {
+    "cik": "0000885988",
+    "company": "INTEGRAMED AMERICA INC",
+    "filed": "2006-05-23",
+    "stratum": "stratified",
+    "url": "https://www.sec.gov/Archives/edgar/data/885988/000088598806000069/0000885988-06-000069.txt"
+  },
+  "0000885988-07-000009": {
+    "cik": "0000885988",
+    "company": "INTEGRAMED AMERICA INC",
+    "filed": "2007-03-21",
+    "stratum": "stratified",
+    "url": "https://www.sec.gov/Archives/edgar/data/885988/000088598807000009/0000885988-07-000009.txt"
+  },
+  "0000898432-04-000593": {
+    "cik": "0000919567",
+    "company": "RENAISSANCE CAPITAL GROWTH & INCOME FUND III INC",
+    "filed": "2004-07-07",
+    "stratum": "stratified",
+    "url": "https://www.sec.gov/Archives/edgar/data/919567/000089843204000593/0000898432-04-000593.txt"
+  },
+  "0000899051-25-000026": {
+    "cik": "0000899051",
+    "company": "ALLSTATE CORP",
+    "filed": "2025-04-17",
+    "stratum": "random",
+    "url": "https://www.sec.gov/Archives/edgar/data/899051/000089905125000026/0000899051-25-000026.txt"
+  },
+  "0000904020-05-000045": {
+    "cik": "0000904020",
+    "company": "FLYI INC",
+    "filed": "2005-11-14",
+    "stratum": "stratified",
+    "url": "https://www.sec.gov/Archives/edgar/data/904020/000090402005000045/0000904020-05-000045.txt"
+  },
+  "0000909832-25-000023": {
+    "cik": "0000909832",
+    "company": "COSTCO WHOLESALE CORP /NEW",
+    "filed": "2025-04-16",
+    "stratum": "random",
+    "url": "https://www.sec.gov/Archives/edgar/data/909832/000090983225000023/0000909832-25-000023.txt"
+  },
+  "0000910680-09-000101": {
+    "cik": "0001003390",
+    "company": "SILVERSTAR HOLDINGS LTD",
+    "filed": "2009-03-10",
+    "stratum": "stratified",
+    "url": "https://www.sec.gov/Archives/edgar/data/1003390/000091068009000101/0000910680-09-000101.txt"
+  },
+  "0000912057-01-533131": {
+    "cik": "0000915901",
+    "company": "INVERNESS MEDICAL TECHNOLOGY INC/DE",
+    "filed": "2001-09-24",
+    "stratum": "stratified",
+    "url": "https://www.sec.gov/Archives/edgar/data/915901/000091205701533131/0000912057-01-533131.txt"
+  },
+  "0000912057-01-544706": {
+    "cik": "0001082114",
+    "company": "LIBERTY MEDIA CORP /DE/",
+    "filed": "2001-12-27",
+    "stratum": "stratified",
+    "url": "https://www.sec.gov/Archives/edgar/data/1082114/000091205701544706/0000912057-01-544706.txt"
+  },
+  "0000927628-25-000123": {
+    "cik": "0000927628",
+    "company": "CAPITAL ONE FINANCIAL CORP",
+    "filed": "2025-04-18",
+    "stratum": "random",
+    "url": "https://www.sec.gov/Archives/edgar/data/927628/000092762825000123/0000927628-25-000123.txt"
+  },
+  "0000946673-25-000026": {
+    "cik": "0000946673",
+    "company": "BANNER CORP",
+    "filed": "2025-04-16",
+    "stratum": "random",
+    "url": "https://www.sec.gov/Archives/edgar/data/946673/000094667325000026/0000946673-25-000026.txt"
+  },
+  "0000948830-14-000014": {
+    "cik": "0001436161",
+    "company": "MySkin, Inc.",
+    "filed": "2014-03-21",
+    "stratum": "stratified",
+    "url": "https://www.sec.gov/Archives/edgar/data/1436161/000094883014000014/0000948830-14-000014.txt"
+  },
+  "0000950103-12-004982": {
+    "cik": "0001122304",
+    "company": "AETNA INC /PA/",
+    "filed": "2012-09-27",
+    "stratum": "stratified",
+    "url": "https://www.sec.gov/Archives/edgar/data/1122304/000095010312004982/0000950103-12-004982.txt"
+  },
+  "0000950103-12-005586": {
+    "cik": "0001122304",
+    "company": "AETNA INC /PA/",
+    "filed": "2012-10-22",
+    "stratum": "stratified",
+    "url": "https://www.sec.gov/Archives/edgar/data/1122304/000095010312005586/0000950103-12-005586.txt"
+  },
+  "0000950103-25-004790": {
+    "cik": "0000723531",
+    "company": "PAYCHEX INC",
+    "filed": "2025-04-14",
+    "stratum": "random",
+    "url": "https://www.sec.gov/Archives/edgar/data/723531/000095010325004790/0000950103-25-004790.txt"
+  },
+  "0000950116-03-000235": {
+    "cik": "0001046002",
+    "company": "ALLIANCE BANCORP OF NEW ENGLAND INC",
+    "filed": "2003-01-31",
+    "stratum": "stratified",
+    "url": "https://www.sec.gov/Archives/edgar/data/1046002/000095011603000235/0000950116-03-000235.txt"
+  },
+  "0000950123-06-003830": {
+    "cik": "0001208261",
+    "company": "EPICEPT CORP",
+    "filed": "2006-03-29",
+    "stratum": "stratified",
+    "url": "https://www.sec.gov/Archives/edgar/data/1208261/000095012306003830/0000950123-06-003830.txt"
+  },
+  "0000950123-07-002577": {
+    "cik": "0001145124",
+    "company": "INVESTOOLS INC",
+    "filed": "2007-02-22",
+    "stratum": "stratified",
+    "url": "https://www.sec.gov/Archives/edgar/data/1145124/000095012307002577/0000950123-07-002577.txt"
+  },
+  "0000950123-09-048017": {
+    "cik": "0001136893",
+    "company": "Fidelity National Information Services, Inc.",
+    "filed": "2009-10-02",
+    "stratum": "stratified",
+    "url": "https://www.sec.gov/Archives/edgar/data/1136893/000095012309048017/0000950123-09-048017.txt"
+  },
+  "0000950123-10-108825": {
+    "cik": "0000007431",
+    "company": "ARMSTRONG WORLD INDUSTRIES INC",
+    "filed": "2010-11-24",
+    "stratum": "stratified",
+    "url": "https://www.sec.gov/Archives/edgar/data/7431/000095012310108825/0000950123-10-108825.txt"
+  },
+  "0000950123-11-053370": {
+    "cik": "0000929994",
+    "company": "ASSISTED LIVING CONCEPTS INC",
+    "filed": "2011-05-24",
+    "stratum": "stratified",
+    "url": "https://www.sec.gov/Archives/edgar/data/929994/000095012311053370/0000950123-11-053370.txt"
+  },
+  "0000950123-11-063742": {
+    "cik": "0000740260",
+    "company": "VENTAS INC",
+    "filed": "2011-07-01",
+    "stratum": "stratified",
+    "url": "https://www.sec.gov/Archives/edgar/data/740260/000095012311063742/0000950123-11-063742.txt"
+  },
+  "0000950123-11-063748": {
+    "cik": "0000780053",
+    "company": "NATIONWIDE HEALTH PROPERTIES INC",
+    "filed": "2011-07-01",
+    "stratum": "stratified",
+    "url": "https://www.sec.gov/Archives/edgar/data/780053/000095012311063748/0000950123-11-063748.txt"
+  },
+  "0000950124-06-006105": {
+    "cik": "0000707855",
+    "company": "PRINCETON NATIONAL BANCORP INC",
+    "filed": "2006-10-25",
+    "stratum": "stratified",
+    "url": "https://www.sec.gov/Archives/edgar/data/707855/000095012406006105/0000950124-06-006105.txt"
+  },
+  "0000950129-05-000891": {
+    "cik": "0001068132",
+    "company": "VESTIN GROUP INC",
+    "filed": "2005-02-04",
+    "stratum": "stratified",
+    "url": "https://www.sec.gov/Archives/edgar/data/1068132/000095012905000891/0000950129-05-000891.txt"
+  },
+  "0000950134-05-017403": {
+    "cik": "0001103390",
+    "company": "INTRABIOTICS PHARMACEUTICALS INC /DE",
+    "filed": "2005-09-08",
+    "stratum": "stratified",
+    "url": "https://www.sec.gov/Archives/edgar/data/1103390/000095013405017403/0000950134-05-017403.txt"
+  },
+  "0000950134-07-012298": {
+    "cik": "0000946815",
+    "company": "LOUD TECHNOLOGIES INC",
+    "filed": "2007-05-24",
+    "stratum": "stratified",
+    "url": "https://www.sec.gov/Archives/edgar/data/946815/000095013407012298/0000950134-07-012298.txt"
+  },
+  "0000950134-08-020374": {
+    "cik": "0001207070",
+    "company": "FRANKLIN BANK CORP",
+    "filed": "2008-11-13",
+    "stratum": "stratified",
+    "url": "https://www.sec.gov/Archives/edgar/data/1207070/000095013408020374/0000950134-08-020374.txt"
+  },
+  "0000950137-07-018493": {
+    "cik": "0001317872",
+    "company": "TomoTherapy Inc",
+    "filed": "2007-12-13",
+    "stratum": "stratified",
+    "url": "https://www.sec.gov/Archives/edgar/data/1317872/000095013707018493/0000950137-07-018493.txt"
+  },
+  "0000950142-03-001071": {
+    "cik": "0001028751",
+    "company": "PROBUSINESS SERVICES INC",
+    "filed": "2003-06-23",
+    "stratum": "stratified",
+    "url": "https://www.sec.gov/Archives/edgar/data/1028751/000095014203001071/0000950142-03-001071.txt"
+  },
+  "0000950142-25-001084": {
+    "cik": "0000072573",
+    "company": "MOVADO GROUP INC",
+    "filed": "2025-04-16",
+    "stratum": "random",
+    "url": "https://www.sec.gov/Archives/edgar/data/72573/000095014225001084/0000950142-25-001084.txt"
+  },
+  "0000950142-25-001090": {
+    "cik": "0001236275",
+    "company": "QXO, Inc.",
+    "filed": "2025-04-16",
+    "stratum": "random",
+    "url": "https://www.sec.gov/Archives/edgar/data/1236275/000095014225001090/0000950142-25-001090.txt"
+  },
+  "0000950144-05-005633": {
+    "cik": "0001041379",
+    "company": "AFC ENTERPRISES INC",
+    "filed": "2005-05-16",
+    "stratum": "stratified",
+    "url": "https://www.sec.gov/Archives/edgar/data/1041379/000095014405005633/0000950144-05-005633.txt"
+  },
+  "0000950152-03-008360": {
+    "cik": "0000104777",
+    "company": "WARWICK VALLEY TELEPHONE CO",
+    "filed": "2003-09-19",
+    "stratum": "stratified",
+    "url": "https://www.sec.gov/Archives/edgar/data/104777/000095015203008360/0000950152-03-008360.txt"
+  },
+  "0000950152-05-008732": {
+    "cik": "0001047837",
+    "company": "ARGO TECH CORP",
+    "filed": "2005-11-03",
+    "stratum": "stratified",
+    "url": "https://www.sec.gov/Archives/edgar/data/1047837/000095015205008732/0000950152-05-008732.txt"
+  },
+  "0000950152-07-003505": {
+    "cik": "0000789933",
+    "company": "NACCO INDUSTRIES INC",
+    "filed": "2007-04-26",
+    "stratum": "stratified",
+    "url": "https://www.sec.gov/Archives/edgar/data/789933/000095015207003505/0000950152-07-003505.txt"
+  },
+  "0000950153-06-000317": {
+    "cik": "0001232229",
+    "company": "SYNTAX-BRILLIAN CORP",
+    "filed": "2006-02-10",
+    "stratum": "stratified",
+    "url": "https://www.sec.gov/Archives/edgar/data/1232229/000095015306000317/0000950153-06-000317.txt"
+  },
+  "0000950153-06-002573": {
+    "cik": "0001232229",
+    "company": "SYNTAX-BRILLIAN CORP",
+    "filed": "2006-10-20",
+    "stratum": "stratified",
+    "url": "https://www.sec.gov/Archives/edgar/data/1232229/000095015306002573/0000950153-06-002573.txt"
+  },
+  "0000950153-08-001268": {
+    "cik": "0001232229",
+    "company": "SYNTAX-BRILLIAN CORP",
+    "filed": "2008-07-21",
+    "stratum": "stratified",
+    "url": "https://www.sec.gov/Archives/edgar/data/1232229/000095015308001268/0000950153-08-001268.txt"
+  },
+  "0000950159-03-000181": {
+    "cik": "0000700733",
+    "company": "NATIONAL PENN BANCSHARES INC",
+    "filed": "2003-03-05",
+    "stratum": "stratified",
+    "url": "https://www.sec.gov/Archives/edgar/data/700733/000095015903000181/0000950159-03-000181.txt"
+  },
+  "0000950159-03-001050": {
+    "cik": "0000700733",
+    "company": "NATIONAL PENN BANCSHARES INC",
+    "filed": "2003-12-19",
+    "stratum": "stratified",
+    "url": "https://www.sec.gov/Archives/edgar/data/700733/000095015903001050/0000950159-03-001050.txt"
+  },
+  "0000950170-25-053501": {
+    "cik": "0001050446",
+    "company": "MICROSTRATEGY Inc",
+    "filed": "2025-04-14",
+    "stratum": "random",
+    "url": "https://www.sec.gov/Archives/edgar/data/1050446/000095017025053501/0000950170-25-053501.txt"
+  },
+  "0000950170-25-053766": {
+    "cik": "0001173204",
+    "company": "Cineverse Corp.",
+    "filed": "2025-04-14",
+    "stratum": "random",
+    "url": "https://www.sec.gov/Archives/edgar/data/1173204/000095017025053766/0000950170-25-053766.txt"
+  },
+  "0000950170-25-053944": {
+    "cik": "0001683553",
+    "company": "SPRUCE BIOSCIENCES, INC.",
+    "filed": "2025-04-15",
+    "stratum": "random",
+    "url": "https://www.sec.gov/Archives/edgar/data/1683553/000095017025053944/0000950170-25-053944.txt"
+  },
+  "0000950170-25-053968": {
+    "cik": "0001472787",
+    "company": "First American Financial Corp",
+    "filed": "2025-04-15",
+    "stratum": "random",
+    "url": "https://www.sec.gov/Archives/edgar/data/1472787/000095017025053968/0000950170-25-053968.txt"
+  },
+  "0000950170-25-053975": {
+    "cik": "0001584549",
+    "company": "Village Farms International, Inc.",
+    "filed": "2025-04-15",
+    "stratum": "random",
+    "url": "https://www.sec.gov/Archives/edgar/data/1584549/000095017025053975/0000950170-25-053975.txt"
+  },
+  "0000950170-25-054310": {
+    "cik": "0000944745",
+    "company": "CIVISTA BANCSHARES, INC.",
+    "filed": "2025-04-15",
+    "stratum": "random",
+    "url": "https://www.sec.gov/Archives/edgar/data/944745/000095017025054310/0000950170-25-054310.txt"
+  },
+  "0000950170-25-054311": {
+    "cik": "0000944745",
+    "company": "CIVISTA BANCSHARES, INC.",
+    "filed": "2025-04-15",
+    "stratum": "random",
+    "url": "https://www.sec.gov/Archives/edgar/data/944745/000095017025054311/0000950170-25-054311.txt"
+  },
+  "0000950170-25-054316": {
+    "cik": "0001814215",
+    "company": "Nuburu, Inc.",
+    "filed": "2025-04-15",
+    "stratum": "random",
+    "url": "https://www.sec.gov/Archives/edgar/data/1814215/000095017025054316/0000950170-25-054316.txt"
+  },
+  "0000950170-25-054485": {
+    "cik": "0001045609",
+    "company": "Prologis, Inc.",
+    "filed": "2025-04-16",
+    "stratum": "random",
+    "url": "https://www.sec.gov/Archives/edgar/data/1045609/000095017025054485/0000950170-25-054485.txt"
+  },
+  "0000950170-25-054730": {
+    "cik": "0000792966",
+    "company": "FARMERS & MERCHANTS BANCORP INC",
+    "filed": "2025-04-16",
+    "stratum": "random",
+    "url": "https://www.sec.gov/Archives/edgar/data/792966/000095017025054730/0000950170-25-054730.txt"
+  },
+  "0000950170-25-054800": {
+    "cik": "0000827876",
+    "company": "CLEANSPARK, INC.",
+    "filed": "2025-04-16",
+    "stratum": "random",
+    "url": "https://www.sec.gov/Archives/edgar/data/827876/000095017025054800/0000950170-25-054800.txt"
+  },
+  "0000950170-25-055017": {
+    "cik": "0000002098",
+    "company": "ACME UNITED CORP",
+    "filed": "2025-04-17",
+    "stratum": "random",
+    "url": "https://www.sec.gov/Archives/edgar/data/2098/000095017025055017/0000950170-25-055017.txt"
+  },
+  "0000950170-25-055085": {
+    "cik": "0001724009",
+    "company": "PermRock Royalty Trust",
+    "filed": "2025-04-17",
+    "stratum": "random",
+    "url": "https://www.sec.gov/Archives/edgar/data/1724009/000095017025055085/0000950170-25-055085.txt"
+  },
+  "0000950170-25-055116": {
+    "cik": "0000881787",
+    "company": "CROSS TIMBERS ROYALTY TRUST",
+    "filed": "2025-04-17",
+    "stratum": "random",
+    "url": "https://www.sec.gov/Archives/edgar/data/881787/000095017025055116/0000950170-25-055116.txt"
+  },
+  "0000950170-25-055430": {
+    "cik": "0001502377",
+    "company": "Contango ORE, Inc.",
+    "filed": "2025-04-17",
+    "stratum": "random",
+    "url": "https://www.sec.gov/Archives/edgar/data/1502377/000095017025055430/0000950170-25-055430.txt"
+  },
+  "0000950170-25-055737": {
+    "cik": "0000046195",
+    "company": "BANK OF HAWAII CORP",
+    "filed": "2025-04-18",
+    "stratum": "random",
+    "url": "https://www.sec.gov/Archives/edgar/data/46195/000095017025055737/0000950170-25-055737.txt"
+  },
+  "0000950170-25-055822": {
+    "cik": "0001302387",
+    "company": "BV Financial, Inc.",
+    "filed": "2025-04-18",
+    "stratum": "random",
+    "url": "https://www.sec.gov/Archives/edgar/data/1302387/000095017025055822/0000950170-25-055822.txt"
+  },
+  "0000950170-25-055903": {
+    "cik": "0001107421",
+    "company": "Alaunos Therapeutics, Inc.",
+    "filed": "2025-04-18",
+    "stratum": "random",
+    "url": "https://www.sec.gov/Archives/edgar/data/1107421/000095017025055903/0000950170-25-055903.txt"
+  },
+  "0000950170-25-055927": {
+    "cik": "0001858848",
+    "company": "Tenaya Therapeutics, Inc.",
+    "filed": "2025-04-18",
+    "stratum": "random",
+    "url": "https://www.sec.gov/Archives/edgar/data/1858848/000095017025055927/0000950170-25-055927.txt"
+  },
+  "0001004702-25-000074": {
+    "cik": "0001004702",
+    "company": "OCEANFIRST FINANCIAL CORP",
+    "filed": "2025-04-18",
+    "stratum": "random",
+    "url": "https://www.sec.gov/Archives/edgar/data/1004702/000100470225000074/0001004702-25-000074.txt"
+  },
+  "0001010549-17-000250": {
+    "cik": "0001572386",
+    "company": "UMED HOLDINGS, INC.",
+    "filed": "2017-06-29",
+    "stratum": "stratified",
+    "url": "https://www.sec.gov/Archives/edgar/data/1572386/000101054917000250/0001010549-17-000250.txt"
+  },
+  "0001012870-02-004089": {
+    "cik": "0001095480",
+    "company": "NETRATINGS INC",
+    "filed": "2002-10-21",
+    "stratum": "stratified",
+    "url": "https://www.sec.gov/Archives/edgar/data/1095480/000101287002004089/0001012870-02-004089.txt"
+  },
+  "0001013762-10-001041": {
+    "cik": "0001123316",
+    "company": "Crystal Rock Holdings, Inc.",
+    "filed": "2010-05-06",
+    "stratum": "stratified",
+    "url": "https://www.sec.gov/Archives/edgar/data/1123316/000101376210001041/0001013762-10-001041.txt"
+  },
+  "0001018399-25-000042": {
+    "cik": "0001018399",
+    "company": "ENTERPRISE BANCORP INC /MA/",
+    "filed": "2025-04-15",
+    "stratum": "random",
+    "url": "https://www.sec.gov/Archives/edgar/data/1018399/000101839925000042/0001018399-25-000042.txt"
+  },
+  "0001018399-25-000049": {
+    "cik": "0001018399",
+    "company": "ENTERPRISE BANCORP INC /MA/",
+    "filed": "2025-04-17",
+    "stratum": "random",
+    "url": "https://www.sec.gov/Archives/edgar/data/1018399/000101839925000049/0001018399-25-000049.txt"
+  },
+  "0001019687-14-003923": {
+    "cik": "0001164964",
+    "company": "FITT HIGHWAY PRODUCTS, INC.",
+    "filed": "2014-10-21",
+    "stratum": "stratified",
+    "url": "https://www.sec.gov/Archives/edgar/data/1164964/000101968714003923/0001019687-14-003923.txt"
+  },
+  "0001023128-25-000045": {
+    "cik": "0001023128",
+    "company": "LITHIA MOTORS INC",
+    "filed": "2025-04-15",
+    "stratum": "random",
+    "url": "https://www.sec.gov/Archives/edgar/data/1023128/000102312825000045/0001023128-25-000045.txt"
+  },
+  "0001045810-22-000008": {
+    "cik": "0001045810",
+    "company": "NVIDIA CORP",
+    "filed": "2022-02-16",
+    "stratum": "stratified",
+    "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581022000008/0001045810-22-000008.txt"
+  },
+  "0001045810-24-000315": {
+    "cik": "0001045810",
+    "company": "NVIDIA CORP",
+    "filed": "2024-11-20",
+    "stratum": "stratified",
+    "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581024000315/0001045810-24-000315.txt"
+  },
+  "0001045969-02-001468": {
+    "cik": "0000914397",
+    "company": "GREAT LAKES AVIATION LTD",
+    "filed": "2002-08-16",
+    "stratum": "stratified",
+    "url": "https://www.sec.gov/Archives/edgar/data/914397/000104596902001468/0001045969-02-001468.txt"
+  },
+  "0001057352-21-000077": {
+    "cik": "0001057352",
+    "company": "COSTAR GROUP, INC.",
+    "filed": "2021-07-27",
+    "stratum": "stratified",
+    "url": "https://www.sec.gov/Archives/edgar/data/1057352/000105735221000077/0001057352-21-000077.txt"
+  },
+  "0001057352-21-000101": {
+    "cik": "0001057352",
+    "company": "COSTAR GROUP, INC.",
+    "filed": "2021-10-26",
+    "stratum": "stratified",
+    "url": "https://www.sec.gov/Archives/edgar/data/1057352/000105735221000101/0001057352-21-000101.txt"
+  },
+  "0001057352-22-000022": {
+    "cik": "0001057352",
+    "company": "COSTAR GROUP, INC.",
+    "filed": "2022-02-22",
+    "stratum": "stratified",
+    "url": "https://www.sec.gov/Archives/edgar/data/1057352/000105735222000022/0001057352-22-000022.txt"
+  },
+  "0001057352-22-000050": {
+    "cik": "0001057352",
+    "company": "COSTAR GROUP, INC.",
+    "filed": "2022-04-26",
+    "stratum": "stratified",
+    "url": "https://www.sec.gov/Archives/edgar/data/1057352/000105735222000050/0001057352-22-000050.txt"
+  },
+  "0001062993-25-007481": {
+    "cik": "0001498148",
+    "company": "Artificial Intelligence Technology Solutions Inc.",
+    "filed": "2025-04-15",
+    "stratum": "random",
+    "url": "https://www.sec.gov/Archives/edgar/data/1498148/000106299325007481/0001062993-25-007481.txt"
+  },
+  "0001062993-25-007668": {
+    "cik": "0000720875",
+    "company": "DYNATRONICS CORP",
+    "filed": "2025-04-18",
+    "stratum": "random",
+    "url": "https://www.sec.gov/Archives/edgar/data/720875/000106299325007668/0001062993-25-007668.txt"
+  },
+  "0001079973-25-000657": {
+    "cik": "0000875729",
+    "company": "BION ENVIRONMENTAL TECHNOLOGIES INC",
+    "filed": "2025-04-17",
+    "stratum": "random",
+    "url": "https://www.sec.gov/Archives/edgar/data/875729/000107997325000657/0001079973-25-000657.txt"
+  },
+  "0001091818-25-000047": {
+    "cik": "0001619096",
+    "company": "Summit Networks Inc.",
+    "filed": "2025-04-15",
+    "stratum": "random",
+    "url": "https://www.sec.gov/Archives/edgar/data/1619096/000109181825000047/0001091818-25-000047.txt"
+  },
+  "0001096906-14-000094": {
+    "cik": "0001284452",
+    "company": "MONDIAL VENTURES, INC.",
+    "filed": "2014-01-30",
+    "stratum": "stratified",
+    "url": "https://www.sec.gov/Archives/edgar/data/1284452/000109690614000094/0001096906-14-000094.txt"
+  },
+  "0001096906-25-000497": {
+    "cik": "0001416090",
+    "company": "BLUSKY AI INC.",
+    "filed": "2025-04-14",
+    "stratum": "random",
+    "url": "https://www.sec.gov/Archives/edgar/data/1416090/000109690625000497/0001096906-25-000497.txt"
+  },
+  "0001096906-25-000518": {
+    "cik": "0001391135",
+    "company": "LFTD PARTNERS INC.",
+    "filed": "2025-04-16",
+    "stratum": "random",
+    "url": "https://www.sec.gov/Archives/edgar/data/1391135/000109690625000518/0001096906-25-000518.txt"
+  },
+  "0001099910-02-000150": {
+    "cik": "0001088537",
+    "company": "REALITY WIRELESS NETWORKS  INC",
+    "filed": "2002-05-03",
+    "stratum": "stratified",
+    "url": "https://www.sec.gov/Archives/edgar/data/1088537/000109991002000150/0001099910-02-000150.txt"
+  },
+  "0001101302-25-000042": {
+    "cik": "0001101302",
+    "company": "ENTEGRIS INC",
+    "filed": "2025-04-16",
+    "stratum": "random",
+    "url": "https://www.sec.gov/Archives/edgar/data/1101302/000110130225000042/0001101302-25-000042.txt"
+  },
+  "0001102934-12-000006": {
+    "cik": "0001102934",
+    "company": "CABOT MICROELECTRONICS CORP",
+    "filed": "2012-02-14",
+    "stratum": "stratified",
+    "url": "https://www.sec.gov/Archives/edgar/data/1102934/000110293412000006/0001102934-12-000006.txt"
+  },
+  "0001104659-05-056186": {
+    "cik": "0001163428",
+    "company": "WILLOW GROVE BANCORP INC/NEW",
+    "filed": "2005-11-16",
+    "stratum": "stratified",
+    "url": "https://www.sec.gov/Archives/edgar/data/1163428/000110465905056186/0001104659-05-056186.txt"
+  },
+  "0001104659-05-059919": {
+    "cik": "0000901491",
+    "company": "PAPA JOHNS INTERNATIONAL INC",
+    "filed": "2005-12-09",
+    "stratum": "stratified",
+    "url": "https://www.sec.gov/Archives/edgar/data/901491/000110465905059919/0001104659-05-059919.txt"
+  },
+  "0001104659-06-040012": {
+    "cik": "0000314340",
+    "company": "SECURITY CAPITAL CORP/DE/",
+    "filed": "2006-06-06",
+    "stratum": "stratified",
+    "url": "https://www.sec.gov/Archives/edgar/data/314340/000110465906040012/0001104659-06-040012.txt"
+  },
+  "0001104659-07-020478": {
+    "cik": "0001052045",
+    "company": "SERVICEMASTER CO",
+    "filed": "2007-03-19",
+    "stratum": "stratified",
+    "url": "https://www.sec.gov/Archives/edgar/data/1052045/000110465907020478/0001104659-07-020478.txt"
+  },
+  "0001104659-08-030771": {
+    "cik": "0001324410",
+    "company": "Centennial Bank Holdings, Inc.",
+    "filed": "2008-05-07",
+    "stratum": "stratified",
+    "url": "https://www.sec.gov/Archives/edgar/data/1324410/000110465908030771/0001104659-08-030771.txt"
+  },
+  "0001104659-10-064481": {
+    "cik": "0000097148",
+    "company": "TEL OFFSHORE TRUST",
+    "filed": "2010-12-28",
+    "stratum": "stratified",
+    "url": "https://www.sec.gov/Archives/edgar/data/97148/000110465910064481/0001104659-10-064481.txt"
+  },
+  "0001104659-11-019937": {
+    "cik": "0001497275",
+    "company": "STATE BANK FINANCIAL CORP",
+    "filed": "2011-04-13",
+    "stratum": "stratified",
+    "url": "https://www.sec.gov/Archives/edgar/data/1497275/000110465911019937/0001104659-11-019937.txt"
+  },
+  "0001104659-13-064878": {
+    "cik": "0001274644",
+    "company": "Ocera Therapeutics, Inc.",
+    "filed": "2013-08-19",
+    "stratum": "stratified",
+    "url": "https://www.sec.gov/Archives/edgar/data/1274644/000110465913064878/0001104659-13-064878.txt"
+  },
+  "0001104659-16-093804": {
+    "cik": "0000077449",
+    "company": "PEP BOYS MANNY MOE & JACK",
+    "filed": "2016-02-04",
+    "stratum": "stratified",
+    "url": "https://www.sec.gov/Archives/edgar/data/77449/000110465916093804/0001104659-16-093804.txt"
+  },
+  "0001104659-18-024999": {
+    "cik": "0001615418",
+    "company": "Beneficial Bancorp Inc.",
+    "filed": "2018-04-19",
+    "stratum": "stratified",
+    "url": "https://www.sec.gov/Archives/edgar/data/1615418/000110465918024999/0001104659-18-024999.txt"
+  },
+  "0001104659-18-032536": {
+    "cik": "0001361658",
+    "company": "WYNDHAM WORLDWIDE CORP",
+    "filed": "2018-05-11",
+    "stratum": "stratified",
+    "url": "https://www.sec.gov/Archives/edgar/data/1361658/000110465918032536/0001104659-18-032536.txt"
+  },
+  "0001104659-19-066413": {
+    "cik": "0001001082",
+    "company": "DISH Network CORP",
+    "filed": "2019-11-22",
+    "stratum": "stratified",
+    "url": "https://www.sec.gov/Archives/edgar/data/1001082/000110465919066413/0001104659-19-066413.txt"
+  },
+  "0001104659-21-029380": {
+    "cik": "0001744894",
+    "company": "Sirius International Insurance Group, Ltd.",
+    "filed": "2021-02-26",
+    "stratum": "stratified",
+    "url": "https://www.sec.gov/Archives/edgar/data/1744894/000110465921029380/0001104659-21-029380.txt"
+  },
+  "0001104659-21-045683": {
+    "cik": "0001725526",
+    "company": "HighPoint Resources Corp",
+    "filed": "2021-04-01",
+    "stratum": "stratified",
+    "url": "https://www.sec.gov/Archives/edgar/data/1725526/000110465921045683/0001104659-21-045683.txt"
+  },
+  "0001104659-24-031960": {
+    "cik": "0001811074",
+    "company": "Texas Pacific Land Corp",
+    "filed": "2024-03-07",
+    "stratum": "stratified",
+    "url": "https://www.sec.gov/Archives/edgar/data/1811074/000110465924031960/0001104659-24-031960.txt"
+  },
+  "0001104659-25-034381": {
+    "cik": "0001446847",
+    "company": "IRONWOOD PHARMACEUTICALS INC",
+    "filed": "2025-04-14",
+    "stratum": "random",
+    "url": "https://www.sec.gov/Archives/edgar/data/1446847/000110465925034381/0001104659-25-034381.txt"
+  },
+  "0001104659-25-034426": {
+    "cik": "0000024545",
+    "company": "MOLSON COORS BEVERAGE CO",
+    "filed": "2025-04-14",
+    "stratum": "random",
+    "url": "https://www.sec.gov/Archives/edgar/data/24545/000110465925034426/0001104659-25-034426.txt"
+  },
+  "0001104659-25-034463": {
+    "cik": "0001323468",
+    "company": "GLOBAL PARTNERS LP",
+    "filed": "2025-04-14",
+    "stratum": "random",
+    "url": "https://www.sec.gov/Archives/edgar/data/1323468/000110465925034463/0001104659-25-034463.txt"
+  },
+  "0001104659-25-034672": {
+    "cik": "0001533924",
+    "company": "Amplify Energy Corp.",
+    "filed": "2025-04-14",
+    "stratum": "random",
+    "url": "https://www.sec.gov/Archives/edgar/data/1533924/000110465925034672/0001104659-25-034672.txt"
+  },
+  "0001104659-25-034681": {
+    "cik": "0000866787",
+    "company": "AUTOZONE INC",
+    "filed": "2025-04-14",
+    "stratum": "random",
+    "url": "https://www.sec.gov/Archives/edgar/data/866787/000110465925034681/0001104659-25-034681.txt"
+  },
+  "0001104659-25-034874": {
+    "cik": "0000018230",
+    "company": "CATERPILLAR INC",
+    "filed": "2025-04-15",
+    "stratum": "random",
+    "url": "https://www.sec.gov/Archives/edgar/data/18230/000110465925034874/0001104659-25-034874.txt"
+  },
+  "0001104659-25-035121": {
+    "cik": "0001346830",
+    "company": "Tvardi Therapeutics, Inc.",
+    "filed": "2025-04-15",
+    "stratum": "random",
+    "url": "https://www.sec.gov/Archives/edgar/data/1346830/000110465925035121/0001104659-25-035121.txt"
+  },
+  "0001104659-25-035333": {
+    "cik": "0000707605",
+    "company": "AMERISERV FINANCIAL INC /PA/",
+    "filed": "2025-04-16",
+    "stratum": "random",
+    "url": "https://www.sec.gov/Archives/edgar/data/707605/000110465925035333/0001104659-25-035333.txt"
+  },
+  "0001104659-25-035342": {
+    "cik": "0001818605",
+    "company": "Distoken Acquisition Corp",
+    "filed": "2025-04-16",
+    "stratum": "random",
+    "url": "https://www.sec.gov/Archives/edgar/data/1818605/000110465925035342/0001104659-25-035342.txt"
+  },
+  "0001104659-25-035406": {
+    "cik": "0001310383",
+    "company": "Summit Healthcare REIT, Inc",
+    "filed": "2025-04-16",
+    "stratum": "random",
+    "url": "https://www.sec.gov/Archives/edgar/data/1310383/000110465925035406/0001104659-25-035406.txt"
+  },
+  "0001104659-25-035734": {
+    "cik": "0001868912",
+    "company": "Enfusion, Inc.",
+    "filed": "2025-04-17",
+    "stratum": "random",
+    "url": "https://www.sec.gov/Archives/edgar/data/1868912/000110465925035734/0001104659-25-035734.txt"
+  },
+  "0001104659-25-036013": {
+    "cik": "0000033213",
+    "company": "EQT Corp",
+    "filed": "2025-04-17",
+    "stratum": "random",
+    "url": "https://www.sec.gov/Archives/edgar/data/33213/000110465925036013/0001104659-25-036013.txt"
+  },
+  "0001104659-25-036039": {
+    "cik": "0000746514",
+    "company": "NEW ENGLAND REALTY ASSOCIATES LIMITED PARTNERSHIP",
+    "filed": "2025-04-17",
+    "stratum": "random",
+    "url": "https://www.sec.gov/Archives/edgar/data/746514/000110465925036039/0001104659-25-036039.txt"
+  },
+  "0001104659-25-036096": {
+    "cik": "0000102109",
+    "company": "UNIVERSAL SECURITY INSTRUMENTS INC",
+    "filed": "2025-04-17",
+    "stratum": "random",
+    "url": "https://www.sec.gov/Archives/edgar/data/102109/000110465925036096/0001104659-25-036096.txt"
+  },
+  "0001104659-25-036123": {
+    "cik": "0001066684",
+    "company": "THEGLOBE COM INC",
+    "filed": "2025-04-18",
+    "stratum": "random",
+    "url": "https://www.sec.gov/Archives/edgar/data/1066684/000110465925036123/0001104659-25-036123.txt"
+  },
+  "0001104659-25-036349": {
+    "cik": "0000928465",
+    "company": "AMCON DISTRIBUTING CO",
+    "filed": "2025-04-18",
+    "stratum": "random",
+    "url": "https://www.sec.gov/Archives/edgar/data/928465/000110465925036349/0001104659-25-036349.txt"
+  },
+  "0001104659-25-036350": {
+    "cik": "0000313364",
+    "company": "MESA ROYALTY TRUST/TX",
+    "filed": "2025-04-18",
+    "stratum": "random",
+    "url": "https://www.sec.gov/Archives/edgar/data/313364/000110465925036350/0001104659-25-036350.txt"
+  },
+  "0001104659-25-036574": {
+    "cik": "0000763907",
+    "company": "FIRST UNITED CORP/MD/",
+    "filed": "2025-04-21",
+    "stratum": "random",
+    "url": "https://www.sec.gov/Archives/edgar/data/763907/000110465925036574/0001104659-25-036574.txt"
+  },
+  "0001104659-25-117726": {
+    "cik": "0001811074",
+    "company": "Texas Pacific Land Corp",
+    "filed": "2025-12-02",
+    "stratum": "stratified",
+    "url": "https://www.sec.gov/Archives/edgar/data/1811074/000110465925117726/0001104659-25-117726.txt"
+  },
+  "0001116502-10-000087": {
+    "cik": "0000049930",
+    "company": "IMPERIAL INDUSTRIES INC",
+    "filed": "2010-01-26",
+    "stratum": "stratified",
+    "url": "https://www.sec.gov/Archives/edgar/data/49930/000111650210000087/0001116502-10-000087.txt"
+  },
+  "0001122304-12-000152": {
+    "cik": "0001122304",
+    "company": "AETNA INC /PA/",
+    "filed": "2012-11-06",
+    "stratum": "stratified",
+    "url": "https://www.sec.gov/Archives/edgar/data/1122304/000112230412000152/0001122304-12-000152.txt"
+  },
+  "0001131554-25-000034": {
+    "cik": "0001131554",
+    "company": "SYNCHRONOSS TECHNOLOGIES INC",
+    "filed": "2025-04-16",
+    "stratum": "random",
+    "url": "https://www.sec.gov/Archives/edgar/data/1131554/000113155425000034/0001131554-25-000034.txt"
+  },
+  "0001137774-25-000051": {
+    "cik": "0001137774",
+    "company": "PRUDENTIAL FINANCIAL INC",
+    "filed": "2025-04-14",
+    "stratum": "random",
+    "url": "https://www.sec.gov/Archives/edgar/data/1137774/000113777425000051/0001137774-25-000051.txt"
+  },
+  "0001140361-08-009937": {
+    "cik": "0001063344",
+    "company": "HERSHA HOSPITALITY TRUST",
+    "filed": "2008-04-22",
+    "stratum": "stratified",
+    "url": "https://www.sec.gov/Archives/edgar/data/1063344/000114036108009937/0001140361-08-009937.txt"
+  },
+  "0001140361-08-017354": {
+    "cik": "0001362599",
+    "company": "Omni Financial Services, Inc.",
+    "filed": "2008-07-21",
+    "stratum": "stratified",
+    "url": "https://www.sec.gov/Archives/edgar/data/1362599/000114036108017354/0001140361-08-017354.txt"
+  },
+  "0001140361-12-052742": {
+    "cik": "0000799235",
+    "company": "ERHC Energy Inc",
+    "filed": "2012-12-27",
+    "stratum": "stratified",
+    "url": "https://www.sec.gov/Archives/edgar/data/799235/000114036112052742/0001140361-12-052742.txt"
+  },
+  "0001140361-21-039785": {
+    "cik": "0000095953",
+    "company": "SYNALLOY CORP",
+    "filed": "2021-11-30",
+    "stratum": "stratified",
+    "url": "https://www.sec.gov/Archives/edgar/data/95953/000114036121039785/0001140361-21-039785.txt"
+  },
+  "0001140361-22-017599": {
+    "cik": "0001625101",
+    "company": "Pulse Biosciences, Inc.",
+    "filed": "2022-05-04",
+    "stratum": "stratified",
+    "url": "https://www.sec.gov/Archives/edgar/data/1625101/000114036122017599/0001140361-22-017599.txt"
+  },
+  "0001140361-25-013659": {
+    "cik": "0001781162",
+    "company": "Momentus Inc.",
+    "filed": "2025-04-14",
+    "stratum": "random",
+    "url": "https://www.sec.gov/Archives/edgar/data/1781162/000114036125013659/0001140361-25-013659.txt"
+  },
+  "0001140361-25-013879": {
+    "cik": "0001781162",
+    "company": "Momentus Inc.",
+    "filed": "2025-04-15",
+    "stratum": "random",
+    "url": "https://www.sec.gov/Archives/edgar/data/1781162/000114036125013879/0001140361-25-013879.txt"
+  },
+  "0001140361-25-013979": {
+    "cik": "0001966394",
+    "company": "Fortress Net Lease REIT",
+    "filed": "2025-04-15",
+    "stratum": "random",
+    "url": "https://www.sec.gov/Archives/edgar/data/1966394/000114036125013979/0001140361-25-013979.txt"
+  },
+  "0001140361-25-014095": {
+    "cik": "0000047217",
+    "company": "HP INC",
+    "filed": "2025-04-16",
+    "stratum": "random",
+    "url": "https://www.sec.gov/Archives/edgar/data/47217/000114036125014095/0001140361-25-014095.txt"
+  },
+  "0001140361-25-014509": {
+    "cik": "0001874944",
+    "company": "Vacasa, Inc.",
+    "filed": "2025-04-18",
+    "stratum": "random",
+    "url": "https://www.sec.gov/Archives/edgar/data/1874944/000114036125014509/0001140361-25-014509.txt"
+  },
+  "0001140361-25-014587": {
+    "cik": "0001707919",
+    "company": "Cenntro Inc.",
+    "filed": "2025-04-18",
+    "stratum": "random",
+    "url": "https://www.sec.gov/Archives/edgar/data/1707919/000114036125014587/0001140361-25-014587.txt"
+  },
+  "0001144204-12-000785": {
+    "cik": "0000810509",
+    "company": "NAVIDEA BIOPHARMACEUTICALS, INC.",
+    "filed": "2012-01-05",
+    "stratum": "stratified",
+    "url": "https://www.sec.gov/Archives/edgar/data/810509/000114420412000785/0001144204-12-000785.txt"
+  },
+  "0001144204-15-040014": {
+    "cik": "0001343979",
+    "company": "CIRQUE ENERGY, INC.",
+    "filed": "2015-06-30",
+    "stratum": "stratified",
+    "url": "https://www.sec.gov/Archives/edgar/data/1343979/000114420415040014/0001144204-15-040014.txt"
+  },
+  "0001144204-17-010225": {
+    "cik": "0001043961",
+    "company": "TRANSGENOMIC INC",
+    "filed": "2017-02-21",
+    "stratum": "stratified",
+    "url": "https://www.sec.gov/Archives/edgar/data/1043961/000114420417010225/0001144204-17-010225.txt"
+  },
+  "0001144204-17-022814": {
+    "cik": "0001578685",
+    "company": "Midcoast Energy Partners, L.P.",
+    "filed": "2017-04-28",
+    "stratum": "stratified",
+    "url": "https://www.sec.gov/Archives/edgar/data/1578685/000114420417022814/0001144204-17-022814.txt"
+  },
+  "0001157523-11-004060": {
+    "cik": "0001038205",
+    "company": "BANK OF THE OZARKS INC",
+    "filed": "2011-07-20",
+    "stratum": "stratified",
+    "url": "https://www.sec.gov/Archives/edgar/data/1038205/000115752311004060/0001157523-11-004060.txt"
+  },
+  "0001157523-13-004785": {
+    "cik": "0000103379",
+    "company": "V F CORP",
+    "filed": "2013-10-21",
+    "stratum": "stratified",
+    "url": "https://www.sec.gov/Archives/edgar/data/103379/000115752313004785/0001157523-13-004785.txt"
+  },
+  "0001169561-25-000028": {
+    "cik": "0001169561",
+    "company": "COMMVAULT SYSTEMS INC",
+    "filed": "2025-04-15",
+    "stratum": "random",
+    "url": "https://www.sec.gov/Archives/edgar/data/1169561/000116956125000028/0001169561-25-000028.txt"
+  },
+  "0001171843-18-003880": {
+    "cik": "0000090498",
+    "company": "SIMMONS FIRST NATIONAL CORP",
+    "filed": "2018-05-14",
+    "stratum": "stratified",
+    "url": "https://www.sec.gov/Archives/edgar/data/90498/000117184318003880/0001171843-18-003880.txt"
+  },
+  "0001171843-25-002302": {
+    "cik": "0001383414",
+    "company": "PENNANTPARK INVESTMENT CORP",
+    "filed": "2025-04-17",
+    "stratum": "random",
+    "url": "https://www.sec.gov/Archives/edgar/data/1383414/000117184325002302/0001171843-25-002302.txt"
+  },
+  "0001171843-25-002319": {
+    "cik": "0000763563",
+    "company": "CHEMUNG FINANCIAL CORP",
+    "filed": "2025-04-18",
+    "stratum": "random",
+    "url": "https://www.sec.gov/Archives/edgar/data/763563/000117184325002319/0001171843-25-002319.txt"
+  },
+  "0001174850-25-000020": {
+    "cik": "0001174850",
+    "company": "NICOLET BANKSHARES INC",
+    "filed": "2025-04-15",
+    "stratum": "random",
+    "url": "https://www.sec.gov/Archives/edgar/data/1174850/000117485025000020/0001174850-25-000020.txt"
+  },
+  "0001174947-26-000503": {
+    "cik": "0000731122",
+    "company": "MUNCY COLUMBIA FINANCIAL Corp",
+    "filed": "2026-04-23",
+    "stratum": "stratified",
+    "url": "https://www.sec.gov/Archives/edgar/data/731122/000117494726000503/0001174947-26-000503.txt"
+  },
+  "0001174947-26-000694": {
+    "cik": "0000731122",
+    "company": "MUNCY COLUMBIA FINANCIAL Corp",
+    "filed": "2026-07-20",
+    "stratum": "stratified",
+    "url": "https://www.sec.gov/Archives/edgar/data/731122/000117494726000694/0001174947-26-000694.txt"
+  },
+  "0001176334-25-000057": {
+    "cik": "0001176334",
+    "company": "MARTIN MIDSTREAM PARTNERS L.P.",
+    "filed": "2025-04-16",
+    "stratum": "random",
+    "url": "https://www.sec.gov/Archives/edgar/data/1176334/000117633425000057/0001176334-25-000057.txt"
+  },
+  "0001178913-19-001295": {
+    "cik": "0001021991",
+    "company": "TOP IMAGE SYSTEMS LTD",
+    "filed": "2019-05-06",
+    "stratum": "stratified",
+    "url": "https://www.sec.gov/Archives/edgar/data/1021991/000117891319001295/0001178913-19-001295.txt"
+  },
+  "0001178913-25-001291": {
+    "cik": "0001607962",
+    "company": "Lifeward Ltd.",
+    "filed": "2025-04-14",
+    "stratum": "random",
+    "url": "https://www.sec.gov/Archives/edgar/data/1607962/000117891325001291/0001178913-25-001291.txt"
+  },
+  "0001181431-08-025059": {
+    "cik": "0001344708",
+    "company": "AMERICAN MOLD GUARD INC",
+    "filed": "2008-04-15",
+    "stratum": "stratified",
+    "url": "https://www.sec.gov/Archives/edgar/data/1344708/000118143108025059/0001181431-08-025059.txt"
+  },
+  "0001181431-13-006650": {
+    "cik": "0001476264",
+    "company": "WashingtonFirst Bankshares, Inc.",
+    "filed": "2013-02-05",
+    "stratum": "stratified",
+    "url": "https://www.sec.gov/Archives/edgar/data/1476264/000118143113006650/0001181431-13-006650.txt"
+  },
+  "0001185185-02-000030": {
+    "cik": "0001072248",
+    "company": "GATEWAY INTERNATIONAL HOLDINGS INC",
+    "filed": "2002-11-07",
+    "stratum": "stratified",
+    "url": "https://www.sec.gov/Archives/edgar/data/1072248/000118518502000030/0001185185-02-000030.txt"
+  },
+  "0001185185-25-000315": {
+    "cik": "0000802257",
+    "company": "Mitesco, Inc.",
+    "filed": "2025-04-18",
+    "stratum": "random",
+    "url": "https://www.sec.gov/Archives/edgar/data/802257/000118518525000315/0001185185-25-000315.txt"
+  },
+  "0001193125-05-227902": {
+    "cik": "0001060801",
+    "company": "CRITICAL PATH INC",
+    "filed": "2005-11-16",
+    "stratum": "stratified",
+    "url": "https://www.sec.gov/Archives/edgar/data/1060801/000119312505227902/0001193125-05-227902.txt"
+  },
+  "0001193125-06-083211": {
+    "cik": "0001070750",
+    "company": "HOST HOTELS & RESORTS, INC.",
+    "filed": "2006-04-19",
+    "stratum": "stratified",
+    "url": "https://www.sec.gov/Archives/edgar/data/1070750/000119312506083211/0001193125-06-083211.txt"
+  },
+  "0001193125-07-084925": {
+    "cik": "0001094895",
+    "company": "AVICI SYSTEMS INC",
+    "filed": "2007-04-19",
+    "stratum": "stratified",
+    "url": "https://www.sec.gov/Archives/edgar/data/1094895/000119312507084925/0001193125-07-084925.txt"
+  },
+  "0001193125-07-263832": {
+    "cik": "0001289505",
+    "company": "QC Holdings, Inc.",
+    "filed": "2007-12-12",
+    "stratum": "stratified",
+    "url": "https://www.sec.gov/Archives/edgar/data/1289505/000119312507263832/0001193125-07-263832.txt"
+  },
+  "0001193125-09-163058": {
+    "cik": "0001042418",
+    "company": "COMMONWEALTH BIOTECHNOLOGIES INC",
+    "filed": "2009-08-04",
+    "stratum": "stratified",
+    "url": "https://www.sec.gov/Archives/edgar/data/1042418/000119312509163058/0001193125-09-163058.txt"
+  },
+  "0001193125-09-219093": {
+    "cik": "0000925043",
+    "company": "ADVANT E CORP",
+    "filed": "2009-10-30",
+    "stratum": "stratified",
+    "url": "https://www.sec.gov/Archives/edgar/data/925043/000119312509219093/0001193125-09-219093.txt"
+  },
+  "0001193125-09-233977": {
+    "cik": "0000925043",
+    "company": "ADVANT E CORP",
+    "filed": "2009-11-13",
+    "stratum": "stratified",
+    "url": "https://www.sec.gov/Archives/edgar/data/925043/000119312509233977/0001193125-09-233977.txt"
+  },
+  "0001193125-10-009614": {
+    "cik": "0001042418",
+    "company": "COMMONWEALTH BIOTECHNOLOGIES INC",
+    "filed": "2010-01-21",
+    "stratum": "stratified",
+    "url": "https://www.sec.gov/Archives/edgar/data/1042418/000119312510009614/0001193125-10-009614.txt"
+  },
+  "0001193125-10-204814": {
+    "cik": "0001228068",
+    "company": "INERGY HOLDINGS, L.P.",
+    "filed": "2010-09-03",
+    "stratum": "stratified",
+    "url": "https://www.sec.gov/Archives/edgar/data/1228068/000119312510204814/0001193125-10-204814.txt"
+  },
+  "0001193125-11-224393": {
+    "cik": "0000706874",
+    "company": "PALMETTO BANCSHARES INC",
+    "filed": "2011-08-16",
+    "stratum": "stratified",
+    "url": "https://www.sec.gov/Archives/edgar/data/706874/000119312511224393/0001193125-11-224393.txt"
+  },
+  "0001193125-12-156349": {
+    "cik": "0000072741",
+    "company": "NORTHEAST UTILITIES",
+    "filed": "2012-04-10",
+    "stratum": "stratified",
+    "url": "https://www.sec.gov/Archives/edgar/data/72741/000119312512156349/0001193125-12-156349.txt"
+  },
+  "0001193125-12-451400": {
+    "cik": "0000072444",
+    "company": "NABI BIOPHARMACEUTICALS",
+    "filed": "2012-11-05",
+    "stratum": "stratified",
+    "url": "https://www.sec.gov/Archives/edgar/data/72444/000119312512451400/0001193125-12-451400.txt"
+  },
+  "0001193125-13-480087": {
+    "cik": "0001056696",
+    "company": "MANHATTAN ASSOCIATES INC",
+    "filed": "2013-12-20",
+    "stratum": "stratified",
+    "url": "https://www.sec.gov/Archives/edgar/data/1056696/000119312513480087/0001193125-13-480087.txt"
+  },
+  "0001193125-14-034849": {
+    "cik": "0001056696",
+    "company": "MANHATTAN ASSOCIATES INC",
+    "filed": "2014-02-04",
+    "stratum": "stratified",
+    "url": "https://www.sec.gov/Archives/edgar/data/1056696/000119312514034849/0001193125-14-034849.txt"
+  },
+  "0001193125-14-035827": {
+    "cik": "0001056696",
+    "company": "MANHATTAN ASSOCIATES INC",
+    "filed": "2014-02-05",
+    "stratum": "stratified",
+    "url": "https://www.sec.gov/Archives/edgar/data/1056696/000119312514035827/0001193125-14-035827.txt"
+  },
+  "0001193125-14-152640": {
+    "cik": "0001056696",
+    "company": "MANHATTAN ASSOCIATES INC",
+    "filed": "2014-04-22",
+    "stratum": "stratified",
+    "url": "https://www.sec.gov/Archives/edgar/data/1056696/000119312514152640/0001193125-14-152640.txt"
+  },
+  "0001193125-14-177372": {
+    "cik": "0001021860",
+    "company": "NATIONAL OILWELL VARCO INC",
+    "filed": "2014-05-01",
+    "stratum": "stratified",
+    "url": "https://www.sec.gov/Archives/edgar/data/1021860/000119312514177372/0001193125-14-177372.txt"
+  },
+  "0001193125-14-206686": {
+    "cik": "0001038205",
+    "company": "BANK OF THE OZARKS INC",
+    "filed": "2014-05-20",
+    "stratum": "stratified",
+    "url": "https://www.sec.gov/Archives/edgar/data/1038205/000119312514206686/0001193125-14-206686.txt"
+  },
+  "0001193125-14-220143": {
+    "cik": "0001599617",
+    "company": "NOW Inc.",
+    "filed": "2014-05-30",
+    "stratum": "stratified",
+    "url": "https://www.sec.gov/Archives/edgar/data/1599617/000119312514220143/0001193125-14-220143.txt"
+  },
+  "0001193125-14-220149": {
+    "cik": "0001021860",
+    "company": "NATIONAL OILWELL VARCO INC",
+    "filed": "2014-05-30",
+    "stratum": "stratified",
+    "url": "https://www.sec.gov/Archives/edgar/data/1021860/000119312514220149/0001193125-14-220149.txt"
+  },
+  "0001193125-14-226138": {
+    "cik": "0001125376",
+    "company": "ENSIGN GROUP, INC",
+    "filed": "2014-06-05",
+    "stratum": "stratified",
+    "url": "https://www.sec.gov/Archives/edgar/data/1125376/000119312514226138/0001193125-14-226138.txt"
+  },
+  "0001193125-15-243669": {
+    "cik": "0001629995",
+    "company": "Columbia Pipeline Group, Inc.",
+    "filed": "2015-07-02",
+    "stratum": "stratified",
+    "url": "https://www.sec.gov/Archives/edgar/data/1629995/000119312515243669/0001193125-15-243669.txt"
+  },
+  "0001193125-16-420085": {
+    "cik": "0000906780",
+    "company": "EMPIRE RESORTS INC",
+    "filed": "2016-01-04",
+    "stratum": "stratified",
+    "url": "https://www.sec.gov/Archives/edgar/data/906780/000119312516420085/0001193125-16-420085.txt"
+  },
+  "0001193125-16-681926": {
+    "cik": "0000944314",
+    "company": "LIFE STORAGE, INC.",
+    "filed": "2016-08-15",
+    "stratum": "stratified",
+    "url": "https://www.sec.gov/Archives/edgar/data/944314/000119312516681926/0001193125-16-681926.txt"
+  },
+  "0001193125-16-798886": {
+    "cik": "0000315858",
+    "company": "BFC FINANCIAL CORP",
+    "filed": "2016-12-20",
+    "stratum": "stratified",
+    "url": "https://www.sec.gov/Archives/edgar/data/315858/000119312516798886/0001193125-16-798886.txt"
+  },
+  "0001193125-17-038403": {
+    "cik": "0001574532",
+    "company": "WCI Communities, Inc.",
+    "filed": "2017-02-10",
+    "stratum": "stratified",
+    "url": "https://www.sec.gov/Archives/edgar/data/1574532/000119312517038403/0001193125-17-038403.txt"
+  },
+  "0001193125-18-064132": {
+    "cik": "0000064803",
+    "company": "CVS HEALTH Corp",
+    "filed": "2018-02-28",
+    "stratum": "stratified",
+    "url": "https://www.sec.gov/Archives/edgar/data/64803/000119312518064132/0001193125-18-064132.txt"
+  },
+  "0001193125-18-224888": {
+    "cik": "0001326428",
+    "company": "LINN ENERGY, INC.",
+    "filed": "2018-07-25",
+    "stratum": "stratified",
+    "url": "https://www.sec.gov/Archives/edgar/data/1326428/000119312518224888/0001193125-18-224888.txt"
+  },
+  "0001193125-18-225800": {
+    "cik": "0000774569",
+    "company": "CORTLAND BANCORP INC",
+    "filed": "2018-07-25",
+    "stratum": "stratified",
+    "url": "https://www.sec.gov/Archives/edgar/data/774569/000119312518225800/0001193125-18-225800.txt"
+  },
+  "0001193125-20-036662": {
+    "cik": "0000891293",
+    "company": "CTI BIOPHARMA CORP",
+    "filed": "2020-02-14",
+    "stratum": "stratified",
+    "url": "https://www.sec.gov/Archives/edgar/data/891293/000119312520036662/0001193125-20-036662.txt"
+  },
+  "0001193125-21-267354": {
+    "cik": "0000846901",
+    "company": "LAKELAND BANCORP INC",
+    "filed": "2021-09-08",
+    "stratum": "stratified",
+    "url": "https://www.sec.gov/Archives/edgar/data/846901/000119312521267354/0001193125-21-267354.txt"
+  },
+  "0001193125-22-218053": {
+    "cik": "0001000209",
+    "company": "MEDALLION FINANCIAL CORP",
+    "filed": "2022-08-11",
+    "stratum": "stratified",
+    "url": "https://www.sec.gov/Archives/edgar/data/1000209/000119312522218053/0001193125-22-218053.txt"
+  },
+  "0001193125-23-041150": {
+    "cik": "0001811856",
+    "company": "View, Inc.",
+    "filed": "2023-02-16",
+    "stratum": "stratified",
+    "url": "https://www.sec.gov/Archives/edgar/data/1811856/000119312523041150/0001193125-23-041150.txt"
+  },
+  "0001193125-23-139516": {
+    "cik": "0000703604",
+    "company": "Distribution Solutions Group, Inc.",
+    "filed": "2023-05-09",
+    "stratum": "stratified",
+    "url": "https://www.sec.gov/Archives/edgar/data/703604/000119312523139516/0001193125-23-139516.txt"
+  },
+  "0001193125-25-079625": {
+    "cik": "0000886982",
+    "company": "GOLDMAN SACHS GROUP INC",
+    "filed": "2025-04-14",
+    "stratum": "random",
+    "url": "https://www.sec.gov/Archives/edgar/data/886982/000119312525079625/0001193125-25-079625.txt"
+  },
+  "0001193125-25-080276": {
+    "cik": "0001319161",
+    "company": "Warner Music Group Corp.",
+    "filed": "2025-04-14",
+    "stratum": "random",
+    "url": "https://www.sec.gov/Archives/edgar/data/1319161/000119312525080276/0001193125-25-080276.txt"
+  },
+  "0001193125-25-080765": {
+    "cik": "0001971543",
+    "company": "Mural Oncology plc",
+    "filed": "2025-04-15",
+    "stratum": "random",
+    "url": "https://www.sec.gov/Archives/edgar/data/1971543/000119312525080765/0001193125-25-080765.txt"
+  },
+  "0001193125-25-081494": {
+    "cik": "0001633336",
+    "company": "Crescent Capital BDC, Inc.",
+    "filed": "2025-04-15",
+    "stratum": "random",
+    "url": "https://www.sec.gov/Archives/edgar/data/1633336/000119312525081494/0001193125-25-081494.txt"
+  },
+  "0001193125-25-081518": {
+    "cik": "0001036044",
+    "company": "Identiv, Inc.",
+    "filed": "2025-04-15",
+    "stratum": "random",
+    "url": "https://www.sec.gov/Archives/edgar/data/1036044/000119312525081518/0001193125-25-081518.txt"
+  },
+  "0001193125-25-081561": {
+    "cik": "0001826600",
+    "company": "Montauk Renewables, Inc.",
+    "filed": "2025-04-15",
+    "stratum": "random",
+    "url": "https://www.sec.gov/Archives/edgar/data/1826600/000119312525081561/0001193125-25-081561.txt"
+  },
+  "0001193125-25-081580": {
+    "cik": "0001816613",
+    "company": "Markforged Holding Corp",
+    "filed": "2025-04-15",
+    "stratum": "random",
+    "url": "https://www.sec.gov/Archives/edgar/data/1816613/000119312525081580/0001193125-25-081580.txt"
+  },
+  "0001193125-25-081800": {
+    "cik": "0000926282",
+    "company": "ADTRAN Holdings, Inc.",
+    "filed": "2025-04-16",
+    "stratum": "random",
+    "url": "https://www.sec.gov/Archives/edgar/data/926282/000119312525081800/0001193125-25-081800.txt"
+  },
+  "0001193125-25-082159": {
+    "cik": "0001035002",
+    "company": "VALERO ENERGY CORP/TX",
+    "filed": "2025-04-16",
+    "stratum": "random",
+    "url": "https://www.sec.gov/Archives/edgar/data/1035002/000119312525082159/0001193125-25-082159.txt"
+  },
+  "0001193125-25-082951": {
+    "cik": "0000090498",
+    "company": "SIMMONS FIRST NATIONAL CORP",
+    "filed": "2025-04-16",
+    "stratum": "random",
+    "url": "https://www.sec.gov/Archives/edgar/data/90498/000119312525082951/0001193125-25-082951.txt"
+  },
+  "0001193125-25-083512": {
+    "cik": "0000040704",
+    "company": "GENERAL MILLS INC",
+    "filed": "2025-04-17",
+    "stratum": "random",
+    "url": "https://www.sec.gov/Archives/edgar/data/40704/000119312525083512/0001193125-25-083512.txt"
+  },
+  "0001193125-25-083523": {
+    "cik": "0001593899",
+    "company": "Atea Pharmaceuticals, Inc.",
+    "filed": "2025-04-17",
+    "stratum": "random",
+    "url": "https://www.sec.gov/Archives/edgar/data/1593899/000119312525083523/0001193125-25-083523.txt"
+  },
+  "0001193125-25-083659": {
+    "cik": "0001013272",
+    "company": "NORWOOD FINANCIAL CORP",
+    "filed": "2025-04-17",
+    "stratum": "random",
+    "url": "https://www.sec.gov/Archives/edgar/data/1013272/000119312525083659/0001193125-25-083659.txt"
+  },
+  "0001193125-25-084319": {
+    "cik": "0001439725",
+    "company": "BIODESIX INC",
+    "filed": "2025-04-17",
+    "stratum": "random",
+    "url": "https://www.sec.gov/Archives/edgar/data/1439725/000119312525084319/0001193125-25-084319.txt"
+  },
+  "0001193125-25-084340": {
+    "cik": "0001420565",
+    "company": "Rein Therapeutics, Inc.",
+    "filed": "2025-04-17",
+    "stratum": "random",
+    "url": "https://www.sec.gov/Archives/edgar/data/1420565/000119312525084340/0001193125-25-084340.txt"
+  },
+  "0001193125-25-084343": {
+    "cik": "0001601046",
+    "company": "Keysight Technologies, Inc.",
+    "filed": "2025-04-17",
+    "stratum": "random",
+    "url": "https://www.sec.gov/Archives/edgar/data/1601046/000119312525084343/0001193125-25-084343.txt"
+  },
+  "0001193125-25-084382": {
+    "cik": "0000929351",
+    "company": "LIONS GATE ENTERTAINMENT CORP /CN/",
+    "filed": "2025-04-17",
+    "stratum": "random",
+    "url": "https://www.sec.gov/Archives/edgar/data/929351/000119312525084382/0001193125-25-084382.txt"
+  },
+  "0001193125-25-084390": {
+    "cik": "0002006191",
+    "company": "Lionsgate Studios Corp.",
+    "filed": "2025-04-17",
+    "stratum": "random",
+    "url": "https://www.sec.gov/Archives/edgar/data/2006191/000119312525084390/0001193125-25-084390.txt"
+  },
+  "0001193125-25-084922": {
+    "cik": "0001359841",
+    "company": "Hanesbrands Inc.",
+    "filed": "2025-04-18",
+    "stratum": "random",
+    "url": "https://www.sec.gov/Archives/edgar/data/1359841/000119312525084922/0001193125-25-084922.txt"
+  },
+  "0001193125-25-085750": {
+    "cik": "0000008146",
+    "company": "AstroNova, Inc.",
+    "filed": "2025-04-18",
+    "stratum": "random",
+    "url": "https://www.sec.gov/Archives/edgar/data/8146/000119312525085750/0001193125-25-085750.txt"
+  },
+  "0001193125-25-085812": {
+    "cik": "0001393612",
+    "company": "Discover Financial Services",
+    "filed": "2025-04-18",
+    "stratum": "random",
+    "url": "https://www.sec.gov/Archives/edgar/data/1393612/000119312525085812/0001193125-25-085812.txt"
+  },
+  "0001193125-26-016540": {
+    "cik": "0001381197",
+    "company": "Interactive Brokers Group, Inc.",
+    "filed": "2026-01-20",
+    "stratum": "stratified",
+    "url": "https://www.sec.gov/Archives/edgar/data/1381197/000119312526016540/0001193125-26-016540.txt"
+  },
+  "0001193125-26-177317": {
+    "cik": "0001370053",
+    "company": "ANAPTYSBIO, INC",
+    "filed": "2026-04-24",
+    "stratum": "stratified",
+    "url": "https://www.sec.gov/Archives/edgar/data/1370053/000119312526177317/0001193125-26-177317.txt"
+  },
+  "0001193805-07-000970": {
+    "cik": "0001099609",
+    "company": "NESCO INDUSTRIES INC",
+    "filed": "2007-04-02",
+    "stratum": "stratified",
+    "url": "https://www.sec.gov/Archives/edgar/data/1099609/000119380507000970/0001193805-07-000970.txt"
+  },
+  "0001206264-20-000228": {
+    "cik": "0001206264",
+    "company": "TEMPUR SEALY INTERNATIONAL, INC.",
+    "filed": "2020-10-29",
+    "stratum": "stratified",
+    "url": "https://www.sec.gov/Archives/edgar/data/1206264/000120626420000228/0001206264-20-000228.txt"
+  },
+  "0001212545-25-000136": {
+    "cik": "0001212545",
+    "company": "WESTERN ALLIANCE BANCORPORATION",
+    "filed": "2025-04-21",
+    "stratum": "random",
+    "url": "https://www.sec.gov/Archives/edgar/data/1212545/000121254525000136/0001212545-25-000136.txt"
+  },
+  "0001213900-09-003328": {
+    "cik": "0001144320",
+    "company": "NEW ENERGY SYSTEMS GROUP",
+    "filed": "2009-11-19",
+    "stratum": "stratified",
+    "url": "https://www.sec.gov/Archives/edgar/data/1144320/000121390009003328/0001213900-09-003328.txt"
+  },
+  "0001213900-18-001918": {
+    "cik": "0001388320",
+    "company": "Actinium Pharmaceuticals, Inc.",
+    "filed": "2018-02-15",
+    "stratum": "stratified",
+    "url": "https://www.sec.gov/Archives/edgar/data/1388320/000121390018001918/0001213900-18-001918.txt"
+  },
+  "0001213900-18-017050": {
+    "cik": "0001529113",
+    "company": "INPIXON",
+    "filed": "2018-12-07",
+    "stratum": "stratified",
+    "url": "https://www.sec.gov/Archives/edgar/data/1529113/000121390018017050/0001213900-18-017050.txt"
+  },
+  "0001213900-19-019122": {
+    "cik": "0001553643",
+    "company": "RELMADA THERAPEUTICS, INC.",
+    "filed": "2019-09-27",
+    "stratum": "stratified",
+    "url": "https://www.sec.gov/Archives/edgar/data/1553643/000121390019019122/0001213900-19-019122.txt"
+  },
+  "0001213900-21-045623": {
+    "cik": "0001505611",
+    "company": "DecisionPoint Systems, Inc.",
+    "filed": "2021-08-30",
+    "stratum": "stratified",
+    "url": "https://www.sec.gov/Archives/edgar/data/1505611/000121390021045623/0001213900-21-045623.txt"
+  },
+  "0001213900-24-108876": {
+    "cik": "0001769624",
+    "company": "Triller Group Inc.",
+    "filed": "2024-12-13",
+    "stratum": "stratified",
+    "url": "https://www.sec.gov/Archives/edgar/data/1769624/000121390024108876/0001213900-24-108876.txt"
+  },
+  "0001213900-25-031274": {
+    "cik": "0001912461",
+    "company": "SK Growth Opportunities Corp",
+    "filed": "2025-04-14",
+    "stratum": "random",
+    "url": "https://www.sec.gov/Archives/edgar/data/1912461/000121390025031274/0001213900-25-031274.txt"
+  },
+  "0001213900-25-031589": {
+    "cik": "0001866001",
+    "company": "JVSPAC Acquisition Corp.",
+    "filed": "2025-04-14",
+    "stratum": "random",
+    "url": "https://www.sec.gov/Archives/edgar/data/1866001/000121390025031589/0001213900-25-031589.txt"
+  },
+  "0001213900-25-031601": {
+    "cik": "0002019505",
+    "company": "Health In Tech, Inc.",
+    "filed": "2025-04-14",
+    "stratum": "random",
+    "url": "https://www.sec.gov/Archives/edgar/data/2019505/000121390025031601/0001213900-25-031601.txt"
+  },
+  "0001213900-25-031632": {
+    "cik": "0002019505",
+    "company": "Health In Tech, Inc.",
+    "filed": "2025-04-14",
+    "stratum": "random",
+    "url": "https://www.sec.gov/Archives/edgar/data/2019505/000121390025031632/0001213900-25-031632.txt"
+  },
+  "0001213900-25-031743": {
+    "cik": "0001009891",
+    "company": "AIR INDUSTRIES GROUP",
+    "filed": "2025-04-15",
+    "stratum": "random",
+    "url": "https://www.sec.gov/Archives/edgar/data/1009891/000121390025031743/0001213900-25-031743.txt"
+  },
+  "0001213900-25-032135": {
+    "cik": "0001173313",
+    "company": "ABVC BIOPHARMA, INC.",
+    "filed": "2025-04-15",
+    "stratum": "random",
+    "url": "https://www.sec.gov/Archives/edgar/data/1173313/000121390025032135/0001213900-25-032135.txt"
+  },
+  "0001213900-25-032344": {
+    "cik": "0001892025",
+    "company": "Optimus Healthcare Services, Inc.",
+    "filed": "2025-04-16",
+    "stratum": "random",
+    "url": "https://www.sec.gov/Archives/edgar/data/1892025/000121390025032344/0001213900-25-032344.txt"
+  },
+  "0001213900-25-032349": {
+    "cik": "0001865631",
+    "company": "NEXTNAV INC.",
+    "filed": "2025-04-16",
+    "stratum": "random",
+    "url": "https://www.sec.gov/Archives/edgar/data/1865631/000121390025032349/0001213900-25-032349.txt"
+  },
+  "0001213900-25-032567": {
+    "cik": "0000016160",
+    "company": "CAL-MAINE FOODS INC",
+    "filed": "2025-04-16",
+    "stratum": "random",
+    "url": "https://www.sec.gov/Archives/edgar/data/16160/000121390025032567/0001213900-25-032567.txt"
+  },
+  "0001213900-25-032574": {
+    "cik": "0001023994",
+    "company": "SAFE & GREEN HOLDINGS CORP.",
+    "filed": "2025-04-16",
+    "stratum": "random",
+    "url": "https://www.sec.gov/Archives/edgar/data/1023994/000121390025032574/0001213900-25-032574.txt"
+  },
+  "0001213900-25-032629": {
+    "cik": "0002025401",
+    "company": "Fifth Era Acquisition Corp I",
+    "filed": "2025-04-16",
+    "stratum": "random",
+    "url": "https://www.sec.gov/Archives/edgar/data/2025401/000121390025032629/0001213900-25-032629.txt"
+  },
+  "0001213900-25-032655": {
+    "cik": "0001840563",
+    "company": "PMGC Holdings Inc.",
+    "filed": "2025-04-17",
+    "stratum": "random",
+    "url": "https://www.sec.gov/Archives/edgar/data/1840563/000121390025032655/0001213900-25-032655.txt"
+  },
+  "0001213900-25-032738": {
+    "cik": "0001898474",
+    "company": "Signing Day Sports, Inc.",
+    "filed": "2025-04-17",
+    "stratum": "random",
+    "url": "https://www.sec.gov/Archives/edgar/data/1898474/000121390025032738/0001213900-25-032738.txt"
+  },
+  "0001213900-25-032758": {
+    "cik": "0001805521",
+    "company": "FARADAY FUTURE INTELLIGENT ELECTRIC INC.",
+    "filed": "2025-04-17",
+    "stratum": "random",
+    "url": "https://www.sec.gov/Archives/edgar/data/1805521/000121390025032758/0001213900-25-032758.txt"
+  },
+  "0001213900-25-032947": {
+    "cik": "0001341235",
+    "company": "Aldeyra Therapeutics, Inc.",
+    "filed": "2025-04-17",
+    "stratum": "random",
+    "url": "https://www.sec.gov/Archives/edgar/data/1341235/000121390025032947/0001213900-25-032947.txt"
+  },
+  "0001213900-25-032990": {
+    "cik": "0001425287",
+    "company": "Workhorse Group Inc.",
+    "filed": "2025-04-17",
+    "stratum": "random",
+    "url": "https://www.sec.gov/Archives/edgar/data/1425287/000121390025032990/0001213900-25-032990.txt"
+  },
+  "0001213900-25-033295": {
+    "cik": "0001782107",
+    "company": "Onconetix, Inc.",
+    "filed": "2025-04-18",
+    "stratum": "random",
+    "url": "https://www.sec.gov/Archives/edgar/data/1782107/000121390025033295/0001213900-25-033295.txt"
+  },
+  "0001213900-25-033370": {
+    "cik": "0001735041",
+    "company": "Greenland Technologies Holding Corp.",
+    "filed": "2025-04-18",
+    "stratum": "random",
+    "url": "https://www.sec.gov/Archives/edgar/data/1735041/000121390025033370/0001213900-25-033370.txt"
+  },
+  "0001213900-25-033425": {
+    "cik": "0001805521",
+    "company": "FARADAY FUTURE INTELLIGENT ELECTRIC INC.",
+    "filed": "2025-04-18",
+    "stratum": "random",
+    "url": "https://www.sec.gov/Archives/edgar/data/1805521/000121390025033425/0001213900-25-033425.txt"
+  },
+  "0001232582-25-000077": {
+    "cik": "0001232582",
+    "company": "ASHFORD HOSPITALITY TRUST INC",
+    "filed": "2025-04-15",
+    "stratum": "random",
+    "url": "https://www.sec.gov/Archives/edgar/data/1232582/000123258225000077/0001232582-25-000077.txt"
+  },
+  "0001262823-25-000020": {
+    "cik": "0001262823",
+    "company": "WESTLAKE CORP",
+    "filed": "2025-04-16",
+    "stratum": "random",
+    "url": "https://www.sec.gov/Archives/edgar/data/1262823/000126282325000020/0001262823-25-000020.txt"
+  },
+  "0001281761-25-000028": {
+    "cik": "0001281761",
+    "company": "REGIONS FINANCIAL CORP",
+    "filed": "2025-04-17",
+    "stratum": "random",
+    "url": "https://www.sec.gov/Archives/edgar/data/1281761/000128176125000028/0001281761-25-000028.txt"
+  },
+  "0001299933-05-002352": {
+    "cik": "0001100395",
+    "company": "AMERICA ONLINE LATIN AMERICA INC",
+    "filed": "2005-05-12",
+    "stratum": "stratified",
+    "url": "https://www.sec.gov/Archives/edgar/data/1100395/000129993305002352/0001299933-05-002352.txt"
+  },
+  "0001299933-12-002025": {
+    "cik": "0001443646",
+    "company": "Booz Allen Hamilton Holding Corp",
+    "filed": "2012-08-29",
+    "stratum": "stratified",
+    "url": "https://www.sec.gov/Archives/edgar/data/1443646/000129993312002025/0001299933-12-002025.txt"
+  },
+  "0001299933-15-000272": {
+    "cik": "0001330399",
+    "company": "Federal Home Loan Bank of Pittsburgh",
+    "filed": "2015-02-19",
+    "stratum": "stratified",
+    "url": "https://www.sec.gov/Archives/edgar/data/1330399/000129993315000272/0001299933-15-000272.txt"
+  },
+  "0001331520-25-000099": {
+    "cik": "0001331520",
+    "company": "HOME BANCSHARES INC",
+    "filed": "2025-04-18",
+    "stratum": "random",
+    "url": "https://www.sec.gov/Archives/edgar/data/1331520/000133152025000099/0001331520-25-000099.txt"
+  },
+  "0001331754-25-000085": {
+    "cik": "0001331754",
+    "company": "Federal Home Loan Bank of Indianapolis",
+    "filed": "2025-04-17",
+    "stratum": "random",
+    "url": "https://www.sec.gov/Archives/edgar/data/1331754/000133175425000085/0001331754-25-000085.txt"
+  },
+  "0001355096-15-000009": {
+    "cik": "0001355096",
+    "company": "Liberty Interactive Corp",
+    "filed": "2015-01-30",
+    "stratum": "stratified",
+    "url": "https://www.sec.gov/Archives/edgar/data/1355096/000135509615000009/0001355096-15-000009.txt"
+  },
+  "0001381197-25-000043": {
+    "cik": "0001381197",
+    "company": "Interactive Brokers Group, Inc.",
+    "filed": "2025-04-15",
+    "stratum": "random",
+    "url": "https://www.sec.gov/Archives/edgar/data/1381197/000138119725000043/0001381197-25-000043.txt"
+  },
+  "0001381197-25-000078": {
+    "cik": "0001381197",
+    "company": "Interactive Brokers Group, Inc.",
+    "filed": "2025-07-17",
+    "stratum": "stratified",
+    "url": "https://www.sec.gov/Archives/edgar/data/1381197/000138119725000078/0001381197-25-000078.txt"
+  },
+  "0001381197-25-000143": {
+    "cik": "0001381197",
+    "company": "Interactive Brokers Group, Inc.",
+    "filed": "2025-10-16",
+    "stratum": "stratified",
+    "url": "https://www.sec.gov/Archives/edgar/data/1381197/000138119725000143/0001381197-25-000143.txt"
+  },
+  "0001381197-26-000078": {
+    "cik": "0001381197",
+    "company": "Interactive Brokers Group, Inc.",
+    "filed": "2026-04-21",
+    "stratum": "stratified",
+    "url": "https://www.sec.gov/Archives/edgar/data/1381197/000138119726000078/0001381197-26-000078.txt"
+  },
+  "0001408100-25-000102": {
+    "cik": "0001408100",
+    "company": "Kennedy-Wilson Holdings, Inc.",
+    "filed": "2025-04-14",
+    "stratum": "random",
+    "url": "https://www.sec.gov/Archives/edgar/data/1408100/000140810025000102/0001408100-25-000102.txt"
+  },
+  "0001423689-25-000041": {
+    "cik": "0001423689",
+    "company": "AGNC Investment Corp.",
+    "filed": "2025-04-18",
+    "stratum": "random",
+    "url": "https://www.sec.gov/Archives/edgar/data/1423689/000142368925000041/0001423689-25-000041.txt"
+  },
+  "0001433195-25-000041": {
+    "cik": "0001433195",
+    "company": "APPFOLIO INC",
+    "filed": "2025-04-17",
+    "stratum": "random",
+    "url": "https://www.sec.gov/Archives/edgar/data/1433195/000143319525000041/0001433195-25-000041.txt"
+  },
+  "0001434728-25-000136": {
+    "cik": "0001434728",
+    "company": "Global Water Resources, Inc.",
+    "filed": "2025-04-16",
+    "stratum": "random",
+    "url": "https://www.sec.gov/Archives/edgar/data/1434728/000143472825000136/0001434728-25-000136.txt"
+  },
+  "0001437749-21-016938": {
+    "cik": "0000798287",
+    "company": "PAM TRANSPORTATION SERVICES INC",
+    "filed": "2021-07-15",
+    "stratum": "stratified",
+    "url": "https://www.sec.gov/Archives/edgar/data/798287/000143774921016938/0001437749-21-016938.txt"
+  },
+  "0001437749-22-005633": {
+    "cik": "0000798287",
+    "company": "PAM TRANSPORTATION SERVICES INC",
+    "filed": "2022-03-09",
+    "stratum": "stratified",
+    "url": "https://www.sec.gov/Archives/edgar/data/798287/000143774922005633/0001437749-22-005633.txt"
+  },
+  "0001437749-25-011905": {
+    "cik": "0001058307",
+    "company": "NextPlat Corp",
+    "filed": "2025-04-14",
+    "stratum": "random",
+    "url": "https://www.sec.gov/Archives/edgar/data/1058307/000143774925011905/0001437749-25-011905.txt"
+  },
+  "0001437749-25-011923": {
+    "cik": "0001996210",
+    "company": "BLUM HOLDINGS, INC.",
+    "filed": "2025-04-14",
+    "stratum": "random",
+    "url": "https://www.sec.gov/Archives/edgar/data/1996210/000143774925011923/0001437749-25-011923.txt"
+  },
+  "0001437749-25-011986": {
+    "cik": "0000946486",
+    "company": "WINDTREE THERAPEUTICS INC /DE/",
+    "filed": "2025-04-15",
+    "stratum": "random",
+    "url": "https://www.sec.gov/Archives/edgar/data/946486/000143774925011986/0001437749-25-011986.txt"
+  },
+  "0001437749-25-012120": {
+    "cik": "0000799167",
+    "company": "MARTEN TRANSPORT LTD",
+    "filed": "2025-04-16",
+    "stratum": "random",
+    "url": "https://www.sec.gov/Archives/edgar/data/799167/000143774925012120/0001437749-25-012120.txt"
+  },
+  "0001437749-25-012121": {
+    "cik": "0001168455",
+    "company": "PLUMAS BANCORP",
+    "filed": "2025-04-16",
+    "stratum": "random",
+    "url": "https://www.sec.gov/Archives/edgar/data/1168455/000143774925012121/0001437749-25-012121.txt"
+  },
+  "0001437749-25-012123": {
+    "cik": "0000039368",
+    "company": "FULLER H B CO",
+    "filed": "2025-04-16",
+    "stratum": "random",
+    "url": "https://www.sec.gov/Archives/edgar/data/39368/000143774925012123/0001437749-25-012123.txt"
+  },
+  "0001437749-25-012293": {
+    "cik": "0001569994",
+    "company": "Waterstone Financial, Inc.",
+    "filed": "2025-04-17",
+    "stratum": "random",
+    "url": "https://www.sec.gov/Archives/edgar/data/1569994/000143774925012293/0001437749-25-012293.txt"
+  },
+  "0001437749-25-012352": {
+    "cik": "0001499422",
+    "company": "RBB Bancorp",
+    "filed": "2025-04-18",
+    "stratum": "random",
+    "url": "https://www.sec.gov/Archives/edgar/data/1499422/000143774925012352/0001437749-25-012352.txt"
+  },
+  "0001437749-25-012355": {
+    "cik": "0000917470",
+    "company": "OLYMPIC STEEL INC",
+    "filed": "2025-04-18",
+    "stratum": "random",
+    "url": "https://www.sec.gov/Archives/edgar/data/917470/000143774925012355/0001437749-25-012355.txt"
+  },
+  "0001437749-25-012397": {
+    "cik": "0001602658",
+    "company": "Investar Holding Corp",
+    "filed": "2025-04-21",
+    "stratum": "random",
+    "url": "https://www.sec.gov/Archives/edgar/data/1602658/000143774925012397/0001437749-25-012397.txt"
+  },
+  "0001437749-26-016538": {
+    "cik": "0001742927",
+    "company": "REVIVA PHARMACEUTICALS HOLDINGS, INC.",
+    "filed": "2026-05-13",
+    "stratum": "stratified",
+    "url": "https://www.sec.gov/Archives/edgar/data/1742927/000143774926016538/0001437749-26-016538.txt"
+  },
+  "0001441683-25-000028": {
+    "cik": "0001441683",
+    "company": "APPIAN CORP",
+    "filed": "2025-04-21",
+    "stratum": "random",
+    "url": "https://www.sec.gov/Archives/edgar/data/1441683/000144168325000028/0001441683-25-000028.txt"
+  },
+  "0001465740-17-000093": {
+    "cik": "0001465740",
+    "company": "TWO HARBORS INVESTMENT CORP.",
+    "filed": "2017-09-14",
+    "stratum": "stratified",
+    "url": "https://www.sec.gov/Archives/edgar/data/1465740/000146574017000093/0001465740-17-000093.txt"
+  },
+  "0001466593-25-000075": {
+    "cik": "0001466593",
+    "company": "Otter Tail Corp",
+    "filed": "2025-04-17",
+    "stratum": "random",
+    "url": "https://www.sec.gov/Archives/edgar/data/1466593/000146659325000075/0001466593-25-000075.txt"
+  },
+  "0001468327-25-000052": {
+    "cik": "0001468327",
+    "company": "Rent the Runway, Inc.",
+    "filed": "2025-04-15",
+    "stratum": "random",
+    "url": "https://www.sec.gov/Archives/edgar/data/1468327/000146832725000052/0001468327-25-000052.txt"
+  },
+  "0001477932-11-001792": {
+    "cik": "0001403085",
+    "company": "Computer Vision Systems Laboratories Corp.",
+    "filed": "2011-08-31",
+    "stratum": "stratified",
+    "url": "https://www.sec.gov/Archives/edgar/data/1403085/000147793211001792/0001477932-11-001792.txt"
+  },
+  "0001477932-25-002734": {
+    "cik": "0001231339",
+    "company": "Astra Energy, Inc.",
+    "filed": "2025-04-15",
+    "stratum": "random",
+    "url": "https://www.sec.gov/Archives/edgar/data/1231339/000147793225002734/0001477932-25-002734.txt"
+  },
+  "0001477932-25-002874": {
+    "cik": "0000846377",
+    "company": "Totaligent, Inc.",
+    "filed": "2025-04-21",
+    "stratum": "random",
+    "url": "https://www.sec.gov/Archives/edgar/data/846377/000147793225002874/0001477932-25-002874.txt"
+  },
+  "0001477932-25-002875": {
+    "cik": "0001906133",
+    "company": "iCoreConnect Inc.",
+    "filed": "2025-04-21",
+    "stratum": "random",
+    "url": "https://www.sec.gov/Archives/edgar/data/1906133/000147793225002875/0001477932-25-002875.txt"
+  },
+  "0001490281-23-000131": {
+    "cik": "0001490281",
+    "company": "Groupon, Inc.",
+    "filed": "2023-11-21",
+    "stratum": "stratified",
+    "url": "https://www.sec.gov/Archives/edgar/data/1490281/000149028123000131/0001490281-23-000131.txt"
+  },
+  "0001493152-20-016982": {
+    "cik": "0001605481",
+    "company": "Nevada Canyon Gold Corp.",
+    "filed": "2020-08-31",
+    "stratum": "stratified",
+    "url": "https://www.sec.gov/Archives/edgar/data/1605481/000149315220016982/0001493152-20-016982.txt"
+  },
+  "0001493152-20-023658": {
+    "cik": "0001778805",
+    "company": "Taronis Fuels, Inc.",
+    "filed": "2020-12-15",
+    "stratum": "stratified",
+    "url": "https://www.sec.gov/Archives/edgar/data/1778805/000149315220023658/0001493152-20-023658.txt"
+  },
+  "0001493152-21-006933": {
+    "cik": "0001416697",
+    "company": "Blue Line Protection Group, Inc.",
+    "filed": "2021-03-26",
+    "stratum": "stratified",
+    "url": "https://www.sec.gov/Archives/edgar/data/1416697/000149315221006933/0001493152-21-006933.txt"
+  },
+  "0001493152-26-024117": {
+    "cik": "0001650101",
+    "company": "ADDENTAX GROUP CORP.",
+    "filed": "2026-05-18",
+    "stratum": "stratified",
+    "url": "https://www.sec.gov/Archives/edgar/data/1650101/000149315226024117/0001493152-26-024117.txt"
+  },
+  "0001515971-25-000043": {
+    "cik": "0000845819",
+    "company": "KonaTel, Inc.",
+    "filed": "2025-04-16",
+    "stratum": "random",
+    "url": "https://www.sec.gov/Archives/edgar/data/845819/000151597125000043/0001515971-25-000043.txt"
+  },
+  "0001527469-25-000026": {
+    "cik": "0001527469",
+    "company": "Athene Holding Ltd.",
+    "filed": "2025-04-18",
+    "stratum": "random",
+    "url": "https://www.sec.gov/Archives/edgar/data/1527469/000152746925000026/0001527469-25-000026.txt"
+  },
+  "0001558370-25-004768": {
+    "cik": "0001621227",
+    "company": "Adaptimmune Therapeutics PLC",
+    "filed": "2025-04-14",
+    "stratum": "random",
+    "url": "https://www.sec.gov/Archives/edgar/data/1621227/000155837025004768/0001558370-25-004768.txt"
+  },
+  "0001558370-25-004771": {
+    "cik": "0001325670",
+    "company": "Primis Financial Corp.",
+    "filed": "2025-04-14",
+    "stratum": "random",
+    "url": "https://www.sec.gov/Archives/edgar/data/1325670/000155837025004771/0001558370-25-004771.txt"
+  },
+  "0001558370-25-004833": {
+    "cik": "0001638287",
+    "company": "MetaVia Inc.",
+    "filed": "2025-04-15",
+    "stratum": "random",
+    "url": "https://www.sec.gov/Archives/edgar/data/1638287/000155837025004833/0001558370-25-004833.txt"
+  },
+  "0001562762-25-000086": {
+    "cik": "0001275101",
+    "company": "BANK OF THE JAMES FINANCIAL GROUP INC",
+    "filed": "2025-04-18",
+    "stratum": "random",
+    "url": "https://www.sec.gov/Archives/edgar/data/1275101/000156276225000086/0001562762-25-000086.txt"
+  },
+  "0001564590-20-046454": {
+    "cik": "0001274032",
+    "company": "Simply, Inc.",
+    "filed": "2020-10-15",
+    "stratum": "stratified",
+    "url": "https://www.sec.gov/Archives/edgar/data/1274032/000156459020046454/0001564590-20-046454.txt"
+  },
+  "0001564590-20-047280": {
+    "cik": "0001209028",
+    "company": "Arlington Asset Investment Corp.",
+    "filed": "2020-10-22",
+    "stratum": "stratified",
+    "url": "https://www.sec.gov/Archives/edgar/data/1209028/000156459020047280/0001564590-20-047280.txt"
+  },
+  "0001564590-20-056301": {
+    "cik": "0001596967",
+    "company": "Moelis & Co",
+    "filed": "2020-12-07",
+    "stratum": "stratified",
+    "url": "https://www.sec.gov/Archives/edgar/data/1596967/000156459020056301/0001564590-20-056301.txt"
+  },
+  "0001564590-21-002645": {
+    "cik": "0001318605",
+    "company": "Tesla, Inc.",
+    "filed": "2021-01-27",
+    "stratum": "stratified",
+    "url": "https://www.sec.gov/Archives/edgar/data/1318605/000156459021002645/0001564590-21-002645.txt"
+  },
+  "0001564590-23-000799": {
+    "cik": "0001318605",
+    "company": "Tesla, Inc.",
+    "filed": "2023-01-25",
+    "stratum": "stratified",
+    "url": "https://www.sec.gov/Archives/edgar/data/1318605/000156459023000799/0001564590-23-000799.txt"
+  },
+  "0001564708-25-000214": {
+    "cik": "0001564708",
+    "company": "NEWS CORP",
+    "filed": "2025-04-14",
+    "stratum": "random",
+    "url": "https://www.sec.gov/Archives/edgar/data/1564708/000156470825000214/0001564708-25-000214.txt"
+  },
+  "0001564708-25-000216": {
+    "cik": "0001564708",
+    "company": "NEWS CORP",
+    "filed": "2025-04-15",
+    "stratum": "random",
+    "url": "https://www.sec.gov/Archives/edgar/data/1564708/000156470825000216/0001564708-25-000216.txt"
+  },
+  "0001571049-14-002672": {
+    "cik": "0001015739",
+    "company": "AWARE INC /MA/",
+    "filed": "2014-06-26",
+    "stratum": "stratified",
+    "url": "https://www.sec.gov/Archives/edgar/data/1015739/000157104914002672/0001571049-14-002672.txt"
+  },
+  "0001571283-25-000020": {
+    "cik": "0001571283",
+    "company": "Rexford Industrial Realty, Inc.",
+    "filed": "2025-04-16",
+    "stratum": "random",
+    "url": "https://www.sec.gov/Archives/edgar/data/1571283/000157128325000020/0001571283-25-000020.txt"
+  },
+  "0001580808-25-000065": {
+    "cik": "0001580808",
+    "company": "A10 Networks, Inc.",
+    "filed": "2025-04-18",
+    "stratum": "random",
+    "url": "https://www.sec.gov/Archives/edgar/data/1580808/000158080825000065/0001580808-25-000065.txt"
+  },
+  "0001590895-20-000036": {
+    "cik": "0001590895",
+    "company": "Caesars Entertainment, Inc.",
+    "filed": "2020-11-05",
+    "stratum": "stratified",
+    "url": "https://www.sec.gov/Archives/edgar/data/1590895/000159089520000036/0001590895-20-000036.txt"
+  },
+  "0001596532-25-000018": {
+    "cik": "0001596532",
+    "company": "Arista Networks, Inc.",
+    "filed": "2025-02-18",
+    "stratum": "stratified",
+    "url": "https://www.sec.gov/Archives/edgar/data/1596532/000159653225000018/0001596532-25-000018.txt"
+  },
+  "0001606498-25-000064": {
+    "cik": "0001606498",
+    "company": "AVANOS MEDICAL, INC.",
+    "filed": "2025-04-18",
+    "stratum": "random",
+    "url": "https://www.sec.gov/Archives/edgar/data/1606498/000160649825000064/0001606498-25-000064.txt"
+  },
+  "0001615774-17-005494": {
+    "cik": "0000711665",
+    "company": "PHOTOMEDEX INC",
+    "filed": "2017-10-02",
+    "stratum": "stratified",
+    "url": "https://www.sec.gov/Archives/edgar/data/711665/000161577417005494/0001615774-17-005494.txt"
+  },
+  "0001628280-22-013097": {
+    "cik": "0001805521",
+    "company": "FARADAY FUTURE INTELLIGENT ELECTRIC INC.",
+    "filed": "2022-05-06",
+    "stratum": "stratified",
+    "url": "https://www.sec.gov/Archives/edgar/data/1805521/000162828022013097/0001628280-22-013097.txt"
+  },
+  "0001628280-23-041088": {
+    "cik": "0001021096",
+    "company": "Troika Media Group, Inc.",
+    "filed": "2023-12-07",
+    "stratum": "stratified",
+    "url": "https://www.sec.gov/Archives/edgar/data/1021096/000162828023041088/0001628280-23-041088.txt"
+  },
+  "0001628280-23-041723": {
+    "cik": "0000819050",
+    "company": "Fresh Tracks Therapeutics, Inc.",
+    "filed": "2023-12-18",
+    "stratum": "stratified",
+    "url": "https://www.sec.gov/Archives/edgar/data/819050/000162828023041723/0001628280-23-041723.txt"
+  },
+  "0001628280-25-017679": {
+    "cik": "0001136174",
+    "company": "Ontrak, Inc.",
+    "filed": "2025-04-14",
+    "stratum": "random",
+    "url": "https://www.sec.gov/Archives/edgar/data/1136174/000162828025017679/0001628280-25-017679.txt"
+  },
+  "0001628280-25-017683": {
+    "cik": "0001144879",
+    "company": "Applied Digital Corp.",
+    "filed": "2025-04-14",
+    "stratum": "random",
+    "url": "https://www.sec.gov/Archives/edgar/data/1144879/000162828025017683/0001628280-25-017683.txt"
+  },
+  "0001628280-25-017688": {
+    "cik": "0001827821",
+    "company": "Forge Global Holdings, Inc.",
+    "filed": "2025-04-14",
+    "stratum": "random",
+    "url": "https://www.sec.gov/Archives/edgar/data/1827821/000162828025017688/0001628280-25-017688.txt"
+  },
+  "0001628280-25-017703": {
+    "cik": "0002001557",
+    "company": "Innventure, Inc.",
+    "filed": "2025-04-14",
+    "stratum": "random",
+    "url": "https://www.sec.gov/Archives/edgar/data/2001557/000162828025017703/0001628280-25-017703.txt"
+  },
+  "0001628280-25-017795": {
+    "cik": "0000713676",
+    "company": "PNC FINANCIAL SERVICES GROUP, INC.",
+    "filed": "2025-04-15",
+    "stratum": "random",
+    "url": "https://www.sec.gov/Archives/edgar/data/713676/000162828025017795/0001628280-25-017795.txt"
+  },
+  "0001628280-25-017848": {
+    "cik": "0001776909",
+    "company": "CuriosityStream Inc.",
+    "filed": "2025-04-15",
+    "stratum": "random",
+    "url": "https://www.sec.gov/Archives/edgar/data/1776909/000162828025017848/0001628280-25-017848.txt"
+  },
+  "0001628280-25-017864": {
+    "cik": "0001844971",
+    "company": "Greenidge Generation Holdings Inc.",
+    "filed": "2025-04-15",
+    "stratum": "random",
+    "url": "https://www.sec.gov/Archives/edgar/data/1844971/000162828025017864/0001628280-25-017864.txt"
+  },
+  "0001628280-25-017924": {
+    "cik": "0000001800",
+    "company": "ABBOTT LABORATORIES",
+    "filed": "2025-04-16",
+    "stratum": "random",
+    "url": "https://www.sec.gov/Archives/edgar/data/1800/000162828025017924/0001628280-25-017924.txt"
+  },
+  "0001628280-25-017988": {
+    "cik": "0001539638",
+    "company": "Triumph Financial, Inc.",
+    "filed": "2025-04-16",
+    "stratum": "random",
+    "url": "https://www.sec.gov/Archives/edgar/data/1539638/000162828025017988/0001628280-25-017988.txt"
+  },
+  "0001628280-25-018083": {
+    "cik": "0001832511",
+    "company": "P3 Health Partners Inc.",
+    "filed": "2025-04-17",
+    "stratum": "random",
+    "url": "https://www.sec.gov/Archives/edgar/data/1832511/000162828025018083/0001628280-25-018083.txt"
+  },
+  "0001628280-25-018145": {
+    "cik": "0001035092",
+    "company": "SHORE BANCSHARES INC",
+    "filed": "2025-04-17",
+    "stratum": "random",
+    "url": "https://www.sec.gov/Archives/edgar/data/1035092/000162828025018145/0001628280-25-018145.txt"
+  },
+  "0001628280-25-018292": {
+    "cik": "0001023459",
+    "company": "Simulations Plus, Inc.",
+    "filed": "2025-04-18",
+    "stratum": "random",
+    "url": "https://www.sec.gov/Archives/edgar/data/1023459/000162828025018292/0001628280-25-018292.txt"
+  },
+  "0001628280-25-018294": {
+    "cik": "0001689731",
+    "company": "Southern States Bancshares, Inc.",
+    "filed": "2025-04-18",
+    "stratum": "random",
+    "url": "https://www.sec.gov/Archives/edgar/data/1689731/000162828025018294/0001628280-25-018294.txt"
+  },
+  "0001628280-25-018380": {
+    "cik": "0001841761",
+    "company": "Grove Collaborative Holdings, Inc.",
+    "filed": "2025-04-18",
+    "stratum": "random",
+    "url": "https://www.sec.gov/Archives/edgar/data/1841761/000162828025018380/0001628280-25-018380.txt"
+  },
+  "0001641172-25-003913": {
+    "cik": "0001815974",
+    "company": "Anebulo Pharmaceuticals, Inc.",
+    "filed": "2025-04-14",
+    "stratum": "random",
+    "url": "https://www.sec.gov/Archives/edgar/data/1815974/000164117225003913/0001641172-25-003913.txt"
+  },
+  "0001641172-25-003942": {
+    "cik": "0001597846",
+    "company": "Greenpro Capital Corp.",
+    "filed": "2025-04-14",
+    "stratum": "random",
+    "url": "https://www.sec.gov/Archives/edgar/data/1597846/000164117225003942/0001641172-25-003942.txt"
+  },
+  "0001641172-25-003963": {
+    "cik": "0001498148",
+    "company": "Artificial Intelligence Technology Solutions Inc.",
+    "filed": "2025-04-14",
+    "stratum": "random",
+    "url": "https://www.sec.gov/Archives/edgar/data/1498148/000164117225003963/0001641172-25-003963.txt"
+  },
+  "0001641172-25-003966": {
+    "cik": "0000788611",
+    "company": "NextTrip, Inc.",
+    "filed": "2025-04-14",
+    "stratum": "random",
+    "url": "https://www.sec.gov/Archives/edgar/data/788611/000164117225003966/0001641172-25-003966.txt"
+  },
+  "0001641172-25-003973": {
+    "cik": "0002017950",
+    "company": "DT Cloud Star Acquisition Corp",
+    "filed": "2025-04-14",
+    "stratum": "random",
+    "url": "https://www.sec.gov/Archives/edgar/data/2017950/000164117225003973/0001641172-25-003973.txt"
+  },
+  "0001641172-25-003974": {
+    "cik": "0001342958",
+    "company": "DIGITAL ALLY, INC.",
+    "filed": "2025-04-14",
+    "stratum": "random",
+    "url": "https://www.sec.gov/Archives/edgar/data/1342958/000164117225003974/0001641172-25-003974.txt"
+  },
+  "0001641172-25-004320": {
+    "cik": "0000890821",
+    "company": "Enveric Biosciences, Inc.",
+    "filed": "2025-04-14",
+    "stratum": "random",
+    "url": "https://www.sec.gov/Archives/edgar/data/890821/000164117225004320/0001641172-25-004320.txt"
+  },
+  "0001641172-25-004647": {
+    "cik": "0001687542",
+    "company": "Freight Technologies, Inc.",
+    "filed": "2025-04-15",
+    "stratum": "random",
+    "url": "https://www.sec.gov/Archives/edgar/data/1687542/000164117225004647/0001641172-25-004647.txt"
+  },
+  "0001641172-25-004829": {
+    "cik": "0001532619",
+    "company": "Power REIT",
+    "filed": "2025-04-15",
+    "stratum": "random",
+    "url": "https://www.sec.gov/Archives/edgar/data/1532619/000164117225004829/0001641172-25-004829.txt"
+  },
+  "0001641172-25-004837": {
+    "cik": "0001449792",
+    "company": "PIONEER POWER SOLUTIONS, INC.",
+    "filed": "2025-04-15",
+    "stratum": "random",
+    "url": "https://www.sec.gov/Archives/edgar/data/1449792/000164117225004837/0001641172-25-004837.txt"
+  },
+  "0001641172-25-004902": {
+    "cik": "0001826011",
+    "company": "Banzai International, Inc.",
+    "filed": "2025-04-15",
+    "stratum": "random",
+    "url": "https://www.sec.gov/Archives/edgar/data/1826011/000164117225004902/0001641172-25-004902.txt"
+  },
+  "0001641172-25-004964": {
+    "cik": "0001265521",
+    "company": "Polomar Health Services, Inc.",
+    "filed": "2025-04-16",
+    "stratum": "random",
+    "url": "https://www.sec.gov/Archives/edgar/data/1265521/000164117225004964/0001641172-25-004964.txt"
+  },
+  "0001641172-25-004995": {
+    "cik": "0000315545",
+    "company": "PROVECTUS BIOPHARMACEUTICALS, INC.",
+    "filed": "2025-04-16",
+    "stratum": "random",
+    "url": "https://www.sec.gov/Archives/edgar/data/315545/000164117225004995/0001641172-25-004995.txt"
+  },
+  "0001641172-25-005078": {
+    "cik": "0001453593",
+    "company": "Xtant Medical Holdings, Inc.",
+    "filed": "2025-04-16",
+    "stratum": "random",
+    "url": "https://www.sec.gov/Archives/edgar/data/1453593/000164117225005078/0001641172-25-005078.txt"
+  },
+  "0001641172-25-005089": {
+    "cik": "0000008504",
+    "company": "AgEagle Aerial Systems Inc.",
+    "filed": "2025-04-16",
+    "stratum": "random",
+    "url": "https://www.sec.gov/Archives/edgar/data/8504/000164117225005089/0001641172-25-005089.txt"
+  },
+  "0001641172-25-005119": {
+    "cik": "0001812360",
+    "company": "FOXO TECHNOLOGIES INC.",
+    "filed": "2025-04-17",
+    "stratum": "random",
+    "url": "https://www.sec.gov/Archives/edgar/data/1812360/000164117225005119/0001641172-25-005119.txt"
+  },
+  "0001641172-25-005149": {
+    "cik": "0001471727",
+    "company": "Better Choice Co Inc.",
+    "filed": "2025-04-17",
+    "stratum": "random",
+    "url": "https://www.sec.gov/Archives/edgar/data/1471727/000164117225005149/0001641172-25-005149.txt"
+  },
+  "0001641172-25-005151": {
+    "cik": "0001471727",
+    "company": "Better Choice Co Inc.",
+    "filed": "2025-04-17",
+    "stratum": "random",
+    "url": "https://www.sec.gov/Archives/edgar/data/1471727/000164117225005151/0001641172-25-005151.txt"
+  },
+  "0001641172-25-005243": {
+    "cik": "0001347858",
+    "company": "22nd Century Group, Inc.",
+    "filed": "2025-04-17",
+    "stratum": "random",
+    "url": "https://www.sec.gov/Archives/edgar/data/1347858/000164117225005243/0001641172-25-005243.txt"
+  },
+  "0001641172-25-005262": {
+    "cik": "0001812360",
+    "company": "FOXO TECHNOLOGIES INC.",
+    "filed": "2025-04-17",
+    "stratum": "random",
+    "url": "https://www.sec.gov/Archives/edgar/data/1812360/000164117225005262/0001641172-25-005262.txt"
+  },
+  "0001641172-25-005352": {
+    "cik": "0001021917",
+    "company": "Awaysis Capital, Inc.",
+    "filed": "2025-04-18",
+    "stratum": "random",
+    "url": "https://www.sec.gov/Archives/edgar/data/1021917/000164117225005352/0001641172-25-005352.txt"
+  },
+  "0001641172-25-005405": {
+    "cik": "0000894871",
+    "company": "Arena Group Holdings, Inc.",
+    "filed": "2025-04-18",
+    "stratum": "random",
+    "url": "https://www.sec.gov/Archives/edgar/data/894871/000164117225005405/0001641172-25-005405.txt"
+  },
+  "0001641172-25-005428": {
+    "cik": "0001858685",
+    "company": "Biofrontera Inc.",
+    "filed": "2025-04-18",
+    "stratum": "random",
+    "url": "https://www.sec.gov/Archives/edgar/data/1858685/000164117225005428/0001641172-25-005428.txt"
+  },
+  "0001641172-25-005442": {
+    "cik": "0001854963",
+    "company": "SHF Holdings, Inc.",
+    "filed": "2025-04-18",
+    "stratum": "random",
+    "url": "https://www.sec.gov/Archives/edgar/data/1854963/000164117225005442/0001641172-25-005442.txt"
+  },
+  "0001641172-25-005465": {
+    "cik": "0001737995",
+    "company": "Sharps Technology Inc.",
+    "filed": "2025-04-18",
+    "stratum": "random",
+    "url": "https://www.sec.gov/Archives/edgar/data/1737995/000164117225005465/0001641172-25-005465.txt"
+  },
+  "0001641172-25-005466": {
+    "cik": "0001335105",
+    "company": "LIXTE BIOTECHNOLOGY HOLDINGS, INC.",
+    "filed": "2025-04-18",
+    "stratum": "random",
+    "url": "https://www.sec.gov/Archives/edgar/data/1335105/000164117225005466/0001641172-25-005466.txt"
+  },
+  "0001641172-25-005476": {
+    "cik": "0001130166",
+    "company": "Cyclacel Pharmaceuticals, Inc.",
+    "filed": "2025-04-21",
+    "stratum": "random",
+    "url": "https://www.sec.gov/Archives/edgar/data/1130166/000164117225005476/0001641172-25-005476.txt"
+  },
+  "0001650372-25-000013": {
+    "cik": "0001650372",
+    "company": "Atlassian Corp",
+    "filed": "2025-04-14",
+    "stratum": "random",
+    "url": "https://www.sec.gov/Archives/edgar/data/1650372/000165037225000013/0001650372-25-000013.txt"
+  },
+  "0001677703-25-000067": {
+    "cik": "0001677703",
+    "company": "CONDUENT Inc",
+    "filed": "2025-04-14",
+    "stratum": "random",
+    "url": "https://www.sec.gov/Archives/edgar/data/1677703/000167770325000067/0001677703-25-000067.txt"
+  },
+  "0001683168-25-002591": {
+    "cik": "0000790526",
+    "company": "RadNet, Inc.",
+    "filed": "2025-04-15",
+    "stratum": "random",
+    "url": "https://www.sec.gov/Archives/edgar/data/790526/000168316825002591/0001683168-25-002591.txt"
+  },
+  "0001683168-25-002595": {
+    "cik": "0001941536",
+    "company": "Bridger Aerospace Group Holdings, Inc.",
+    "filed": "2025-04-15",
+    "stratum": "random",
+    "url": "https://www.sec.gov/Archives/edgar/data/1941536/000168316825002595/0001683168-25-002595.txt"
+  },
+  "0001731122-25-000592": {
+    "cik": "0001527728",
+    "company": "RENOVARO INC.",
+    "filed": "2025-04-18",
+    "stratum": "random",
+    "url": "https://www.sec.gov/Archives/edgar/data/1527728/000173112225000592/0001731122-25-000592.txt"
+  },
+  "0001818382-25-000061": {
+    "cik": "0001818382",
+    "company": "Humacyte, Inc.",
+    "filed": "2025-04-18",
+    "stratum": "random",
+    "url": "https://www.sec.gov/Archives/edgar/data/1818382/000181838225000061/0001818382-25-000061.txt"
+  },
+  "0001827090-25-000021": {
+    "cik": "0001827090",
+    "company": "Certara, Inc.",
+    "filed": "2025-04-14",
+    "stratum": "random",
+    "url": "https://www.sec.gov/Archives/edgar/data/1827090/000182709025000021/0001827090-25-000021.txt"
+  },
+  "0001828105-25-000020": {
+    "cik": "0001828105",
+    "company": "Hippo Holdings Inc.",
+    "filed": "2025-04-18",
+    "stratum": "random",
+    "url": "https://www.sec.gov/Archives/edgar/data/1828105/000182810525000020/0001828105-25-000020.txt"
+  },
+  "0001831631-25-000041": {
+    "cik": "0001831631",
+    "company": "loanDepot, Inc.",
+    "filed": "2025-04-17",
+    "stratum": "random",
+    "url": "https://www.sec.gov/Archives/edgar/data/1831631/000183163125000041/0001831631-25-000041.txt"
+  },
+  "0001836875-25-000084": {
+    "cik": "0001836875",
+    "company": "Nuvve Holding Corp.",
+    "filed": "2025-04-16",
+    "stratum": "random",
+    "url": "https://www.sec.gov/Archives/edgar/data/1836875/000183687525000084/0001836875-25-000084.txt"
+  },
+  "0001840776-25-000118": {
+    "cik": "0001840776",
+    "company": "Hagerty, Inc.",
+    "filed": "2025-04-16",
+    "stratum": "random",
+    "url": "https://www.sec.gov/Archives/edgar/data/1840776/000184077625000118/0001840776-25-000118.txt"
+  },
+  "0001845437-25-000022": {
+    "cik": "0001845437",
+    "company": "NET Power Inc.",
+    "filed": "2025-04-15",
+    "stratum": "random",
+    "url": "https://www.sec.gov/Archives/edgar/data/1845437/000184543725000022/0001845437-25-000022.txt"
+  },
+  "0001877939-25-000042": {
+    "cik": "0001877939",
+    "company": "Castellum, Inc.",
+    "filed": "2025-04-15",
+    "stratum": "random",
+    "url": "https://www.sec.gov/Archives/edgar/data/1877939/000187793925000042/0001877939-25-000042.txt"
+  },
+  "0001888524-25-006758": {
+    "cik": "0001690577",
+    "company": "Morgan Stanley Bank of America Merrill Lynch Trust 2016-C32",
+    "filed": "2025-04-17",
+    "stratum": "random",
+    "url": "https://www.sec.gov/Archives/edgar/data/1690577/000188852425006758/0001888524-25-006758.txt"
+  },
+  "0001929980-25-000259": {
+    "cik": "0002022308",
+    "company": "Classover Holdings, Inc.",
+    "filed": "2025-04-14",
+    "stratum": "random",
+    "url": "https://www.sec.gov/Archives/edgar/data/2022308/000192998025000259/0001929980-25-000259.txt"
+  },
+  "0001929980-25-000284": {
+    "cik": "0002022308",
+    "company": "Classover Holdings, Inc.",
+    "filed": "2025-04-17",
+    "stratum": "random",
+    "url": "https://www.sec.gov/Archives/edgar/data/2022308/000192998025000284/0001929980-25-000284.txt"
+  },
+  "0002003881-25-000033": {
+    "cik": "0002003881",
+    "company": "Stirling Hotels & Resorts, Inc.",
+    "filed": "2025-04-15",
+    "stratum": "random",
+    "url": "https://www.sec.gov/Archives/edgar/data/2003881/000200388125000033/0002003881-25-000033.txt"
+  }
+}
