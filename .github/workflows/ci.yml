@@ -1,0 +1,62 @@
+name: CI
+
+on:
+  push:
+    branches: [master, main]
+  pull_request:
+  workflow_dispatch:
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+env:
+  # Fixed so a run is reproducible. Python randomises string hashing by default, and
+  # event ids in this codebase are content hashes.
+  PYTHONHASHSEED: "0"
+
+jobs:
+  lint:
+    name: lint and type-check
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: astral-sh/setup-uv@v5
+        with:
+          enable-cache: true
+      - run: uv sync --dev
+      - run: uv run ruff check src tests
+      - run: uv run ruff format --check src tests
+      - run: uv run mypy src/reviewradar
+
+  test:
+    name: tests (py${{ matrix.python }})
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        python: ["3.12", "3.13"]
+    steps:
+      - uses: actions/checkout@v4
+      - uses: astral-sh/setup-uv@v5
+        with:
+          enable-cache: true
+      - run: uv python install ${{ matrix.python }}
+      - run: uv sync --dev
+      # No network, no credentials. The model sits behind a Protocol with a
+      # deterministic offline implementation, so the full pipeline runs here.
+      # Network-marked tests are deselected by default.
+      - run: uv run pytest -q --cov=reviewradar --cov-report=term-missing
+
+  evals:
+    name: extraction scoreboard
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: astral-sh/setup-uv@v5
+        with:
+          enable-cache: true
+      - run: uv sync --dev
+      # The gate that stops the measured numbers drifting away from reality.
+      # Baseline F1 against the committed gold set may not regress.
+      - run: uv run reviewradar score --gate

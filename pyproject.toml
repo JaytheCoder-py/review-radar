@@ -1,0 +1,86 @@
+[project]
+name = "reviewradar"
+version = "0.1.0"
+description = "Corporate-action extraction and index-treatment classification over SEC 8-K filings"
+readme = "README.md"
+requires-python = ">=3.12"
+authors = [{ name = "Jason Chung", email = "jasonchung.ck@gmail.com" }]
+dependencies = [
+    "duckdb>=1.1.0",
+    "fastapi>=0.115.0",
+    "jinja2>=3.1.4",
+    "pandas>=2.2.0",
+    "requests>=2.32.0",
+    "typer>=0.15.0",
+    "uvicorn>=0.34.0",
+]
+
+[project.optional-dependencies]
+# The real model client. Deliberately optional: CI, the full test suite and the
+# offline pipeline all run without it, so a clone with no cloud account still
+# works end to end. See DECISIONS.md D-006.
+vertex = ["anthropic[vertex]>=0.40.0"]
+
+[project.scripts]
+reviewradar = "reviewradar.cli:app"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[dependency-groups]
+dev = [
+    "hypothesis>=6.120.0",
+    "httpx>=0.28.0",
+    "mypy>=1.14.0",
+    "pandas-stubs>=2.2.0",
+    "pytest>=8.3.0",
+    "pytest-cov>=6.0.0",
+    "ruff>=0.9.0",
+    "types-requests>=2.32.0",
+]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-q --strict-markers"
+markers = [
+    "network: hits the SEC. Deselected by default; run with -m network.",
+]
+filterwarnings = ["error::DeprecationWarning:reviewradar.*"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py312"
+src = ["src", "tests"]
+
+[tool.ruff.lint]
+# Deliberate, not the default. E/W pycodestyle, F pyflakes, I isort,
+# UP pyupgrade, B bugbear, SIM simplify, RUF ruff-specific.
+select = ["E", "W", "F", "I", "UP", "B", "SIM", "RUF"]
+ignore = [
+    "E501",   # line length is enforced by the formatter, not the linter
+    "SIM108", # ternaries are not always clearer than an if/else
+]
+
+[tool.ruff.lint.per-file-ignores]
+"tests/*" = ["B011"]
+
+[tool.mypy]
+python_version = "3.12"
+strict = true
+warn_unreachable = true
+warn_return_any = true
+disallow_any_generics = true
+no_implicit_reexport = true
+show_error_codes = true
+plugins = []
+
+[[tool.mypy.overrides]]
+# DuckDB ships no stubs. Confined to the storage boundary rather than
+# relaxed globally - the same graded-strictness argument as miniftse D-011.
+module = ["duckdb.*", "anthropic.*"]
+ignore_missing_imports = true
+
+[tool.coverage.run]
+source = ["src/reviewradar"]
+omit = ["*/vertex.py"]
