@@ -22,6 +22,7 @@ from __future__ import annotations
 
 import re
 from dataclasses import dataclass
+from difflib import SequenceMatcher
 from typing import Final
 
 from reviewradar.ingest.edgar import EdgarClient, Submission
@@ -118,7 +119,7 @@ _LEAKED_TAG = re.compile(r"<ITEMS>\s*([0-9]\.[0-9]{2})")
 #: Similarity above which a near-miss is accepted rather than reported as unmapped.
 #: Set high on purpose: a wrong item number routes a real event into the eliminated
 #: pile, where nothing will ever look at it again.
-_FUZZY_FLOOR: Final[float] = 0.85
+_FUZZY_FLOOR: Final[float] = 0.90
 
 
 def _norm(text: str) -> str:
@@ -133,11 +134,15 @@ _BY_DESCRIPTION: Final[dict[str, str]] = {
 
 
 def _similarity(a: str, b: str) -> float:
-    """Jaccard over token sets. Cheap, symmetric, and explainable to a reviewer."""
-    ta, tb = set(a.split()), set(b.split())
-    if not ta or not tb:
-        return 0.0
-    return len(ta & tb) / len(ta | tb)
+    """Character-level similarity, symmetric and explainable to a reviewer.
+
+    Not Jaccard over tokens, which was the first attempt: it scores "Financial
+    Condition" against "Financial Conditions" at 0.71, because a plural is a wholly
+    different token. Wording drift in the SEC's item list is overwhelmingly singular
+    versus plural and inserted articles, which is exactly what character-level
+    matching sees and token matching cannot.
+    """
+    return SequenceMatcher(None, a, b).ratio()
 
 
 # ----------------------------------------------------------------------------------

@@ -1,0 +1,168 @@
+-----BEGIN PRIVACY-ENHANCED MESSAGE-----
+Proc-Type: 2001,MIC-CLEAR
+Originator-Name: webmaster@www.sec.gov
+Originator-Key-Asymmetric:
+ MFgwCgYEVQgBAQICAf8DSgAwRwJAW2sNKK9AVtBzYZmr6aGjlWyK3XmZv3dTINen
+ TWSM7vrzLADbmYQaionwg5sDW3P6oaM5D3tdezXMm7z1T+B+twIDAQAB
+MIC-Info: RSA-MD5,RSA,
+ VvE9gOPgvpxx02zlkTMZXa2W5rHksid3do0VZeOPbhS90dnlwnJtwTDp6Frrhgdb
+ 3badaXEQNmQLWXYUZF8klg==
+
+<SEC-DOCUMENT>0000950152-03-008360.txt : 20030919
+<SEC-HEADER>0000950152-03-008360.hdr.sgml : 20030919
+<ACCEPTANCE-DATETIME>20030919165439
+ACCESSION NUMBER:		0000950152-03-008360
+CONFORMED SUBMISSION TYPE:	8-K
+PUBLIC DOCUMENT COUNT:		2
+CONFORMED PERIOD OF REPORT:	20030919
+ITEM INFORMATION:		Other events
+ITEM INFORMATION:		Financial statements and exhibits
+FILED AS OF DATE:		20030919
+
+FILER:
+
+	COMPANY DATA:	
+		COMPANY CONFORMED NAME:			WARWICK VALLEY TELEPHONE CO
+		CENTRAL INDEX KEY:			0000104777
+		STANDARD INDUSTRIAL CLASSIFICATION:	TELEPHONE COMMUNICATIONS (NO RADIO TELEPHONE) [4813]
+		IRS NUMBER:				141160510
+		STATE OF INCORPORATION:			NY
+		FISCAL YEAR END:			1231
+
+	FILING VALUES:
+		FORM TYPE:		8-K
+		SEC ACT:		1934 Act
+		SEC FILE NUMBER:	000-11174
+		FILM NUMBER:		03903005
+
+	BUSINESS ADDRESS:	
+		STREET 1:		47 49 MAIN ST
+		CITY:			WARWICK
+		STATE:			NY
+		ZIP:			10990
+		BUSINESS PHONE:		9149861101
+
+	MAIL ADDRESS:	
+		STREET 1:		47 49 MAIN ST
+		STREET 2:		PO BOX 592
+		CITY:			WARWICK
+		STATE:			NY
+		ZIP:			10990
+</SEC-HEADER>
+<DOCUMENT>
+<TYPE>8-K
+<SEQUENCE>1
+<FILENAME>l03170ae8vk.txt
+<DESCRIPTION>WARWICK VALLEY TELEPHONE COMPANY | FORM 8-K
+<TEXT>
+<PAGE>
+                       SECURITIES AND EXCHANGE COMMISSION
+                             Washington, D.C. 20549
+
+
+                                   -----------
+
+                                    FORM 8-K
+                                 CURRENT REPORT
+                     PURSUANT TO SECTION 13 OR 15(d) OF THE
+                         SECURITIES EXCHANGE ACT OF 1934
+
+
+
+       Date of Report (Date of earliest event reported) September 19, 2003
+                                                       -------------------
+
+
+                        WARWICK VALLEY TELEPHONE COMPANY
+                        --------------------------------
+               (Exact Name of Registrant as Specified in Charter)
+
+
+          NEW YORK                   0-11174                     14-1160510
+- --------------------------------------------------------------------------------
+(State or Other Jurisdiction       (Commission                  (IRS Employer
+      of Incorporation)           File Number)               Identification No.)
+
+
+   47 MAIN STREET, WARWICK, NEW YORK                                    10990
+- --------------------------------------------------------------------------------
+(Address of principal executive offices)                              (Zip Code)
+
+
+Registrant's telephone number, including area code      (845) 986-8080
+                                                   -------------------
+
+
+- --------------------------------------------------------------------------------
+     (Former name or former address, if changed since last report)
+<PAGE>
+ITEM 5. OTHER EVENTS.
+
+On September 19, 2003, the Registrant issued a press release announcing that
+both the New York State Public Service Commission and the New Jersey Board of
+Public Utilities have approved the changes to the Company's restated and amended
+Certificate of Incorporation (including the three-for-one stock split) that had
+been approved by Warwick Valley Telephone Company ("WVT") shareholders at the
+Annual Meeting on April 25, 2003. The restated and amended Certificate of
+Incorporation has also been accepted by the New York Secretary of State. The
+press release is included as Exhibit 99.1 to this Current Report on Form 8-K and
+is incorporated herein by reference.
+
+
+ITEM 7. FINANCIAL STATEMENTS AND EXHIBITS.
+
+The following exhibit is filed herewith:
+
+      99.1  Press Release dated September 19, 2003.
+<PAGE>
+                                   SIGNATURES
+
+      Pursuant to the requirements of the Securities Exchange Act of 1934, the
+Registrant has duly caused this Report to be signed on its behalf by the
+undersigned hereunto duly authorized.
+
+                                             WARWICK VALLEY TELEPHONE COMPANY
+
+Dated: September 19, 2003                    By:  /s/ M. Lynn Pike
+                                                --------------------------------
+                                             Name:  M. Lynn Pike
+                                             Title: President
+
+
+</TEXT>
+</DOCUMENT>
+<DOCUMENT>
+<TYPE>EX-99.1
+<SEQUENCE>3
+<FILENAME>l03170aexv99w1.txt
+<DESCRIPTION>EX-99.1 PRESS RELEASE
+<TEXT>
+<PAGE>
+Exhibit 99.1
+
+Warwick Valley Telephone Company (NASDAQ - WWVY) announced today that both the
+New York State Public Service Commission and the New Jersey Board of Public
+Utilities have approved the changes to WVT's restated and amended Certificate of
+Incorporation (including the three-for-one stock split) that had been approved
+by WVT shareholders at the Annual Meeting on April 25, 2003. The restated and
+amended Certificate of Incorporation has also been accepted by the New York
+Secretary of State. This enables the Company to set the record date for the
+three-for-one stock split of its Common Shares. That record date will be October
+6, 2003. The new shares will be made available on October 13, 2003.
+
+Existing stock certificates will be retained by shareholders and will represent
+the same number of shares of Common Shares as they did prior to the split,
+except that these Common Shares will now be $0.01 par value per share rather
+than being no-par-value shares. Each person shown on the transfer books of the
+Company as holding shares of Common Shares in certificated form on the record
+date will receive one new certificate representing a number of new,
+$0.01-par-value Common shares equal to two times the number of shares of Common
+Shares previously held. The new certificate, together with all other
+certificates held, will represent the total number of split shares held.
+Shareholders holding their shares other than directly in certificated form will
+have the appropriate number of Common Shares attributed to them.
+
+</TEXT>
+</DOCUMENT>
+</SEC-DOCUMENT>
+-----END PRIVACY-ENHANCED MESSAGE-----
