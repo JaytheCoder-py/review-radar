@@ -323,7 +323,7 @@ class EdgarClient:
         """The `ITEM INFORMATION:` description strings, verbatim.
 
         The header carries the item *description*, never the number - established by
-        probe, see `memos/W2_what_the_8k_header_actually_contains.md` and D-003. Mapping
+        probe, see `memos/what_the_8k_header_actually_contains.md` and D-003. Mapping
         those strings to item numbers is the baseline classifier's job, not this one's.
         """
         # `[^\S\n]*` and not `\s*`: older headers leave the field empty, and `\s*`

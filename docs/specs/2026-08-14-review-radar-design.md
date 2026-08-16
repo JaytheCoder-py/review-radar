@@ -1,7 +1,7 @@
 # Review Radar — design
 
-**Status:** approved 2026-08-14 · **Author:** Jason Chung · **Build mode:** tutor (spec, interfaces
-and failing tests are provided; implementations are written by the author)
+**Status:** approved 2026-08-14 · **Owner:** Jason Chung · **Build mode:** agent-built
+(Claude implements against this spec; the owner directs, reviews and owns every decision)
 
 ---
 
@@ -14,8 +14,8 @@ and a running accuracy scoreboard.
 It runs as a scheduled Cloud Run job writing to an append-only event log, with a small read-only
 FastAPI dashboard over the log.
 
-It is deliberately small — a target of 3–4k lines — because the author writes every line and must
-be able to defend every line.
+It is deliberately small — a target of 3–4k lines — so the owner can read, question and defend
+every line and every measured number in it.
 
 ## 2. Why it has business value
 
@@ -212,7 +212,7 @@ probability and must not be treated as one. Confidence here is a deterministic f
 observable facts: whether every field required by the assigned event type survived span validation
 (§D-003), whether baseline and model agree where both produced an event type, and whether the
 extracted `ex_date` is internally consistent with `filed_at`. The routing threshold is a
-configuration value **calibrated against the random stratum of the gold set in week 9** — chosen to
+configuration value **calibrated against the random stratum of the gold set** — chosen to
 hit a target precision on auto-accepted events — not picked in advance.
 
 **D-005 — Vertex AI, not the direct vendor API.** One GCP project, service-account authentication,
@@ -226,7 +226,7 @@ full pipeline with no credentials and no spend. Only the eval job, run manually,
 
 ## 9. The gold set
 
-~200 hand-labelled filings. This is the least glamorous week of the build and the one that makes
+~200 hand-labelled filings. This is the least glamorous step of the build and the one that makes
 every other number credible.
 
 **Two strata, never pooled:**
@@ -303,25 +303,17 @@ unverifiable."* This half needs no hand-labelling and grows on its own every nig
   automatic push-to-prod — the repository has one maintainer and an accidental deploy has no
   reviewer.
 
-## 14. Schedule
+## 14. Build order
 
-12 weeks at 5–10 hrs/week, ~90 hours total.
+Repo and domain types → EDGAR ingest → append-only store → baseline classifier and first
+measurement → gold set → model extraction with span grounding and cost accounting → eval
+harness and CI gate → Cloud Run job + Scheduler (**live**) → dashboard → forward
+verification and the write-up. Current state and remaining tasks live in the active build
+plan under [`docs/plans/`](../plans/).
 
-| Wk | Work | Hrs |
-|---|---|---|
-| 1 | Repo, `uv`, ruff, `mypy --strict`, CI against a real GitHub remote, `types.py` | 7 |
-| 2 | EDGAR ingest: daily index, rate limiting, User-Agent, exhibit following, fixtures | 8 |
-| 3 | Append-only store, idempotency, `FAILED` handling | 7 |
-| 4–5 | Baseline classifier and first measurement — a working system with no model in it | 15 |
-| 6 | Hand-label the gold set, both strata | 8 |
-| 7–8 | Vertex extraction, structured output, span grounding, cost accounting | 15 |
-| 9 | Eval harness, baseline-vs-model delta, CI gate | 8 |
-| 10 | Cloud Run job + Scheduler — **live** | 8 |
-| 11 | Dashboard and `/scoreboard` | 7 |
-| 12 | Forward verification, README, `DECISIONS.md`, the business case | 7 |
-
-**Week 6 is the one people skip and the one that makes the rest credible. Week 10 is
-non-negotiable — if the schedule slips, cut the dashboard, not the deployment.**
+**The gold set is the step people skip and the one that makes every later number
+credible. The live deployment is non-negotiable — if scope slips, cut the dashboard, not
+the deployment.**
 
 ## 15. Relationship to the miniftse reference build
 
