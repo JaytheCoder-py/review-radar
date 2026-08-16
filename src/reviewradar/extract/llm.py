@@ -18,7 +18,13 @@ import json
 import time
 from collections.abc import Mapping
 from dataclasses import dataclass, field
-from typing import Any, Protocol, runtime_checkable
+from typing import TYPE_CHECKING, Any, Protocol, cast, runtime_checkable
+
+if TYPE_CHECKING:
+    # Type-only: never imported at runtime, so D-006 holds - a clone without the
+    # `vertex` extra still runs everything. Without the extra installed, the
+    # `anthropic.*` ignore_missing_imports override makes this resolve to Any.
+    from anthropic.types import ToolParam
 
 SYSTEM_PROMPT = """\
 You extract corporate-action facts from SEC 8-K filings for an index calculation team.
@@ -133,7 +139,7 @@ class VertexLlm:
         Schema-invalid output is retried, then allowed to fail. A partial parse of
         malformed JSON is never returned - a half-read ratio is worse than no ratio.
         """
-        tool = {
+        tool: ToolParam = {
             "name": "record_corporate_action",
             "description": "Record the corporate action this filing announces.",
             "input_schema": dict(schema),
@@ -151,9 +157,11 @@ class VertexLlm:
                     messages=[{"role": "user", "content": prompt}],
                 )
                 for block in message.content:
-                    if getattr(block, "type", None) == "tool_use":
+                    if block.type == "tool_use":
+                        # tool_use input is a JSON object by API contract; the SDK
+                        # types it `object`.
                         return LlmResponse(
-                            payload=dict(block.input),
+                            payload=dict(cast(Mapping[str, Any], block.input)),
                             input_tokens=message.usage.input_tokens,
                             output_tokens=message.usage.output_tokens,
                             latency_ms=(time.monotonic() - started) * 1000,
