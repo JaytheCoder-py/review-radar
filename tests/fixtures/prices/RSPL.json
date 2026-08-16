@@ -1,0 +1,11 @@
+{
+  "ticker": "RSPL",
+  "note": "Constructed, not recorded. A 1/8 reverse split with an ex-date of 2026-03-05: the as-traded close steps from 0.42 to 3.30, near the exact eightfold. Verified at a relative error of 1/56.",
+  "closes": [
+    ["2026-03-02", 0.44],
+    ["2026-03-03", 0.43],
+    ["2026-03-04", 0.42],
+    ["2026-03-05", 3.30],
+    ["2026-03-06", 3.35]
+  ]
+}

@@ -63,6 +63,33 @@ gcloud scheduler jobs create http reviewradar-trigger --schedule="0 6 * * 2-6" -
 arrears. Weekends have no daily index and the job would record a failure for a date the
 SEC never published.
 
+### Forward verification, weekly
+
+`reviewradar verify` checks past-dated extractions against the tape and appends verdicts.
+Weekly rather than nightly, and Sunday rather than a weekday: an ex-date announced today is
+verifiable in a few days' time, not tonight, so a nightly run would spend most of its
+output re-recording `unverifiable — the ex-date has not passed`. The verdict log is
+append-only and idempotent on the verdict's own content, so re-running costs nothing and a
+verdict that changes when an ex-date finally passes appends beside the old one.
+
+```bash
+gcloud run jobs create reviewradar-verify --image "$REGION-docker.pkg.dev/$PROJECT/reviewradar/job:latest" --region "$REGION" --service-account "reviewradar@$PROJECT.iam.gserviceaccount.com" --task-timeout=15m --max-retries=1 --args="verify,--db,/data/events.duckdb,--source,yahoo" --project "$PROJECT"
+```
+
+```bash
+gcloud scheduler jobs create http reviewradar-verify-trigger --schedule="0 8 * * 0" --time-zone="America/New_York" --uri="https://$REGION-run.googleapis.com/apis/run.googleapis.com/v1/namespaces/$PROJECT/jobs/reviewradar-verify:run" --http-method=POST --oauth-service-account-email="reviewradar@$PROJECT.iam.gserviceaccount.com" --project "$PROJECT"
+```
+
+`--source yahoo` reaches a public endpoint with no key and no account, so the job needs no
+extra IAM grant. **It must stay `yahoo` or another source that serves unadjusted, as-traded
+closes.** A back-adjusted series has the split divided out of every price before the
+ex-date, so the step this job exists to look for is not in the data — and the failure is
+silent, because the output is still full of confident-looking verdicts. See D-008.
+
+The signal to watch is not the exit code. A run that verifies nothing exits zero; check
+that `contradicted` is being read by somebody, because it is the only output here that asks
+for a human.
+
 ## 6. The dashboard
 
 ```bash

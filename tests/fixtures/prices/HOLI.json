@@ -1,0 +1,11 @@
+{
+  "ticker": "HOLI",
+  "note": "Constructed, not recorded. A 3/1 split with an ex-date of Saturday 2026-03-07. No session closed that day; the step lands on Monday 2026-03-09 and the prior close is Friday's. Verified at a relative error of 0.002.",
+  "closes": [
+    ["2026-03-04", 299.00],
+    ["2026-03-05", 300.00],
+    ["2026-03-06", 300.00],
+    ["2026-03-09", 100.20],
+    ["2026-03-10", 101.00]
+  ]
+}

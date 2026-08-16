@@ -1,0 +1,9 @@
+{
+  "ticker": "NEAR",
+  "note": "Constructed, not recorded. A 3/1 split ex 2026-03-05 whose close steps to 107.50 against an expected 100.00 - a relative error of exactly 0.075, just inside the 0.08 band. Pins the verified side of the boundary.",
+  "closes": [
+    ["2026-03-04", 300.00],
+    ["2026-03-05", 107.50],
+    ["2026-03-06", 108.00]
+  ]
+}

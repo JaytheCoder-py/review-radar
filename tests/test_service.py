@@ -42,6 +42,44 @@ def test_the_failures_page_renders_when_empty(client: TestClient) -> None:
     assert client.get("/failures").status_code == 200
 
 
+def test_the_scoreboard_carries_a_forward_verification_section(client: TestClient) -> None:
+    body = client.get("/scoreboard").text
+    assert "forward verification" in body
+    # The empty state is stated rather than presented as a blank table: no model run has
+    # been made, so no stored event carries an ex-date or a ratio to verify.
+    assert "Empty is the honest state" in body
+
+
+def test_a_recorded_verdict_reaches_the_scoreboard(tmp_path: Path) -> None:
+    import datetime as dt
+
+    from reviewradar.evals.forward import Claim, FixturePrices, verify
+    from reviewradar.types import EventType, Ratio, parse_accession
+
+    source = FixturePrices()
+    source.add("FSPL", [("2026-03-04", 300.0), ("2026-03-05", 99.5)])
+    result = verify(
+        Claim(
+            accession=parse_accession("0000320193-26-000001"),
+            event_id="e1",
+            event_type=EventType.SPLIT_FORWARD,
+            ex_date=dt.date(2026, 3, 5),
+            ratio=Ratio(3, 1),
+            tickers=("FSPL",),
+        ),
+        source=source,
+        today=dt.date(2026, 4, 1),
+        run_id="t",
+    )
+    db = tmp_path / "log.duckdb"
+    with EventStore(db) as store:
+        store.append([make_event()])
+        store.append_verifications([result.to_row()])
+    body = TestClient(create_app(db)).get("/scoreboard").text
+    assert "verified" in body
+    assert "FSPL" in body
+
+
 def test_company_names_are_escaped(tmp_path: Path) -> None:
     # Company names come from SEC filings, which are third-party text. Rendering them
     # unescaped would be an injection with a very respectable source.

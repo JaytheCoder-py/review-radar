@@ -1,0 +1,11 @@
+{
+  "ticker": "FSPL",
+  "note": "Constructed, not recorded. A 3/1 forward split with an ex-date of 2026-03-05: the as-traded close steps from 300.00 to 99.50, a 0.5% drift on top of the exact third. Verified at a relative error of 0.005.",
+  "closes": [
+    ["2026-03-02", 301.50],
+    ["2026-03-03", 299.00],
+    ["2026-03-04", 300.00],
+    ["2026-03-05", 99.50],
+    ["2026-03-06", 100.10]
+  ]
+}

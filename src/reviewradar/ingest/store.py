@@ -13,7 +13,7 @@ alongside. No `SELECT` before every insert, and no unique-constraint gymnastics.
 from __future__ import annotations
 
 import datetime as dt
-from collections.abc import Sequence
+from collections.abc import Mapping, Sequence
 from pathlib import Path
 from typing import Any
 
@@ -63,6 +63,38 @@ CREATE TABLE IF NOT EXISTS ingested (
     run_id     VARCHAR NOT NULL,
     n_filings  BIGINT  NOT NULL,
     completed_at TIMESTAMP DEFAULT current_timestamp
+);
+
+-- Forward-verification verdicts. A second append-only table, never a column on
+-- `events`: the extraction is what the system said, the verdict is what the market
+-- later said about it, and writing the second into the first would rewrite the record
+-- D-001 exists to protect. Keyed on `event_id` rather than accession, because a filing
+-- may carry several extractions and a verdict belongs to the row it tested (D-008).
+CREATE SEQUENCE IF NOT EXISTS verification_seq;
+
+CREATE TABLE IF NOT EXISTS verifications (
+    verification_id VARCHAR PRIMARY KEY,
+    -- Insertion order, not the wall clock. "The latest verdict" has to mean the one
+    -- appended last: two verdicts recorded in the same second would otherwise order
+    -- arbitrarily, and a clock that steps backwards would reorder history.
+    seq             BIGINT  DEFAULT nextval('verification_seq'),
+    event_id        VARCHAR NOT NULL,
+    accession       VARCHAR NOT NULL,
+    ticker          VARCHAR,
+    verdict         VARCHAR NOT NULL,
+    reason          VARCHAR,
+    ex_date         DATE,
+    session         DATE,
+    prior_session   DATE,
+    prior_close     DOUBLE,
+    post_close      DOUBLE,
+    expected_step   VARCHAR,
+    observed_step   DOUBLE,
+    relative_error  DOUBLE,
+    tolerance       DOUBLE,
+    price_source    VARCHAR NOT NULL,
+    run_id          VARCHAR NOT NULL,
+    checked_at      TIMESTAMP DEFAULT current_timestamp
 );
 """
 
@@ -117,6 +149,30 @@ class EventStore:
             [str(accession), stage, error[:2000], run_id],
         )
 
+    def append_verifications(self, rows: Sequence[Mapping[str, Any]]) -> int:
+        """Insert forward-verification verdicts. Returns the number inserted.
+
+        Rows rather than a domain object, so that `ingest` keeps knowing nothing about
+        `evals`: persistence is this module's job, the verdict type is
+        `evals.forward.Verification`'s, and the dependency does not need to point
+        upwards for both to be true.
+
+        Idempotent on `verification_id`, which hashes the verdict and its evidence. A
+        weekly re-check that reaches the same answer from the same session collides and
+        inserts once; a verdict that has genuinely changed inserts alongside the old one.
+        """
+        if not rows:
+            return 0
+        columns = list(rows[0].keys())
+        placeholders = ", ".join("?" for _ in columns)
+        sql = (
+            f"INSERT INTO verifications ({', '.join(columns)}) VALUES ({placeholders}) "
+            "ON CONFLICT (verification_id) DO NOTHING"
+        )
+        before = self._count("verifications")
+        self._con.executemany(sql, [[row[c] for c in columns] for row in rows])
+        return self._count("verifications") - before
+
     def mark_ingested(self, on: dt.date, run_id: str, n_filings: int) -> None:
         self._con.execute(
             "INSERT INTO ingested (on_date, run_id, n_filings) VALUES (?, ?, ?) "
@@ -147,6 +203,58 @@ class EventStore:
             )
         sql += " ORDER BY filed_at DESC, accession"
         return self._con.execute(sql, params).df()
+
+    def latest_per_accession(self) -> list[dict[str, Any]]:
+        """The newest non-superseded row for each accession, as plain dicts.
+
+        The forward verifier's input. Rows rather than a DataFrame on purpose: pandas
+        renders a missing date as `NaT` and a missing string as `nan`, and a verifier
+        whose whole job is to distinguish "no ex-date was extracted" from "the ex-date
+        has not passed" cannot afford a `None` that is three different objects. DuckDB
+        hands back `None`.
+        """
+        cursor = self._con.execute(
+            """
+            SELECT * FROM events
+            WHERE event_id NOT IN (
+                SELECT supersedes FROM events WHERE supersedes IS NOT NULL
+            )
+            QUALIFY row_number() OVER (
+                PARTITION BY accession ORDER BY recorded_at DESC, event_id
+            ) = 1
+            ORDER BY accession
+            """
+        )
+        columns = [description[0] for description in cursor.description or []]
+        return [dict(zip(columns, row, strict=True)) for row in cursor.fetchall()]
+
+    def verifications(self, *, latest_only: bool = True) -> pd.DataFrame:
+        """Forward-verification verdicts, newest first.
+
+        `latest_only` shows one verdict per extraction. The earlier verdicts are still
+        there - a claim that went from `unverifiable` to `verified` when its ex-date
+        passed is a history worth keeping, and this is a view, not a delete.
+        """
+        sql = "SELECT * FROM verifications"
+        if latest_only:
+            sql += " QUALIFY row_number() OVER (PARTITION BY event_id ORDER BY seq DESC) = 1"
+        return self._con.execute(sql + " ORDER BY seq DESC").df()
+
+    def verification_counts(self) -> dict[str, int]:
+        """Latest verdict per extraction, counted.
+
+        Computed here rather than in the dashboard: a published figure has exactly one
+        source, and the service layer renders.
+        """
+        rows = self._con.execute(
+            """
+            SELECT verdict, count(*) FROM (
+                SELECT * FROM verifications
+                QUALIFY row_number() OVER (PARTITION BY event_id ORDER BY seq DESC) = 1
+            ) GROUP BY verdict
+            """
+        ).fetchall()
+        return {str(verdict): int(count) for verdict, count in rows}
 
     def failures(self, since: dt.date | None = None) -> pd.DataFrame:
         sql = "SELECT * FROM failures"

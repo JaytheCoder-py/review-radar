@@ -9,10 +9,15 @@ immutable log. A read-only dashboard renders the log and computes nothing of its
 
 ```bash
 uv sync
-uv run pytest                                    # 106 tests, no network, no credentials
-uv run reviewradar replay --baseline-only        # the pipeline over 399 real filings
-uv run reviewradar score                         # the scoreboard
-uv run reviewradar serve                         # the dashboard on :8080
+uv run pytest                              # 178 tests, no network, no credentials
+uv run reviewradar replay --baseline-only  # the pipeline over 399 real filings
+uv run reviewradar score                   # the scoreboard
+uv run reviewradar label --stratum random  # hand-label into the gold set
+uv run reviewradar serve                   # the dashboard on :8080
+
+# Past-dated extractions against the tape. `--source yahoo` for live unadjusted closes;
+# the committed fixtures are constructed, and exist to exercise the arithmetic offline.
+uv run reviewradar verify --prices tests/fixtures/prices
 ```
 
 Design and plan: [`docs/specs/`](docs/specs/) · [`docs/plans/`](docs/plans/) · judgement
@@ -54,7 +59,7 @@ was measured and found to discard real events — see below.
 | Eliminated by item codes alone | 41.9% |
 | Eliminated after the keyword screen, no model call | **34.1%** |
 | Residual sent to the model | 65.9% |
-| Tests | **106**, no network, no credentials |
+| Tests | **178**, no network, no credentials |
 | `ruff`, `mypy --strict` | clean |
 
 ### The finding that matters
@@ -120,6 +125,69 @@ intended direction — the alternative is a confident wrong answer.
 against it end to end, but no run has been made — that needs the owner's own GCP project.
 Every model figure here is absent rather than estimated.
 
+## Forward verification, and the trap in it
+
+An extraction is a claim about the future. "3-for-1, ex 5 March" predicts that the price
+steps to about a third on the first session on or after that date. `reviewradar verify`
+checks the claim against the tape and appends a verdict, which is the one half of the
+scoreboard that needs no hand-labelling and grows on its own every night the job runs.
+
+**Split-adjusted prices erase exactly the step being tested.** A back-adjusted close has
+the split divided out of every price *before* the ex-date, so a 3-for-1 split leaves **no
+step at all** in the adjusted series. A verifier fed one contradicts every correct
+extraction and verifies nothing — while looking like it works, because the output is full
+of confident verdicts. This is the default behaviour of the obvious library
+(`yfinance`'s `auto_adjust=True`), so the source reads Yahoo's v8 chart endpoint directly
+and takes `indicators.quote[0].close`, never `indicators.adjclose`. The ban is a test over
+the AST of `src/`, not a comment.
+
+The verdict is one of three, never two:
+
+| verdict | meaning |
+|---|---|
+| `verified` | the unadjusted close stepped by the ratio, within the band |
+| `contradicted` | the session came and went and the price did not step |
+| `unverifiable` | no test was possible — **including every ex-date that has not passed** |
+
+An unpassed ex-date is never a contradiction, and that is checked before any price is
+fetched rather than falling out of an empty series. The band is a relative error of
+**0.08**, which sits about four standard deviations above an ordinary daily move and about
+three times below the weakest signal it must catch — an unchanged close on a 5/4 stock
+split scores 0.25. What it buys and what it costs is worked through in
+[D-008](DECISIONS.md), including the case it gets wrong: it cannot tell a 5/4 from a 13/10,
+because those differ by 4% in price step. A `verified` verdict says *a step of about the
+right size happened*, not *the ratio is exactly right*.
+
+Only splits get a verdict. A spin-off ratio — one GE Vernova share per four GE shares — says
+nothing about how far the parent's price falls; that step is the market value of the child.
+Testing it against the ratio anyway would measure the verifier's model of the event rather
+than the extraction.
+
+**The production count is zero, and the reason is worth reading.** Replaying the 399-filing
+corpus with the baseline alone puts 29 index-relevant events in the log — 26 delistings and
+3 completed mergers, every one of them typed by a diagnostic item code. Not one is a split,
+and none carries a ratio or an ex-date, because the baseline extracts no fields at all. So
+`reviewradar verify` reports **0 verified, 0 contradicted, 29 unverifiable**, all of them
+`event_type_has_no_price_test`:
+
+```
+399 stored extractions, 29 index-relevant claims
+  verified          0
+  contradicted      0
+  unverifiable     29
+```
+
+That is the machinery working correctly on an empty case, and it is the model-shaped hole
+in this repository showing up in a third place. The `/scoreboard` page says as much on the
+page rather than presenting a blank table as a result.
+
+What *is* measured is the arithmetic, against committed price fixtures — a forward split, a
+reverse split, a split that never happened, an ex-date on a Saturday, and both sides of the
+tolerance boundary. Those fixtures are **constructed rather than recorded**, because
+building this repository must not require a market-data fetch and no free source permits
+redistributing its tape. Every fixture file says so in its own `note`, and a test asserts
+that it does.
+
 ## Design decisions worth knowing
 
 **The event log is append-only.** A corrected extraction is a new row carrying
@@ -151,7 +219,9 @@ CI run with no credentials and no spend.
   Recall is measured against filings, not against the universe of corporate actions.
 - **The gold set is 66 filings, not the 200 planned.** Per-class counts are thin. Read the
   21.4% as "roughly a fifth", not a point estimate — and read the 0 / 28 after the screen
-  as "no known miss", not as recall of 1.0.
+  as "no known miss", not as recall of 1.0. `reviewradar label` is the tool for the rest;
+  the labels are hand-applied, because a gold set labelled by the model under test is not
+  gold.
 - **The stratified stratum was built by phrase search**, so it over-represents filings
   whose language is explicit. That flatters the keyword screen specifically: a stratum
   selected by phrase is a stratum a phrase pattern was always going to find. On obliquely
@@ -174,6 +244,8 @@ src/reviewradar/
   treatment/rules.py  event -> what an index calculator must do
   evals/gold.py       the two strata, kept apart
   evals/score.py      false-elimination rate, per-field F1, cost
+  evals/forward.py    extractions against the tape. Unadjusted closes only
+  evals/labelling.py  the hand-labelling queue, parsers and self-agreement
   service/app.py      the dashboard. Renders; computes nothing
 ```
 

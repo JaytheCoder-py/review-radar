@@ -172,3 +172,169 @@ produce one with a citation. That, not the 21.4%, is the case for stage two. The
 own residual cost is honest and visible: stratified `event_type` F1 falls from 0.33 to
 0.25, and the manual-review rate rises from 58.1% to 65.9%, because a rescued filing with
 no model behind it is a filing in the queue.
+
+---
+
+## D-008 — Forward verification reads unadjusted prices, tests only splits, and never contradicts a future ex-date
+
+**Decision.** `evals/forward.py` checks a stored extraction against the tape and appends a
+`verified` / `contradicted` / `unverifiable` verdict. Five parts, each of which was a
+choice:
+
+1. **Unadjusted closes, mandatory.** `PriceSource` is a Protocol whose contract is that
+   `closes` returns **as-traded** prices with nothing divided out. `YahooChartPrices`
+   reads `indicators.quote[0].close` from the v8 chart endpoint and never
+   `indicators.adjclose`, which is in the same payload.
+2. **Splits only.** A verdict is produced for `SPLIT_FORWARD` and `SPLIT_REVERSE`: the
+   event types whose ratio *determines* the price step. Everything else is `unverifiable`
+   with a recorded reason, as is any event missing an ex-date, a ratio or a resolvable
+   ticker.
+3. **A tolerance band of 0.08** on the relative error of the observed step against the
+   expected one. Arithmetic below.
+4. **A separate append-only `verifications` table**, keyed on `event_id`, ordered by an
+   insertion sequence rather than the clock. Re-verification appends; nothing is updated.
+5. **The future check runs before the fetch.** An ex-date that has not passed is
+   `unverifiable` structurally, not because the price series came back empty.
+
+**Why — the ratio orientation.** The schema states a ratio as new shares per old: a
+three-for-one forward split is `3/1`, a one-for-eight reverse split is `1/8`, and
+IntegraMed's 25% stock split is `5/4` in `data/gold/stratified.jsonl`. Value is conserved
+across the split, so the price moves by the reciprocal — a forward split *divides* the
+as-traded close, a reverse split *multiplies* it, and 5/4 in shares is four fifths in
+price, a 20% fall for a 25% increase in count. Getting this backwards inverts every
+verdict the system will ever produce, so it is tested in both directions rather than
+asserted here.
+
+**Why — the tolerance band.** The metric is the relative error of the observed step
+against the expected one, `|post/prior × r − 1|`. Relative rather than absolute, because
+the same absolute miss means different things at 3/1 and at 5/4. The metric has a useful
+identity: **an unchanged close scores exactly `|r − 1|`**, so the weakest signal the band
+must separate is the smallest ratio the system will see.
+
+| quantity | value |
+|---|---:|
+| the band | **0.08** |
+| ordinary single-stock daily move, 1σ — *assumed, not measured here* | 0.01 – 0.03 |
+| band, as a multiple of a 2% day | ≈ 4σ |
+| no-step signal on a 5/4 split (the smallest ratio in the gold set) | 0.25 |
+| no-step signal on 13/10 (IntegraMed's other split) | 0.30 |
+| no-step signal on 3/1 | 2.00 |
+| margin between the band and the weakest no-step signal | 3.1× |
+
+So the band sits about four standard deviations above the noise it must ignore and about
+three times below the weakest signal it must catch. Both margins are needed: an ex-date is
+an event day, and a split announcement moves a stock for reasons other than the split.
+
+**What the band misclassifies, stated rather than hidden.**
+
+- It **verifies a ratio that is merely close**. A 5/4 and a 13/10 differ by
+  `|(4/5)/(10/13) − 1| = 0.04` in price step, which is inside the band. A `verified`
+  verdict therefore means *a step of about the right size happened on about the right
+  session*, not *the ratio is exactly right*. Separating those two needs share counts, and
+  no free source publishes them per ex-date.
+- It **contradicts a real split whose stock also moved more than about 8% net of the step
+  that session**. Possible on a small cap on an event day.
+
+That trade-off is the right way round for the same reason the CI gate is on the
+false-elimination rate: a `contradicted` verdict is a review trigger — visible, cheap,
+someone reads the filing. A false `verified` is the invisible failure, and the invisible
+failures are the ones this project exists to count.
+
+**Why — the scope.** Only splits, even though `RATIO_BEARING` also holds `SPINOFF` and
+`RIGHTS_ISSUE`. GE's Vernova spin-off is one child share per four GE shares; the parent's
+price step is the market value of the child, which that ratio does not give you. A rights
+issue's theoretical ex-rights price turns on the subscription price, which the extraction
+schema does not carry. Testing either against `1/r` would measure the verifier's own model
+of the event rather than the extraction, and a fabricated verdict sitting next to a
+measured one devalues both.
+
+**Why — the ticker.** The only symbol available is `affected_securities`, which the model
+extracted and which `pipeline._value_supported` already forced to appear inside its own
+cited span. The 8-K cover page's "Trading Symbol(s)" table is deliberately not consulted:
+this module reads the log rather than the archive, and the cover page names the
+*registrant*, which on a spin-off or a merger is routinely not the security whose price
+moves. No resolvable ticker is an `unverifiable` reason, never an error.
+
+**Why — the denominator.** Verdicts are produced for `INDEX_RELEVANT` events only. A
+`no_index_action` conclusion asserts nothing about a price; counting it `unverifiable`
+would pad the denominator with 8-K traffic and make the verified fraction move with filing
+volume instead of with extraction quality.
+
+**Why — the storage shape.** A second table rather than a column on `events`: the
+extraction is what the system said, the verdict is what the market later said about it,
+and writing the second into the first rewrites the record D-001 exists to protect. Verdicts
+are keyed on `event_id` rather than accession because a filing may carry several
+extractions and a verdict belongs to the row it tested. `verification_id` is a content hash
+of the verdict and its evidence and **excludes `run_id`** — the one place this differs from
+`CorporateActionEvent.event_id`. A verdict is a statement about market data, not about a
+run: reaching the same answer again next week is not a new fact, and recording it as one
+would bury the verdict changes that matter under a weekly heartbeat. Ordering is by an
+explicit insertion sequence, not `checked_at`, because "the latest verdict" has to mean the
+one appended last and a clock that steps backwards would reorder history.
+
+**Rejected — an adjusted or auto-adjusted source.** This is the trap, and it is the default
+everywhere. A back-adjusted series has the split divided out of every price *before* the
+ex-date, so a 3-for-1 split leaves **no step at all** in the adjusted close. A verifier fed
+one contradicts every correct extraction and verifies nothing, while appearing to work
+perfectly — the scoreboard would fill with accusations and nobody would have a reason to
+doubt them. `yfinance` adjusts by default (`auto_adjust=True`), which is why this reads the
+chart endpoint directly. The ban is enforced by a test over the AST of `src/`, not by this
+paragraph: `adjclose` as a literal key, an `.adjclose` attribute, an `auto_adjust` keyword
+and an import of `yfinance` all fail the build.
+
+**Rejected — a symmetric verdict that can contradict before the ex-date.** Two outcomes
+instead of three, and simpler to reason about. It would also mean that every event whose
+ex-date is next month, every private company, and every spin-off is an accusation against
+the extractor. Absence of evidence about a future date is not evidence against a claim, and
+a queue full of those is a queue nobody reads.
+
+**Rejected — tolerance-free equality.** Closes are rounded to cents, the ex-session is
+chosen by calendar rather than by the filing, and the stock moves on the day for reasons
+unrelated to the split. Exact equality contradicts essentially every real split: the
+committed forward-split fixture, at half a percent of ordinary drift on top of an exact
+third, would fail it.
+
+---
+
+## D-009 — The labelling CLI fixes the order by seed, appends immediately, and relabels blind
+
+**Decision.** `reviewradar label` walks the corpus in an order drawn from a recorded seed,
+writes each accepted label as one JSONL line the moment it is accepted, and offers a
+`--relabel` mode that re-presents already-labelled filings **without showing the existing
+label**, into a sidecar file, printing per-field agreement at the end. Every rule it
+applies is a pure function in `evals/labelling.py`; the interactive loop in `cli.py`
+applies none of its own.
+
+**Why — the whole stratum is shuffled, not the remainder.** The queue is the seeded
+permutation of the stratum with the already-labelled accessions filtered *out of it*.
+Shuffling the unlabelled pool instead would re-order the queue every time a label landed,
+so quitting and resuming would hand back a different sample than the seed promised, and the
+recorded seed would be decoration. Tested as a property: labelling the first *k* leaves
+exactly the tail.
+
+**Why — appended immediately.** One line, opened in append mode, per label. Accumulating in
+memory and saving at the end costs an evening's reading to a closed laptop, and it makes
+the resume path code that nobody runs until the night it matters.
+
+**Why — blind.** Self-agreement measured against a label you can see is a measurement of
+memory. The second reading goes to `data/gold/<stratum>.relabel.<seed>.jsonl` and never to
+the stratum file, because it is evidence about the labeller, not a correction to the labels
+every measured number in this repository was computed against.
+
+**Why — two absences count as agreement.** "The filing states no ex-date" is a reading of
+the filing, not a gap in the data. Scoring it as uncomparable would silently restrict the
+measurement to the filings where something happened, which is the half a labeller is most
+consistent on, and the number would come out flattering.
+
+**Rejected — a decimal ratio.** The CLI refuses `1.25` and asks for `5/4`. `Fraction(1.25)`
+is not five quarters, and a gold label that went through a float is precisely the defect
+D-005 exists to prevent. `5-for-4` and a bare `3` are accepted instead, because those are
+the forms the filings use and re-typing into a single form is where transcription errors
+come from.
+
+**Rejected — offering `UNRESOLVED` in the menu.** `GoldLabel.__post_init__` refuses it, so
+offering it would only invite the refusal. A human who cannot tell records the ambiguity in
+`notes` and picks the reading the filing best supports.
+
+**Not settled here.** The self-agreement figure itself. The CLI prints it; recording it is
+the owner's step, and it belongs in this log next to the gold-set size it qualifies.

@@ -149,25 +149,71 @@ def create_app(db: Path | str) -> FastAPI:
         )
         return _page("Failures", body)
 
+    def _forward_section() -> str:
+        """Forward verification, rendered from the verdict log.
+
+        Counts come from `EventStore.verification_counts`, not from a `value_counts` on
+        the frame below. Two renderings of the same figure are two figures.
+        """
+        with store() as st:
+            counts = st.verification_counts()
+            frame = st.verifications(latest_only=True).head(200)
+        # Display precision only. The log keeps the value the verifier computed; four
+        # places is where a step stops being readable and starts being float noise.
+        frame = frame.round({"observed_step": 4, "relative_error": 4, "prior_close": 2})
+        tally = "".join(
+            f"<tr><td>{html.escape(verdict)}</td><td>{count}</td></tr>"
+            for verdict, count in sorted(counts.items())
+        )
+        return (
+            "<h2>forward verification</h2>"
+            "<p class=sub>An extraction is a claim about the future: a 3-for-1 split with "
+            "an ex-date says the <em>unadjusted</em> close steps to about a third on the "
+            "first session on or after it. These verdicts are the market's answer, and "
+            "they need no hand-labelling. An ex-date that has not passed is "
+            "<code>unverifiable</code>, never <code>contradicted</code>.</p>"
+            "<p class=sub><strong>Empty is the honest state here, not a gap.</strong> No "
+            "model run has been made, so the events in the log are typed by item code "
+            "alone and carry no ratio and no ex-date &mdash; nothing a price can test. "
+            "These counts move the night the extractor first runs. The arithmetic behind "
+            "them is measured against committed price fixtures in the test suite.</p>"
+            + (f"<table>{tally}</table>" if tally else "<p class=empty>No verdicts recorded.</p>")
+            + _table(
+                frame,
+                {
+                    "accession": "accession",
+                    "ticker": "ticker",
+                    "verdict": "verdict",
+                    "reason": "reason",
+                    "ex_date": "ex-date",
+                    "session": "session",
+                    "expected_step": "expected step",
+                    "observed_step": "observed step",
+                    "relative_error": "rel. error",
+                },
+            )
+        )
+
     @api.get("/scoreboard", response_class=HTMLResponse)
     def scoreboard() -> HTMLResponse:
         report = Path("data/scoreboard.json")
-        if not report.exists():
-            return _page(
-                "Scoreboard",
-                "<h1>Scoreboard</h1><p class=empty>No scoreboard recorded. "
-                "Run <code>reviewradar score</code> to produce one.</p>",
-            )
-        # Read and render. Nothing is recomputed here - the numbers come from the
-        # scoring run that produced them.
-        data: dict[str, Any] = json.loads(report.read_text(encoding="utf-8"))
         sections = []
-        for stratum, block in data.get("strata", {}).items():
-            rows = "".join(
-                f"<tr><td>{html.escape(str(k))}</td><td>{html.escape(str(v))}</td></tr>"
-                for k, v in block.items()
+        if report.exists():
+            # Read and render. Nothing is recomputed here - the numbers come from the
+            # scoring run that produced them.
+            data: dict[str, Any] = json.loads(report.read_text(encoding="utf-8"))
+            for stratum, block in data.get("strata", {}).items():
+                rows = "".join(
+                    f"<tr><td>{html.escape(str(k))}</td><td>{html.escape(str(v))}</td></tr>"
+                    for k, v in block.items()
+                )
+                sections.append(f"<h2>{html.escape(stratum)} stratum</h2><table>{rows}</table>")
+        else:
+            sections.append(
+                "<p class=empty>No extraction scoreboard recorded. "
+                "Run <code>reviewradar score</code> to produce one.</p>"
             )
-            sections.append(f"<h2>{html.escape(stratum)} stratum</h2><table>{rows}</table>")
+        sections.append(_forward_section())
         return _page(
             "Scoreboard",
             "<h1>Scoreboard</h1><p class=sub>Strata are reported separately and never "

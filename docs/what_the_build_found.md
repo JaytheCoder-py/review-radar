@@ -13,6 +13,8 @@ inspection.
 | A test I wrote | Jaccard over token sets scores "Financial Condition" against "Financial**s**" at **0.71**, because a plural is a different token. Wording drift is *exactly* singular/plural, so token similarity was the wrong tool. Character-level `SequenceMatcher` scores the same pair 0.99. |
 | The gold set | **The headline finding — below.** |
 | The gold set | My own `eliminated` test fixture was a real 25% stock split. The test asserted "Regulation FD, no index consequence" about a filing that announced a corporate action. The fixture is now called `false_elimination` and the test asserts the failure. |
+| Wiring the verifier to the log | `str(Fraction(3, 1))` is `"3"`, not `"3/1"` — and `to_row` writes the ratio column through `str()`. A verifier that parsed on the slash would have silently dropped every whole-number forward split, which is most of them. |
+| Reading how price series are published | Split-adjusted closes have the split divided out of every price *before* the ex-date, so the step forward verification exists to find is **absent from the adjusted series**. The convenient library adjusts by default. A verifier built on one contradicts every correct extraction and looks like it works — see D-008, and the AST test that now fails the build for `adjclose`. |
 
 ---
 

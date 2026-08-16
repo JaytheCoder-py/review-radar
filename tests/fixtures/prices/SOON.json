@@ -1,0 +1,8 @@
+{
+  "ticker": "SOON",
+  "note": "Constructed, not recorded. The tape stops on 2026-03-03, before an ex-date of 2026-03-05. No session has closed on or after the ex-date, so there is nothing to contradict.",
+  "closes": [
+    ["2026-03-02", 50.00],
+    ["2026-03-03", 50.50]
+  ]
+}
