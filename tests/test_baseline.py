@@ -29,23 +29,31 @@ def test_an_earnings_release_terminates_at_the_baseline(eliminated: Submission) 
     assert result.needs_model is False
 
 
-def test_the_baseline_silently_discards_a_real_split(false_elimination: Submission) -> None:
-    """The most important test in the suite, and it asserts a failure.
+def test_item_codes_alone_would_discard_a_real_split(false_elimination: Submission) -> None:
+    """The two rungs of the baseline, on the filing that establishes why there are two.
 
     IntegraMed announced a 25% stock split effected as a stock dividend, by press
     release, under Item 7.01 alone - Regulation FD. Every item present carries no index
-    consequence, so the deterministic stage eliminates the filing and it is never seen
-    again: not by the model, not by a queue, not by a person.
+    consequence, so the *first* rung eliminates it, and a filing eliminated there is
+    never seen again: not by the model, not by a queue, not by a person. The gold set
+    puts a number on that: 6 of 28 index-relevant filings, 21.4%.
 
-    This is not a bug in the classifier. It is the structural limit of routing on item
-    codes, and it is why the elimination rate alone is not a result. The gold set puts a
-    number on it - 6 of 28 index-relevant filings, 21.4% - and that number is the
-    argument for the second stage.
+    That number was read for a while as the argument for the second stage. Measurement
+    says otherwise. The words "25% stock split" are in the document, and a keyword screen
+    over the body recovers all six - so 21.4% was an argument for *reading the body*,
+    which is a regex problem (D-007, `test_keyword_screen.py`). Hence the assertion here:
+    the item set still says discard, and the filing is routed to the model anyway.
+
+    What the model is for is the field table on the scoreboard, where the baseline scores
+    NaN on ex_date, ratio, counterparty and affected_securities because it never extracts
+    a field - a screen can say "look at this", it cannot say "1-for-4, ex 13 April" with
+    a citation. Detection is cheap; the fields are not.
     """
     result = classify(false_elimination)
     assert result.items == {"7.01"}
-    assert result.event_type is EventType.NO_INDEX_ACTION
-    assert result.needs_model is False
+    assert result.items <= NO_CONSEQUENCE_ITEMS, "item codes alone would discard it"
+    assert result.event_type is EventType.UNRESOLVED
+    assert result.needs_model is True, "the screen rescued it; the item codes did not"
     assert "25% stock split" in false_elimination.full_text().lower()
 
 

@@ -9,7 +9,7 @@ immutable log. A read-only dashboard renders the log and computes nothing of its
 
 ```bash
 uv sync
-uv run pytest                                    # 97 tests, no network, no credentials
+uv run pytest                                    # 106 tests, no network, no credentials
 uv run reviewradar replay --baseline-only        # the pipeline over 399 real filings
 uv run reviewradar score                         # the scoreboard
 uv run reviewradar serve                         # the dashboard on :8080
@@ -41,35 +41,80 @@ That split exists so the scoreboard can state what the model is *worth* against 
 that runs for free. A system that cannot answer "what would this cost you if you deleted
 the LLM?" has not been engineered, it has been assembled.
 
+The baseline itself has two rungs: **item codes**, then a **keyword screen over the body
+text** that may only ever put a filing back. The second rung exists because the first one
+was measured and found to discard real events — see below.
+
 ## Measured on 399 real filings
 
 | | |
 |---|---|
 | Filings parsed | 399 / 399, **0 failures** |
 | Unrecognised 8-K item descriptions | **0** |
-| Eliminated by the baseline, no model call | **41.9%** |
-| Residual sent to the model | 58.1% |
-| Tests | **97**, no network, no credentials |
+| Eliminated by item codes alone | 41.9% |
+| Eliminated after the keyword screen, no model call | **34.1%** |
+| Residual sent to the model | 65.9% |
+| Tests | **106**, no network, no credentials |
 | `ruff`, `mypy --strict` | clean |
 
 ### The finding that matters
 
-The elimination rate is not a result on its own. Against the hand-labelled gold set:
+The elimination rate is not a result on its own. Against the hand-labelled gold set,
+routing on item codes alone:
 
 | Stratum | n | index-relevant | eliminated | **false eliminations** |
 |---|---:|---:|---:|---:|
 | random | 30 | 1 | 63.3% | 0 / 1 |
 | stratified | 36 | 28 | 30.6% | **6 / 28 = 21.4%** |
 
-A fifth of genuinely index-relevant filings are **silently discarded** by item-code
+A fifth of genuinely index-relevant filings were **silently discarded** by item-code
 routing — including GE's April 2024 spin-off of GE Vernova, the largest US corporate
 action of that year. All six were disclosed under Items 7.01, 9.01 or 2.02, which carry no
 index consequence on their own, with the announcement in an attached press release.
 
-This is the structural limit of routing on item codes, and it is the argument for the
-second stage. A false elimination is invisible by construction: the filing never reaches a
-queue, never reaches the model, never reaches a person. Nobody finds out until the index
-prints wrong. So the CI gate is on the false-elimination rate, not on accuracy.
+A false elimination is invisible by construction: the filing never reaches a queue, never
+reaches the model, never reaches a person. Nobody finds out until the index prints wrong.
+So the CI gate is on the false-elimination rate, not on accuracy.
+
+### What the 21.4% actually argued for
+
+Not the model. The words "25% stock split" are in the IntegraMed document; "Spin-Off" is in
+GE's. Item-code routing missed them because it never read the body. That is a regex
+problem, and the fix is a **keyword rescue stage** (D-007): a screen over the primary
+document *and its exhibits*, consulted before any elimination is allowed to stand, that can
+only ever move a filing back to the model.
+
+| | eliminated | false eliminations (stratified) |
+|---|---:|---:|
+| item codes alone | 41.9% | 6 / 28 = **21.4%** |
+| item codes + keyword screen | **34.1%** | 0 / 28 = **0.0%** |
+
+All six are recovered, for 7.8 points of elimination rate — 31 of the 167 filings item
+codes would have discarded now go to the model. The stratified stratum's elimination rate
+falls from 30.6% to 5.6%, which is the point: that stratum is 28 real events out of 36.
+
+Two things make the screen affordable rather than useless:
+
+- **The cover-page table.** Every 8-K filed since 2019 carries a "Trading Symbol(s)" block,
+  so a bare `trading symbol` pattern fires on **84.4%** of the filings item codes eliminate
+  and the screen stops screening. The pattern requires a *change* — "new", "changed to",
+  "symbol … from" — which a listing table never contains.
+- **Announcement context.** A match only counts when its own sentence also announces
+  something: a declaration, an approval, a dated step, a future-tense consequence. Without
+  it the screen fires on 31.7% of eliminated filings instead of 18.6% (elimination 28.6%
+  rather than 34.1%), because every earnings release restates prior periods "to reflect the
+  three-for-one stock split in 2004". `stock split` alone drops from 33 hits to 18.
+
+**So what is the model for?** The field table `uv run reviewradar score` prints: the
+baseline scores `NaN` on `ex_date`, `ratio`, `counterparty` and `affected_securities`,
+because it never extracts a field. A regex can say *look at this filing*; it cannot say
+*1-for-4, ex 13 April, cited here*. Detection is cheap. The fields, with provenance, are
+not — and the fields are what moves a divisor.
+
+The screen's own cost is visible rather than hidden: stratified `event_type` F1 falls from
+0.33 to 0.25 and the manual-review rate rises from 58.1% to 65.9%, because a rescued filing
+is reported `UNRESOLVED` and, with the model absent, lands in the queue. That is the
+intended direction — the alternative is a confident wrong answer.
 
 **The model column is unmeasured.** The Vertex client is written and the pipeline runs
 against it end to end, but no run has been made — that needs the owner's own GCP project.
@@ -105,10 +150,13 @@ CI run with no credentials and no spend.
   by the board and disseminated through the exchange and DTC; some events generate no 8-K.
   Recall is measured against filings, not against the universe of corporate actions.
 - **The gold set is 66 filings, not the 200 planned.** Per-class counts are thin. Read the
-  21.4% as "roughly a fifth", not a point estimate.
+  21.4% as "roughly a fifth", not a point estimate — and read the 0 / 28 after the screen
+  as "no known miss", not as recall of 1.0.
 - **The stratified stratum was built by phrase search**, so it over-represents filings
-  whose language is explicit. The baseline probably does worse than 21.4% on obliquely
-  worded events, not better.
+  whose language is explicit. That flatters the keyword screen specifically: a stratum
+  selected by phrase is a stratum a phrase pattern was always going to find. On obliquely
+  worded events both rungs of the baseline do worse than these numbers, not better, and
+  that residue is the model's to catch.
 - **Nothing is deployed yet.** [`deploy/README.md`](deploy/README.md) is the Cloud Run
   runbook; running it needs the owner's GCP account.
 
@@ -119,7 +167,7 @@ src/reviewradar/
   types.py            Cik, Accession, Ratio, EventType, Treatment
   ingest/edgar.py     daily index, submissions, exhibits, normalisation
   ingest/store.py     append-only DuckDB event log
-  extract/baseline.py item-code routing. Elimination, not classification
+  extract/baseline.py item-code routing, then a rescue-only keyword screen
   extract/schema.py   the event, and the JSON Schema the model is held to
   extract/llm.py      LlmClient Protocol, offline double, Vertex client
   extract/pipeline.py span validation, confidence, orchestration

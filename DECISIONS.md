@@ -52,7 +52,7 @@ maintaining.
 the SGML header to item numbers via a lookup table built from the SEC's own item list.
 
 **Why.** This was established by probe, not assumption — see
-`memos/W2_what_the_8k_header_actually_contains.md`. The header carries the item
+`memos/what_the_8k_header_actually_contains.md`. The header carries the item
 *description*, never the number. The number does appear in the document body, but the body
 is HTML with tags and entities interleaved between "Item" and "5.02", so recovering it
 requires normalising the HTML first and is unreliable across filer agents.
@@ -106,3 +106,69 @@ nothing and need no credentials. Only the eval job, run deliberately, spends mon
 **Rejected.** A single client with a mock injected in tests. Equivalent for testing, but it
 puts an unconditional cloud dependency in the install path of a repository whose point is
 that it runs anywhere.
+
+---
+
+## D-007 — The keyword screen may only rescue, and only in announcement context
+
+**Decision.** Before an item-code elimination is allowed to stand, `screen()` reads the
+full body text — primary document plus exhibits — against `CORPORATE_ACTION_PATTERNS`. A
+hit routes the filing to the model as `UNRESOLVED`. The screen has no other power: it
+cannot eliminate, cannot type an event, and is consulted on no other branch of `classify`.
+A match counts only when the passage it sits in also *announces* something
+(`ANNOUNCEMENT_CONTEXT`: a declaration, an approval, a dated step, a future-tense
+consequence), scoped to the match's own sentence.
+
+**Why.** Item codes alone discarded 6 of 28 index-relevant filings in the stratified gold
+set — 21.4%, GE Vernova included. That number was read for a while as the argument for the
+second stage. It is not: the words "25% stock split" are in the IntegraMed document. It was
+an argument for reading the body, which is a regex problem. Measured over the 399-filing
+corpus:
+
+| | eliminated | rescued of the 6 known misses |
+|---|---:|---:|
+| item codes alone | 41.9% | 0 / 6 |
+| **item codes + this screen** | **34.1%** | **6 / 6** |
+| same, tense-blind | 28.6% | 6 / 6 |
+| tense-blind, plus a bare `trading symbol` | 1.3% | 6 / 6 |
+
+The rescue-only asymmetry is the safety argument: a false positive costs one model call, a
+false negative costs an index print. Nothing that can only add work to the queue needs to
+be trusted the way an eliminator does.
+
+The announcement context is what makes it affordable. Every earnings release restates prior
+periods "to reflect the three-for-one stock split in 2004"; `stock split` fires on 33 of
+the 167 filings item codes eliminate and only some of those are events. Requiring the
+sentence to be a disclosure act takes that to 18, and the screen overall from 53 filings to
+31, with all six real rescues intact. The discriminator is deliberately *announcement*
+rather than *future tense*: "completed the previously announced separation" is past and
+still an announcement — that is GE Vernova — while "adjusted to reflect the split in 2004"
+is neither.
+
+Mergers are absent from the table on purpose. A merger agreement is Item 1.01 and a
+completed acquisition is Item 2.01; neither is ever eliminated, so a merger pattern buys no
+recall while firing on every earnings release that mentions a pending deal.
+
+**Rejected — a screen that can also eliminate.** Symmetric, and it would let a
+`no_index_action` verdict rest on the absence of a phrase. Absence of a phrase is not
+absence of an event, and the failure is the invisible one this project exists to measure.
+
+**Rejected — a tense-blind screen.** Simpler to read, rescues the same six, and costs 5.5
+points of elimination (28.6% against 34.1%). It pays that by sending 22 more filings to the
+model that are, on inspection, earnings releases restating a split from years ago. Worse,
+it makes the screen's own rationale untrue — "the body announces a stock split" when the
+body announces nothing of the kind. A rescue with a wrong reason is indistinguishable from
+a routing bug.
+
+**Rejected — a careless `trading symbol` pattern.** Every 8-K filed since 2019 carries a
+"Trading Symbol(s)" cover-page table, so the bare phrase fires on 84.4% of eliminated
+filings and takes elimination to 6.5% on its own. Requiring a change — "new", "changed to",
+"symbol … from" — keeps the real Herman Miller ticker change and matches no listing table.
+
+**What this does not settle.** The screen detects; it extracts nothing. The scoreboard's
+field table shows the baseline at `NaN` on `ex_date`, `ratio`, `counterparty` and
+`affected_securities` because it never produces a field, and no regex table is going to
+produce one with a citation. That, not the 21.4%, is the case for stage two. The screen's
+own residual cost is honest and visible: stratified `event_type` F1 falls from 0.33 to
+0.25, and the manual-review rate rises from 58.1% to 65.9%, because a rescued filing with
+no model behind it is a filing in the queue.

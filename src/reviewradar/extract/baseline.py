@@ -5,17 +5,25 @@ consequence at all, and every filing this stage terminates is a filing the model
 paid to read. What survives is the residual, and the residual is what the scoreboard
 measures the model against.
 
-Three tables, all data rather than branches, so they can be reviewed by someone who does
-not read Python:
+Two rungs, in order. The first routes on item codes:
 
 * ``NO_CONSEQUENCE_ITEMS`` - items that can never oblige an index calculator to act.
 * ``DIAGNOSTIC_ITEMS``     - items that identify the event type outright. Fields still
                              have to be extracted, so these are not terminal.
 * ``AMBIGUOUS_ITEMS``      - items that may or may not carry an event. The model decides.
 
+The second rung is ``CORPORATE_ACTION_PATTERNS``, a keyword screen over the whole body
+that runs **before** an elimination is allowed to stand. Item codes alone discarded 6 of
+28 index-relevant filings in the stratified gold set - 21.4%, GE Vernova included -
+because a split or a spin-off is routinely announced under 7.01, 9.01 or 2.02 with the
+event confined to the body or an attached press release (D-007).
+
+Every table here is data rather than branches, so it can be reviewed by someone who does
+not read Python.
+
 Item numbers are recovered from the header's ``ITEM INFORMATION:`` description strings,
 which is the only reliable source - see D-003 and
-``memos/W2_what_the_8k_header_actually_contains.md``.
+``memos/what_the_8k_header_actually_contains.md``.
 """
 
 from __future__ import annotations
@@ -205,6 +213,118 @@ AMBIGUOUS_ITEMS: Final[frozenset[str]] = frozenset(
 )
 
 
+# ----------------------------------------------------------------------------------
+# The keyword rescue
+#
+# A screen over the full body text - primary document plus exhibits - consulted before
+# an elimination is allowed to stand. It may only ever move a filing **back** to the
+# model; it cannot eliminate, cannot type, and cannot lower a filing's routing. That
+# asymmetry is the entire safety argument: a false positive costs one model call, a
+# false negative costs an index print (D-007).
+#
+# Scope is deliberately narrow. The screen exists for the event classes item codes
+# systematically miss - splits, spin-offs, special and stock dividends, ticker changes,
+# rights offerings. Mergers are absent on purpose: a merger agreement is Item 1.01 and a
+# completed acquisition is Item 2.01, neither of which is ever eliminated, so a merger
+# pattern buys no recall and fires on every earnings release that mentions a pending
+# deal.
+
+#: Class name -> regex over the normalised body text. Matched case-insensitively.
+#:
+#: `ticker change` is the pattern that has to be written carefully. Every 8-K filed
+#: since 2019 carries a "Trading Symbol(s)" cover-page table, so a bare `trading symbol`
+#: fires on 141 of the 167 filings item codes eliminate - 84.4% - and the screen stops
+#: screening. The pattern therefore requires a *change* - "new", "changed to",
+#: "symbol ... from" - which a listing table never contains.
+CORPORATE_ACTION_PATTERNS: Final[dict[str, str]] = {
+    "stock split": (
+        r"\b(?:stock|share)\s+splits?\b"
+        r"|\bsplit\s+of\s+(?:its|the)\s+(?:issued\s+and\s+outstanding\s+)?common\s+(?:stock|shares)\b"
+    ),
+    "reverse split": r"\breverse\s+(?:stock\s+|share\s+)?splits?\b",
+    # Ratios are written in words as often as in digits, and the words go up to twenty.
+    "split ratio": (
+        r"\b(?:one|two|three|four|five|six|seven|eight|nine|ten|twenty|\d{1,3})"
+        r"[-\s]for[-\s]"
+        r"(?:one|two|three|four|five|six|seven|eight|nine|ten|twenty|\d{1,3})\b"
+    ),
+    "spin-off": r"\bspin[-\s]?offs?\b|\bspun[-\s]off\b",
+    "special dividend": r"\b(?:special|extraordinary|one[-\s]time)\s+(?:cash\s+|stock\s+)?dividends?\b",
+    "stock dividend": r"\bstock\s+dividends?\b",
+    "rights offering": r"\brights\s+(?:offering|issue|issuance|distribution)\b",
+    "ticker change": (
+        r"\b(?:new|chang\w*|renam\w*)\s+(?:\S+\s+){0,3}?(?:ticker|trading|stock)\s+symbols?\b"
+        r"|\b(?:ticker|trading|stock)\s+symbols?\s+(?:chang\w*|from)\b"
+    ),
+}
+
+#: A match only counts when the passage around it also *announces* something. Without
+#: this the table fires on 53 of the 167 filings item codes eliminate rather than 31,
+#: `stock split` alone on 33 rather than 18, because every earnings release restates
+#: prior periods "to reflect the three-for-one stock split in 2004". All six known
+#: false eliminations survive the requirement.
+#:
+#: The discriminator is not the verb's tense but whether the sentence is a disclosure
+#: act - a declaration, an approval, a dated step, or a future-tense consequence.
+#: "Completed the previously announced separation" is past and still an announcement;
+#: "adjusted to reflect the split in 2004" is neither. Same idea as `compute_confidence`
+#: treating an ex-date before the filing date as evidence of a bad extraction.
+ANNOUNCEMENT_CONTEXT: Final[str] = (
+    r"\bannounc\w+\b"  # announced / announces / announcing / announcement
+    r"|\bdeclar\w+\b"  # the board declared ...
+    r"|\bauthoriz\w+\b|\bapprov\w+\b"
+    r"|\bwill\b|\bshall\b|\bexpects?\s+to\b|\bintends?\s+to\b"
+    r"|\bto\s+be\s+effective\b|\beffective\s+(?:on|as\s+of|at\s+the)\b"
+    r"|\b(?:record|payable|payment|distribution|ex|ex-dividend|effective)\s+dates?\b"
+    r"|\bboard\s+of\s+directors\b"
+)
+
+#: How far either side of a match the announcement context may be looked for. Capped so
+#: that a numeric table, which can run for pages without a sentence-ending stop, cannot
+#: reach into unrelated prose and validate itself.
+_CONTEXT_CHARS: Final[int] = 200
+
+#: Sentence-ish boundaries. A full stop before whitespace, a blank line, or a rule of
+#: dashes - the last because pre-2005 filings are plain text and separate blocks with
+#: one, not with punctuation.
+_BOUNDARY = re.compile(r"[.!?](?=\s)|\n[ \t]*\n|-{3,}")
+
+_COMPILED_PATTERNS: Final[dict[str, re.Pattern[str]]] = {
+    name: re.compile(pattern, re.I) for name, pattern in CORPORATE_ACTION_PATTERNS.items()
+}
+_ANNOUNCEMENT = re.compile(ANNOUNCEMENT_CONTEXT, re.I)
+
+
+def _announcement_near(text: str, start: int, end: int) -> bool:
+    """Is the match at `[start, end)` inside a passage that announces something?
+
+    The passage is the match's own sentence, clipped to `_CONTEXT_CHARS` either side.
+    Sentence-scoped rather than window-scoped because the two readings of "stock split"
+    are often one sentence apart: an earnings release says the split happened in 2004,
+    then announces its quarterly figures in the very next breath.
+    """
+    before = text[max(0, start - _CONTEXT_CHARS) : start]
+    after = text[end : end + _CONTEXT_CHARS]
+    if opening := [m.end() for m in _BOUNDARY.finditer(before)]:
+        before = before[opening[-1] :]
+    if closing := _BOUNDARY.search(after):
+        after = after[: closing.start()]
+    return _ANNOUNCEMENT.search(before + text[start:end] + after) is not None
+
+
+def screen(text: str) -> frozenset[str]:
+    """Which corporate-action classes `text` actually announces.
+
+    Empty is the common case and means only "no pattern fired" - never "no event".
+    Nothing in this module may eliminate on that basis.
+    """
+    return frozenset(
+        name
+        for name, pattern in _COMPILED_PATTERNS.items()
+        if any(_announcement_near(text, m.start(), m.end()) for m in pattern.finditer(text))
+    )
+
+
 @dataclass(frozen=True, slots=True)
 class BaselineResult:
     """What the deterministic stage concluded, and why."""
@@ -272,6 +392,10 @@ def classify(submission: Submission) -> BaselineResult:
     2.02 (results) and 2.01 (completed acquisition) is not eliminated, because companies
     routinely file both at once and eliminating on the harmless one drops the event
     sitting beside it.
+
+    Elimination is then checked a second time against the body text (D-007). The screen
+    is consulted only on the branch that would terminate the filing, because it is only
+    allowed to rescue - reaching it from any other branch could only make routing worse.
     """
     parsed = parse_items(submission)
     items, unmapped = parsed.items, parsed.unmapped
@@ -295,6 +419,17 @@ def classify(submission: Submission) -> BaselineResult:
         )
 
     if items <= NO_CONSEQUENCE_ITEMS:
+        if fired := screen(submission.full_text()):
+            return BaselineResult(
+                event_type=EventType.UNRESOLVED,
+                items=items,
+                unmapped_descriptions=(),
+                rationale=(
+                    f"item(s) {', '.join(sorted(items))} carry no index consequence, but the "
+                    f"body announces {', '.join(sorted(fired))}; not eliminated"
+                ),
+                needs_model=True,
+            )
         return BaselineResult(
             event_type=EventType.NO_INDEX_ACTION,
             items=items,
