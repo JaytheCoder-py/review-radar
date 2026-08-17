@@ -10,7 +10,7 @@ sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "src"))
 from reviewradar.ingest.edgar import EdgarClient  # noqa: E402
 
 EFTS = "https://efts.sec.gov/LATEST/search-index"
-CONTACT = sys.argv[1] if len(sys.argv) > 1 else "jasonchung.ck@gmail.com"
+CONTACT = sys.argv[1] if len(sys.argv) > 1 else "jaythecoder.py@gmail.com"
 OUT = Path("data/corpus/submissions"); OUT.mkdir(parents=True, exist_ok=True)
 
 PHRASES = {

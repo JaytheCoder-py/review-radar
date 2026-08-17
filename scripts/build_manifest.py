@@ -11,7 +11,7 @@ from pathlib import Path
 sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "src"))
 from reviewradar.ingest.edgar import EdgarClient  # noqa: E402
 
-CONTACT = sys.argv[1] if len(sys.argv) > 1 else "jasonchung.ck@gmail.com"
+CONTACT = sys.argv[1] if len(sys.argv) > 1 else "jaythecoder.py@gmail.com"
 DAYS = [dt.date(2025, 4, d) for d in (14, 15, 16, 17, 18, 21)]
 client = EdgarClient(contact=CONTACT)
 

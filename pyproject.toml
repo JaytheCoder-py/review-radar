@@ -4,7 +4,7 @@ version = "0.1.0"
 description = "Corporate-action extraction and index-treatment classification over SEC 8-K filings"
 readme = "README.md"
 requires-python = ">=3.12"
-authors = [{ name = "Jason Chung", email = "jasonchung.ck@gmail.com" }]
+authors = [{ name = "Jason Chung", email = "jaythecoder.py@gmail.com" }]
 dependencies = [
     "duckdb>=1.1.0",
     "fastapi>=0.115.0",
